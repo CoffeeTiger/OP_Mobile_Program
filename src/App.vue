@@ -21,7 +21,7 @@
 		data: function() {
 			return {
 				showBarHeader: 2,
-				showBarHeader_title: '中间标题',
+				showBarHeader_title: 'middleName',
 				showBarHeader_leftIcon: '',
 				showBarHeader_leftTitle: '',
 				showBarHeader_rightIcon: '',
