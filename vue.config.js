@@ -14,7 +14,7 @@ module.exports = {
 		hot: true,
 		https: false,
 		hotOnly: false,
-		proxy: {
+		/* proxy: {
 			'/': {
 				target: 'http://xxxx:8080',
 				secure: false,
@@ -23,7 +23,7 @@ module.exports = {
 					'^/API': '/'
 				}
 			}
-		},
+		}, */
 		before: app => {}
 	},
 	

@@ -4,7 +4,8 @@ import {
 } from "vue-router";
 
 
-const routes = [{
+const routes = [
+{
 	path: '/',
 	name: 'home',
 	meta:{index:0, showHeader:0, showFooter:1, login:false},
@@ -37,6 +38,7 @@ const routes = [{
 }, {
 	path: '/test',
 	name: 'test',
+	meta:{index:1, showHeader:0, showFooter:0, login:false},
 	component: () => import('@/views/test/test.vue'),
 }, {
 	path: '/:pathMatch(.*)*',

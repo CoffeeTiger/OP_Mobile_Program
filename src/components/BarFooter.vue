@@ -1,5 +1,5 @@
 <template>
-	<div class="footer-contain">
+	<div class="van-safe-area-bottom footer-contain">
 		<div :class="active=='home'?'footer-cell cell-active':'footer-cell'" class="footer-cell" @click="go('home')">
 			<img src="../assets/imgs/share.png" class="footer-cell-img" />
 			<span class="footer-cell-name">home</span>
@@ -31,6 +31,14 @@
 				active: 'home'
 			}
 		},
+		created() {
+			let current_path_name = this.$route.name
+			if (current_path_name == 'undefined') {
+				this.active = 'home'
+			} else{
+				this.active = current_path_name
+			}
+		},
 		methods:{
 			go(v){
 				this.active = v
@@ -43,15 +51,14 @@
 <style scoped="scoped">
 	.footer-contain{
 		width: 100%;
-		height: 3.32rem;
+		height: 2.8rem;
 		position: fixed;
 		bottom: 0;
 		left: 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background-color: #253341;
-		border-top: 0.04rem solid #253341;
+		background-color: #253341; 
 	}
 	.footer-contain .footer-cell{
 		width: 20%;

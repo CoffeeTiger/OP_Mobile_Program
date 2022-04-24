@@ -1,8 +1,8 @@
 <template>
 	<div>
-	<p class="test1">Welcome to the Solana beta</p>
-		<p class="test2">Welcome to the Solana beta</p>
-		<p class="test3">Welcome to the Solana beta</p>
+	<p class="test1">Welcome to the OP beta</p>
+		<p class="test2">Welcome to the OP beta</p>
+		<p class="test3">Welcome to the OP beta</p>
 	</div>
 </template>
 

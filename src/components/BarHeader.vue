@@ -1,5 +1,5 @@
 <template>
-	<div class="header-contain">
+	<div class="van-safe-area-top header-contain">
 		<div class="header-left" @click="clickLeft"> 
 			<img src="../assets/imgs/share.png" class="header-icon-left"/>
 		</div>

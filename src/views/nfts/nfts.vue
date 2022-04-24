@@ -1,5 +1,5 @@
 <template>
-	<div>Under Construction</div>
+	<div>Under Construction nfts</div>
 </template>
 
 <script>
