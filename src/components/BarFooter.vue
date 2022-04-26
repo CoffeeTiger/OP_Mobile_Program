@@ -1,23 +1,28 @@
 <template>
 	<div class="van-safe-area-bottom footer-contain">
 		<div :class="active=='home'?'footer-cell cell-active':'footer-cell'" class="footer-cell" @click="go('home')">
-			<img src="../assets/imgs/share.png" class="footer-cell-img" />
+			<img src="../assets/imgs/home.png" class="footer-cell-img" v-if="active!='home'"/>
+			<img src="../assets/imgs/home-1.png" class="footer-cell-img" v-if="active=='home'"/>
 			<span class="footer-cell-name">home</span>
 		</div>
 		<div :class="active=='nfts'?'footer-cell cell-active':'footer-cell'" @click="go('nfts')">
-			<img src="../assets/imgs/share.png" class="footer-cell-img" />
+			<img src="../assets/imgs/nfts.png" class="footer-cell-img" v-if="active!='nfts'"/>
+			<img src="../assets/imgs/nfts-1.png" class="footer-cell-img" v-if="active=='nfts'"/>
 			<span class="footer-cell-name">NFTs</span>
 		</div>
 		<div :class="active=='stake'?'footer-cell cell-active':'footer-cell'" @click="go('stake')">
-			<img src="../assets/imgs/share.png" class="footer-cell-img" />
+			<img src="../assets/imgs/stake.png" class="footer-cell-img" v-if="active!='stake'"/>
+			<img src="../assets/imgs/stake-1.png" class="footer-cell-img" v-if="active=='stake'"/>
 			<span class="footer-cell-name">Stake</span>
 		</div>
 		<div :class="active=='bond'?'footer-cell cell-active':'footer-cell'" @click="go('bond')">
-			<img src="../assets/imgs/share.png" class="footer-cell-img" />
+			<img src="../assets/imgs/bond.png" class="footer-cell-img" v-if="active!='bond'"/>
+			<img src="../assets/imgs/bond-1.png" class="footer-cell-img" v-if="active=='bond'"/>
 			<span class="footer-cell-name">Bond</span>
 		</div>
 		<div :class="active=='profile'?'footer-cell cell-active':'footer-cell'" @click="go('profile')">
-			<img src="../assets/imgs/share.png" class="footer-cell-img" />
+			<img src="../assets/imgs/Profile.png" class="footer-cell-img" v-if="active!='profile'"/>
+			<img src="../assets/imgs/Profile-1.png" class="footer-cell-img" v-if="active=='profile'"/>
 			<span class="footer-cell-name">Profile</span>
 		</div>
 	</div>
@@ -68,7 +73,7 @@
 		align-items: center;
 		overflow: hidden;
 		font-size: 0.4rem;
-		font-family: 'OpenSans-Regular, OpenSans';
+		font-weight: 400;
 	}
 	.footer-contain .cell-active{ 
 		color: #1D9BF0;
@@ -79,6 +84,6 @@
 		margin: 0.32rem auto;
 	}
 	.footer-contain .footer-cell .footer-cell-name{
-		line-height: 0.54rem;
+		line-height: 0.54rem; 
 	}
 </style>

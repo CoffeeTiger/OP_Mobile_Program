@@ -18,8 +18,11 @@
 			</keep-alive>
 		</transition>
 		<transition name="van-fade" mode="out-in" v-if="!showBarHeader && showFooterBar">
+			<component :is="Component" class="center-contain center-contain-hfooter" />
+		</transition>
+		<transition name="van-fade" mode="out-in" v-if="!showBarHeader && !showFooterBar">
 			<keep-alive>
-				<component :is="Component" class="center-contain center-contain-hfooter" />
+				<component :is="Component" class="center-contain"  />
 			</keep-alive>
 		</transition>
 	</router-view>
@@ -58,6 +61,9 @@
 					this.showFooterBar = true
 				} else if(index == 1){
 					this.showBarHeader = true
+					this.showFooterBar = false
+				} else if(index == 2){
+					this.showBarHeader = false
 					this.showFooterBar = false
 				} else {
 					this.showBarHeader = false

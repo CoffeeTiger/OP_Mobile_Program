@@ -43,6 +43,7 @@ const routes = [
 }, {
 	path: '/:pathMatch(.*)*',
 	name: 'NotFound',
+	meta:{index:2, showHeader:0, showFooter:0, login:false},
 	component: () => import('@/views/error.vue')
 }, ]
 

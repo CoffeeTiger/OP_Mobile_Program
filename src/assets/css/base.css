@@ -25,10 +25,10 @@ textarea::-webkit-input-placeholder{
 .play-no{display: none !important;}
 .hidden-yes{visibility: hidden;}
 .hidden-no{visibility: visible;}
-.bgcolor_blue{background-color: #2288d4 !important;}
-.bgcolor_blue_{background-color: #c1e5ff !important;}
-.bgcolor_red{background-color: #f63f27 !important;}
-.bgcolor_red_{background-color: #fb9e92 !important;}
+.bg_blue{background: #1D9BF0;}
+.bg_red{background-color: #f63f27 !important;}
+.bg_gray{background: #253341;}
+.color_blue{color: #1D9BF0;}
 /* @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/OpenSans-Regular.ttf'), url('../fonts/OpenSans-Semibold.ttf'), url('../fonts/OpenSans-Bold.ttf'), url('../fonts/OpenSans-Light.ttf');
@@ -165,7 +165,6 @@ textarea {
 	left: 0;
 	position: relative;
 	overflow-x: auto;
-	background-color: #FFFFFF6e;
 }
 .center-contain-hheader{
 	height: -webkit-calc(100% - 1.76rem);
@@ -177,4 +176,34 @@ textarea {
 .center-contain-hheader_hfooter{
 	top: 1.76rem;
 	height: -webkit-calc(100% - 4.56rem);
+}
+.main_contain{
+	width: -webkit-calc(100% - 1.2rem);
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.ipadding-top-30{
+	padding-top: 0.6rem;
+}
+.ipadding-bottom-30{
+	padding-bottom: 0.6rem;
+}
+.ipadding-left-30{
+	padding-left: 0.6rem;
+}
+.ipadding-right-30{
+	padding-right: 0.6rem;
+}
+.imargin-top-30{
+	margin-top: 0.6rem;
+}
+.imargin-bottom-30{
+	margin-bottom: 0.6rem;
+}
+.imargin-left-30{
+	margin-left: 0.6rem;
+}
+.imargin-right-30{
+	margin-right: 0.6rem;
 }

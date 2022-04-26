@@ -6,18 +6,23 @@ import router from './router/router';
 import i18n from './i18n'
 /* use vant */
 import 'vant/lib/index.css'
-import {Toast, Button, NavBar, Icon, Cell, CellGroup} from 'vant'; 
+import {Toast, Button, NavBar, Icon, Cell, CellGroup, Collapse, CollapseItem, Progress} from 'vant'; 
 
 import VueClipboard from 'vue-clipboard2'
 
 /* var app = */ 
-createApp(App).use(VueAxios, axios).use(router).use(i18n).use(Toast).use(Button).use(NavBar).use(Icon).use(Cell).use(CellGroup).use(VueClipboard).mount('#app')
+createApp(App).use(VueAxios, axios).use(router).use(i18n).use(Toast).use(Button).use(NavBar).use(Icon).use(Cell).use(CellGroup).use(VueClipboard).use(Collapse).use(CollapseItem).use(Progress).mount('#app')
 
 /* app.config.globalProperties.$http = () => {
 	return 'www.open.io'
 } */
 /* app.config.$url = 'openpublish.io' */
 
+import {
+  Locale
+} from 'vant'
+import enUS from 'vant/es/locale/lang/en-US'
+Locale.use('en-US', enUS)
 
 window.addEventListener('focusout', function () {
   var ua = navigator.userAgent.toLowerCase();
