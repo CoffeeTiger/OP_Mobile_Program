@@ -10,7 +10,7 @@ import {Toast, Button, NavBar, Icon, Cell, CellGroup, Collapse, CollapseItem, Pr
 
 import VueClipboard from 'vue-clipboard2'
 
-/* var app = */ 
+
 createApp(App).use(VueAxios, axios).use(router).use(i18n).use(Toast).use(Button).use(NavBar).use(Icon).use(Cell).use(CellGroup).use(VueClipboard).use(Collapse).use(CollapseItem).use(Progress).mount('#app')
 
 /* app.config.globalProperties.$http = () => {
