@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<div class="infts-title-big">NFTs</div>
+			<div class="ilevel-0-page-title">NFTs</div>
 			<div class="infts-primay-nft bg_gray">
 				<div class="inft-imgs">
 					<img src="../../assets/imgs/nft-example.png" class="inft-img" />
@@ -156,7 +156,7 @@
 </script>
 
 <style scoped>
-	.infts-title-big {
+	/* .infts-title-big {
 		width: 100%;
 		height: 1.3rem;
 		padding: 0.96rem 0;
@@ -167,7 +167,7 @@
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
-	}
+	} */
 
 	.infts-primay-nft {
 		width: 100%;

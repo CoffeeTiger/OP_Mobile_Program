@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<div class="ihome-title-bg">About OpenPublish</div>
+			<div class="ilevel-0-page-title">About OpenPublish</div>
 			<div class="ihome-media-contain">
 				<!-- <video id="video" controls="controls" muted class="ivideo"> 
 					<source src="../../assets/imgs/video/b6f4de.mp4" type="video/mp4" webkit-playsinline="true" playsinline="true" x5-video-player-fullscreen="true">
@@ -243,18 +243,7 @@
 </script>
 
 <style>
-	.ihome-title-bg {
-		width: 100%;
-		height: 1.3rem;
-		padding: 0.96rem 0;
-		font-size: 0.96rem;
-		font-weight: 600;
-		line-height: 1.3rem;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
-
+	
 	.ihome-media-contain {
 		/* width: 13.8rem; 
 		opacity: 0.9;
