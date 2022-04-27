@@ -1,18 +1,17 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<div class="ilevel-0-page-title">About OpenPublish</div>
-			<div class="ihome-media-contain">
-				<!-- <video id="video" controls="controls" muted class="ivideo"> 
-					<source src="../../assets/imgs/video/b6f4de.mp4" type="video/mp4" webkit-playsinline="true" playsinline="true" x5-video-player-fullscreen="true">
-				your browser does not support the video tag
-				</video> -->
+			<div class="ihome-top">
+				<img src="../../assets/imgs/topbanner.png" class="itopbanner-img" />
+			</div>
+			<!-- <div class="ilevel-0-page-title">About OpenPublish</div> -->
+			<!-- <div class="ihome-media-contain">
 				<iframe class="ivideo"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen frameborder="0" sandbox="allow-same-origin allow-scripts allow-presentation"
 					src="https://www.youtube.com/embed/ontbTdodX7M?autoplay=0&amp;controls=1&amp;loop=1&amp;modestbranding=1&amp;rel=0"
 					title="Meet OpenSea"></iframe>
-			</div>
+			</div> -->
 			<div class="ihome-share">
 				<img src="../../assets/imgs/home-top-tw.png" class="ishare-img" />
 				<img src="../../assets/imgs/home-top-tg.png" class="ishare-img ishare-img-middle" />
@@ -40,12 +39,12 @@
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 							<div class="ititle">Staking</div>
-							<img src="../../assets/imgs/cattle/cattle-purple.png" class="icattle"/>
+							<!-- <img src="../../assets/imgs/cattle/cattle-purple.png" class="icattle"/> -->
 						</div>
 						<div class="ipanel-card-info">
-							<div class="iinfs">Stakers play an important role in the Olympus ecosystem. Stakers deposit
+							<div class="iinfs">Stakers play an important role in the OpenPublish ecosystem. Stakers deposit
 								their OPH into the protocol, which contributes to OPH long-term price stability. In
-								exchange, stakers receive additional OHM token rewards as well as the right to govern
+								exchange, stakers receive additional oph token rewards as well as the right to govern
 								the protocol.</div>
 							<!-- <div class="iimgs">
 								<img src="../../assets/imgs/ihome-Staking.png" class="iimge-stake" />
@@ -61,7 +60,7 @@
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 						<div class="ititle">Bonding</div>
-						<img src="../../assets/imgs/cattle/cattle-red.png" class="icattle"/>
+						<!-- <img src="../../assets/imgs/cattle/cattle-red.png" class="icattle"/> -->
 						</div>
 						<div class="ipanel-card-info">
 							<div class="iinfs">Bonding allows you to trade various tokens for OPH at a discounted price.
@@ -82,7 +81,7 @@
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 							<div class="ititle">NFTs</div>
-							<img src="../../assets/imgs/cattle/cattle-blue.png" class="icattle"/>
+							<!-- <img src="../../assets/imgs/cattle/cattle-blue.png" class="icattle"/> -->
 						</div>
 						<div class="ipanel-card-info">
 							<div class="iinfs">Openpublish is the first market to realize and implement very significant
@@ -100,6 +99,17 @@
 				</div>
 
 			</div>
+			
+			<div class="ihome-panel">
+				<div class="ipanel-title">About OpenPublish</div>
+				<div class="ihome-media-contain">
+					<iframe class="ivideo"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen frameborder="0" sandbox="allow-same-origin allow-scripts allow-presentation"
+						src="https://www.youtube.com/embed/ontbTdodX7M?autoplay=0&amp;controls=1&amp;loop=1&amp;modestbranding=1&amp;rel=0"
+						title="Meet OpenSea"></iframe>
+				</div>
+			</div>
 
 			<div class="ihome-panel">
 				<div class="ipanel-title">FAQ</div>
@@ -116,7 +126,7 @@
 						</div>
 					</div>
 					<div :class="open1?'ibody-open':'ibody-close'">
-						<div class="icontent">Openpublish is the first market to realize and implement very significant changes in NFT trading mode and application of economic theory.In short! Openpublish = printed version opensea + enhanced version looksrare + value version Olympus<br /><br /> In the openpublish platform, the NFT publishing business model with high liquidity replaces the traditional NFT auction model; Cooperate with the strategy of "trading is mining" with strong incentive; Based on the legendary (3,3) token model. These three powerful economic mechanisms are connected by an efficient dispatching control system to build a stable triangular economic system.</div>
+						<div class="icontent">Openpublish is the first market to realize and implement very significant changes in NFT trading mode and application of economic theory.In short! Openpublish = printed version opensea + enhanced version looksrare + value version OpenPublish<br /><br /> In the openpublish platform, the NFT publishing business model with high liquidity replaces the traditional NFT auction model; Cooperate with the strategy of "trading is mining" with strong incentive; Based on the legendary (3,3) token model. These three powerful economic mechanisms are connected by an efficient dispatching control system to build a stable triangular economic system.</div>
 					</div>
 				</div>
 
@@ -266,7 +276,7 @@
 	.ihome-road-contain .iroad-title {
 		width: 100%;
 		height: 0.86rem;
-		margin: 1.18rem auto 0.96rem;
+		margin: 1.64rem auto 1.44rem;
 		line-height: 0.86rem;
 		font-size: 0.64rem;
 		font-weight: 600;
@@ -308,7 +318,7 @@
 		line-height: 0.9rem;
 		font-size: 0.64rem;
 		font-weight: 600;
-		margin: 0.96rem 0;
+		margin: 1.64rem 0;
 		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
 	}
 
@@ -515,7 +525,6 @@
 	.ihome-share .ishare-img {
 		width: 0.88rem;
 		height: 0.88rem;
-		margin: 0.96rem 0;
 	}
 
 	.ihome-share .ishare-img-middle {
@@ -525,8 +534,12 @@
 	.ihome-share .ishare-img:active {
 		opacity: 0.6;
 	}
-
-	/* .ihome-share .ishare-img:hover{
-		opacity: 0.6;
-	} */
+	
+	.ihome-top{
+		width: 100%;
+		margin: 1.14rem auto 1.64rem;
+	}
+	.ihome-top .itopbanner-img{
+		width: 100%;
+	}
 </style>
