@@ -1,25 +1,12 @@
 <template>
 	<div class="van-safe-area-top header-contain">
 		<div class="header-left" @click="clickLeft"> 
-			<img src="../assets/imgs/share.png" class="header-icon-left"/>
+			<img src="../assets/imgs/arrow-left.png" class="header-icon-left"/>
 		</div>
 		<div class="header-middle">{{$t(title)}}</div>
 		<div class="header-right" @click="clickRight">
-			<img src="../assets/imgs/share.png" class="header-icon-right"/>
+			<!-- <img src="../assets/imgs/share.png" class="header-icon-right"/> -->
 		</div>
-		<!-- <van-nav-bar :class="barbg" fixed @click-left="clickLeft" @click-right="clickRight">
-      <template #left>
-        <van-icon :name="leftIcon" color="#FFFFFF" class="header-icon-left"/>
-        <div>{{leftTitle}}</div>
-      </template>
-      <template #title>
-        {{$t(title)}}
-      </template>
-      <template #right>
-        <div>{{rightTitle}}</div>
-        <van-icon :name="rightIcon" color="#FFFFFF" class="header-icon-right"/>
-      </template>
-    </van-nav-bar> -->
 	</div>
 </template>
 
@@ -100,8 +87,21 @@
 </script>
 
 <style scoped="scoped">
+	.header-left, .header-right{
+		width: 3rem;
+	}
+	.header-middle{
+		width: 9rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: 0.72rem;
+		font-weight: 600;
+		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
+		text-align: center;
+	}
 	.header-icon-left {
-		width: 0.38rem;
+		width: 0.64rem;
 		height: 0.64rem;
 		margin-left: 0.74rem;
 	}

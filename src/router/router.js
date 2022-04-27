@@ -31,6 +31,11 @@ const routes = [
 	meta:{index:0, showHeader:0, showFooter:1, login:false},
 	component: () => import('@/views/bond/bond.vue'),
 }, {
+	path: '/bondpurchase',
+	name: 'bondpurchase',
+	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'OPH-LP'},
+	component: () => import('@/views/bond/bondPurchase.vue'),
+}, {
 	path: '/profile',
 	name: 'profile',
 	meta:{index:0, showHeader:0, showFooter:1, login:false},

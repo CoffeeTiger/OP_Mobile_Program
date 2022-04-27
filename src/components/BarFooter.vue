@@ -3,7 +3,7 @@
 		<div :class="active=='home'?'footer-cell cell-active':'footer-cell'" class="footer-cell" @click="go('home')">
 			<img src="../assets/imgs/home.png" class="footer-cell-img" v-if="active!='home'"/>
 			<img src="../assets/imgs/home-1.png" class="footer-cell-img" v-if="active=='home'"/>
-			<span class="footer-cell-name">home</span>
+			<span class="footer-cell-name">Home</span>
 		</div>
 		<div :class="active=='nfts'?'footer-cell cell-active':'footer-cell'" @click="go('nfts')">
 			<img src="../assets/imgs/nfts.png" class="footer-cell-img" v-if="active!='nfts'"/>
@@ -64,6 +64,7 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #253341; 
+		font-family: PingFangSC-Regular, PingFang SC;
 	}
 	.footer-contain .footer-cell{
 		width: 20%;
@@ -72,16 +73,16 @@
 		flex-direction: column;
 		align-items: center;
 		overflow: hidden;
-		font-size: 0.4rem;
-		font-weight: 400;
+		font-size: 0.52rem;
+		font-weight: 500;
 	}
 	.footer-contain .cell-active{ 
 		color: #1D9BF0;
 	} 
 	.footer-contain .footer-cell .footer-cell-img{
-		width: 0.8rem;
-		height: 0.8rem;
-		margin: 0.32rem auto;
+		width: 0.88rem;
+		height: 0.88rem;
+		margin: 0.28rem auto;
 	}
 	.footer-contain .footer-cell .footer-cell-name{
 		line-height: 0.54rem; 

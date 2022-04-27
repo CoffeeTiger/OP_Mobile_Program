@@ -43,8 +43,8 @@ html,body {
 }
 
 body {
-	font-family: 'Poppins, sans-serif, Open Sans';
 	font-size: 16px;
+	font-family: OpenSans-Regular, OpenSans;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 }
@@ -117,12 +117,21 @@ textarea {
 	padding-bottom: 0.4rem;
 }
 
+.ibtn{
+	text-align: center;
+	border: 0;
+	border-radius: 0.1rem;
+}
+.ibtn:active{
+	opacity: .6;
+}
 /* table 内容 */
 .itable {
 	width: 100%;
-	background-color: #f1f1f1;
-	font-size: 0.92rem;
+	/* background-color: #f1f1f1; */
+	font-size: 0.4rem;
 	/* border-collapse:collapse;border-spacing:0; */
+font-family: OpenSans-Regular, OpenSans;
 }
 
 .itable tr,th,td {
@@ -134,18 +143,16 @@ textarea {
 }
 
 .itable th {
-	line-height: 1.8rem;
-	font-size: 1rem;
+	line-height: 1.28rem;
 }
 
 .itable tr {
-	line-height: 1.8rem;
-	background-color: #FFFFFF;
+	line-height: 1.56rem; 
 }
-
-.itable td {
-	width: 33%;
-}
+ 
+ .itable .td-20, .th-20{
+	 width: 20%;
+ }
 
 .header-contain{
 	width: 100%;
@@ -215,7 +222,56 @@ textarea {
 	font-size: 0.96rem;
 	font-weight: 600;
 	line-height: 1.3rem;
+	font-family: OpenSansRoman-SemiBold, OpenSansRoman;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+
+.ipanel{
+	width: 100%;
+	margin: 0.64rem auto;
+	border-radius: 0.36rem;
+	overflow: hidden;
+	font-family: OpenSans-Regular, OpenSans;
+}
+.ipanel .ipanel-title{
+	width: -webkit-calc(100% - 1.2rem);
+	margin: 0 auto;
+	height: 1.28rem;
+	line-height: 1.28rem;
+	font-size: 0.48rem;
+	font-weight: 400;
+}
+.ipanel .ipanel-body{
+	width: -webkit-calc(100% - 1.2rem);
+	padding: 0.6rem;
+	background: #303f4c;
+}
+
+.isummary{
+	width: -webkit-calc(100% - 1.2rem);
+	padding: 0.6rem;
+	margin: 0 auto;
+	border-radius: 0.36rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.isummary .isumm-cell .iname{
+	line-height: 0.54rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 0.4rem;
+	font-weight: 300;
+	font-family: OpenSansRoman-Light, OpenSansRoman;		
+}
+.isummary .isumm-cell .ivalue{
+	margin-top: 0.28rem;
+	line-height: 0.72rem;
+	font-size: 0.52rem;
+	font-weight: 400;
+	font-family: OpenSans-Regular, OpenSans;
 }

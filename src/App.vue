@@ -48,7 +48,6 @@
 				showBarHeader_rightIcon: '',
 				showBarHeader_rightTitle: '',
 				showFooterBar: false,
-
 			}
 		},
 		watch: {
@@ -56,12 +55,15 @@
 				console.info(to)
 				console.info(from)
 				let index  = to.meta.index
+				/* let showHeader = to.meta.showHeader
+				let showFooter = to.meta.showFooter */
 				if(index == 0){
 					this.showBarHeader = false
 					this.showFooterBar = true
 				} else if(index == 1){
 					this.showBarHeader = true
 					this.showFooterBar = false
+					this.showBarHeader_title = to.meta.title
 				} else if(index == 2){
 					this.showBarHeader = false
 					this.showFooterBar = false

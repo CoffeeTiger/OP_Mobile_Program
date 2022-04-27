@@ -31,7 +31,7 @@
 							<input type="text" v-model="stakev" class="iinput" placeholder="Enter your number"/>
 							<span @click="max(1)" class="imax">Max</span>
 						</div>
-						<div class="ibtn-stake">Stake</div>
+						<input type="button" value="Stake" class="ibtn ibtn-stake bg_blue" />
 					</div>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 							<input type="text" v-model="unstakev" class="iinput" placeholder="Enter your number"/>
 							<span @click="max(2)" class="imax">Max</span>
 						</div>
-						<div class="ibtn-stake">Stake</div>
+						<input type="button" value="UnStake" class="ibtn ibtn-stake bg_blue" />
 					</div>
 				</div>
 			</div>			
@@ -83,7 +83,7 @@
 </script>
 
 <style scoped>
-	.isummary{
+	/* .isummary{
 		width: -webkit-calc(100% - 1.2rem);
 		padding: 0.6rem;
 		margin: 0 auto;
@@ -97,7 +97,7 @@
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
-		font-size: 0.2rem;
+		font-size: 0.4rem;
 		font-weight: 300;
 		font-family: OpenSansRoman-Light, OpenSansRoman;		
 	}
@@ -107,8 +107,8 @@
 		font-size: 0.52rem;
 		font-weight: 400;
 		font-family: OpenSans-Regular, OpenSans;
-	}
-	.ipanel{
+	} */
+	/* .ipanel{
 		width: 100%;
 		margin: 0.6rem auto;
 		border-radius: 0.36rem;
@@ -127,7 +127,7 @@
 		width: -webkit-calc(100% - 1.2rem);
 		padding: 0.6rem;
 		background: #303f4c;
-	}
+	} */
 	.ipanel .ipanel-body .iconten-up{
 		width: 100%;
 		height: 0.56rem;
@@ -159,9 +159,7 @@
 		width: 2.36rem;
 		height: 1.44rem;
 		line-height: 1.44rem;
-		background: #1D9BF0;
 		border-radius: 0.16rem;
-		text-align: center;
 	}
 	.iinput{
 		width: 8rem;

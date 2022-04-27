@@ -44,7 +44,7 @@
 						</div>
 						<div class="ipanel-card-info">
 							<div class="iinfs">Stakers play an important role in the Olympus ecosystem. Stakers deposit
-								their OPH into the protocol, which contributes to OPH’s long-term price stability. In
+								their OPH into the protocol, which contributes to OPH long-term price stability. In
 								exchange, stakers receive additional OHM token rewards as well as the right to govern
 								the protocol.</div>
 							<!-- <div class="iimgs">
@@ -52,7 +52,7 @@
 							</div> -->
 						</div>
 						<div class="ipanel-card-btns ipadding-top-30">
-							<van-button round type="primary" class="ibtn">Stake</van-button>
+							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">Stake</van-button>
 						</div>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 							</div> -->
 						</div>
 						<div class="ipanel-card-btns ipadding-top-30">
-							<van-button round type="primary" class="ibtn">Stake</van-button>
+							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">Stake</van-button>
 						</div>
 					</div>
 				</div>
@@ -94,7 +94,7 @@
 							</div> -->
 						</div>
 						<div class="ipanel-card-btns ipadding-top-30">
-							<van-button round type="primary" class="ibtn">Stake</van-button>
+							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">Stake</van-button>
 						</div>
 					</div>
 				</div>
@@ -116,15 +116,7 @@
 						</div>
 					</div>
 					<div :class="open1?'ibody-open':'ibody-close'">
-						<div class="icontent">OpenPublish is the first marketplace to achieve and implement a very
-							significant shift in the way NFT transactions are conducted and economic theory is
-							applied.Simply put! OpenPublish = print version of opensea + enhanced version of looksrare +
-							value version of Olympus<br /><br /> In the OpenPublish platform, the traditional NFT
-							auction model is replaced by a highly liquid NFT publishing business model; with a strong
-							incentive-based "trading-as-mining" strategy; and based on the legendary (3,3) token model.
-							These three powerful economic mechanisms are connected by an efficient scheduling control
-							system to build a stable triangular economic system.Translated with www.DeepL.com/Translator
-							(free version)</div>
+						<div class="icontent">Openpublish is the first market to realize and implement very significant changes in NFT trading mode and application of economic theory.In short! Openpublish = printed version opensea + enhanced version looksrare + value version Olympus<br /><br /> In the openpublish platform, the NFT publishing business model with high liquidity replaces the traditional NFT auction model; Cooperate with the strategy of "trading is mining" with strong incentive; Based on the legendary (3,3) token model. These three powerful economic mechanisms are connected by an efficient dispatching control system to build a stable triangular economic system.</div>
 					</div>
 				</div>
 
@@ -278,6 +270,7 @@
 		line-height: 0.86rem;
 		font-size: 0.64rem;
 		font-weight: 600;
+		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
 	}
 
 	.ihome-road-contain .iroad-cells {
@@ -300,7 +293,7 @@
 	}
 
 	.ihome-road-contain .iroad-content .iroad-img {
-		width: 8.04rem;
+		width: 10.38rem;
 		height: auto;
 	}
 
@@ -316,6 +309,7 @@
 		font-size: 0.64rem;
 		font-weight: 600;
 		margin: 0.96rem 0;
+		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
 	}
 
 	.ihome-panel .ipanel-card {
@@ -339,7 +333,7 @@
 	.ihome-panel .ipanel-card .ipanel-card-title .ititle{
 		height: 0.96rem;
 		line-height: 0.96rem;
-		font-size: 0.64rem;
+		font-size: 0.56rem;
 		font-weight: 400;
 	}
 	.ihome-panel .ipanel-card .ipanel-card-title .icattle{
@@ -358,8 +352,10 @@
 		/* width: 7.88rem; */
 		width: 100%;
 		min-height: 3.3rem;
-		font-size: 0.4rem;
-		line-height: 0.54rem;
+		font-size: 0.56rem;
+		font-weight: 400;
+		line-height: 0.76rem;
+		text-align: justify;
 	}
 
 	.ihome-panel .ipanel-card .ipanel-card-info .iimge-stake {
@@ -381,26 +377,20 @@
 		width: 100%;
 	}
 
-	.ihome-panel .ipanel-card .ipanel-card-btns .ibtn {
+	.ihome-panel .ipanel-card .ipanel-card-btns .ibtn-stake {
 		height: 0.92rem;
 		line-height: 0.92rem;
-		background: #1D9BF0;
 		border-radius: 0.46rem;
 		padding: 0 0.5rem;
+		font-size: 0.52rem;
+		font-weight: 400;
 	}
-
-	.icollapse .icollapse-item {
-		background-color: #0C111B;
-	}
+ 
 
 	.van-cell {
 		background-color: #0C111B !important;
 	}
-
-	.icollapse .icollapse-item .icollapse-title {
-		background-color: #0C111B !important;
-	}
-
+ 
 	.icollapse .icollapse-title-contain {
 		width: 100%;
 		background-color: #253341;
@@ -420,8 +410,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		font-size: 0.4rem;
+		font-size: 0.56rem;
 		font-weight: 400;
+		font-family: OpenSans-Regular, OpenSans;
 	}
 
 	.icollapse .icollapse-title-contain .icollapse-title .ititle {
@@ -463,9 +454,12 @@
 		width: -webkit-calc(100% - 1.2rem);
 		margin: 0 auto;
 		padding: 0.6rem 0;
-		line-height: 0.54rem;
-		font-size: 0.4rem;
+		line-height: 0.66rem;
+		font-size: 0.48rem;
 		font-weight: 400;
+		color: #B3C0CA;
+		font-family: OpenSans-Regular, OpenSans;
+		text-align: justify;
 	}
 
 	/* @media only screen and (min-width: 0px) and (max-width: 360px){
@@ -498,7 +492,7 @@
 	}
 
 	.icollapse .icontent ul>li {
-		line-height: 0.54rem;
+		line-height: 0.72rem;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -511,7 +505,6 @@
 		border-radius: 50%;
 		margin: 0.4rem;
 		display: block;
-		/* background-color: #42B983; */
 		background: #B3C0CA;
 	}
 
