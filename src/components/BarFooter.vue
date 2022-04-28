@@ -63,8 +63,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background-color: #253341; 
-		/* font-family: PingFangSC-Regular, PingFang SC; */
+		background-color: #252525; 
 	}
 	.footer-contain .footer-cell{
 		width: 20%;
@@ -74,10 +73,10 @@
 		align-items: center;
 		overflow: hidden;
 		font-size: 0.52rem;
-		font-weight: 500;
+		font-weight: 400;
 	}
-	.footer-contain .cell-active{ 
-		color: #1D9BF0;
+	.footer-contain .cell-active{
+		color: #F7B62D;;
 	} 
 	.footer-contain .footer-cell .footer-cell-img{
 		width: 0.88rem;

@@ -10,24 +10,27 @@
 					<div class="icell icell-title">
 						<div class="ititle">Cryptomorie</div>
 						<div class="ivalue">
-							<img src="../../assets/imgs/logo/eth.png" class="logo-eth" />
-							<div class="">0.36</div>
+							<div class="iprogress">
+								<div class="iprogress-inner" style="width: 50%;">50/100</div>
+							</div>
 						</div>
 					</div>
 
 					<div class="icell icell-values">
-						<div class="ititle">Progress:80%</div>
-						<div class="ivalue">($302.11)</div>
+						<div class="ivalue">
+							<img src="../../assets/imgs/logo/eth.png" class="logo-eth" />
+							<div class="">0.36</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="infts-btns">
-				<div class="ibtn bg_gray">Create</div>
-				<div class="ibtn bg_blue">Publish</div>
+			<div class="infts-btns-contain">
+				<div class="ibtn infts-btns bg_gray">Create</div>
+				<div class="ibtn infts-btns bg_blue">Publish</div>
 			</div>
 
-			<div class="marquee bg_gray">
+			<!-- <div class="marquee bg_gray">
 				<div class="con">
 					<div class="cons cons1">OPENPUBLISH <span class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
 							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
@@ -44,106 +47,81 @@
 							class="color_blue">OPENPUBLISH</span>OPENPUBLISH <span
 							class="color_blue">OPENPUBLISH</span></div>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="infts-activity-list">
 				<div class="ititle-contain">
 					<div class="ititle">Activity list</div>
-					<div class="imore">More <van-icon name="arrow" />
-					</div>
-				</div>
-				<div class="infts-panel bg_gray">
-					<div class="ipanel-body">
-						<div class="ibody-up">
-							<div class="ibody-up-left">
-								<div class="iindex">01</div>
-								<div class="inftimgs">
-									<img src="../../assets/imgs/nft-header1.png" class="iimg"/>
-								</div>
-								<div class="iname-value">
-									<div class="iname">Erin Green</div>
-									<div class="ivalue">
-										<img src="../../assets/imgs/logo/eth.png" class="logo-eth" />
-										<span class="ivalue-eth">0.03</span>
-										<span class="ivalue-dol">($895.32)</span>
-									</div>
-								</div>
-							</div>
-							<div class="ibody-up-right">
-								<div class="itime-cell">12</div>:
-								<div class="itime-cell">12</div>:
-								<div class="itime-cell">12</div>
-							</div>
-						</div>
-						<div class="ibody-down">
-							<div class="iinfos-cell">
-								<div class="ititle">Prize</div>
-								<div class="ivalues">NFT</div>
-							</div>
-							<div class="iinfos-cell">
-								<div class="ititle">Progress</div>
-								<div class="ivalues">
-									<!-- <van-progress :percentage="50" stroke-width="8" class="iprogress"/> -->
-									<div class="iprogress">
-										<div class="iprogress-inner" style="width: 30%;">30/100</div>
-									</div>
-								</div>
-							</div>
-							<div class="iinfos-cell">
-								<div class="ititle">Sale end</div>
-								<div class="ivalues">Apr 19.2022</div>
-							</div>
-						</div>
+					<div class="imore">More
+						<van-icon name="arrow" />
 					</div>
 				</div>
 				
 				<div class="infts-panel bg_gray">
 					<div class="ipanel-body">
-						<div class="ibody-up">
-							<div class="ibody-up-left">
-								<div class="iindex">02</div>
-								<div class="inftimgs">
-									<img src="../../assets/imgs/nft-header2.png" class="iimg"/>
-								</div>
-								<div class="iname-value">
-									<div class="iname">Erin Green</div>
-									<div class="ivalue">
-										<img src="../../assets/imgs/logo/eth.png" class="logo-eth" />
-										<span class="ivalue-eth">0.03</span>
-										<span class="ivalue-dol">($895.32)</span>
-									</div>
-								</div>
-							</div>
-							<div class="ibody-up-right">
-								<div class="itime-cell">12</div>:
-								<div class="itime-cell">12</div>:
-								<div class="itime-cell">12</div>
-							</div>
+						<div class="ibody-left">
+							<img src="../../assets/imgs/nft-header2.png" class="iimg" />
 						</div>
-						<div class="ibody-down">
-							<div class="iinfos-cell">
-								<div class="ititle">Prize</div>
+						<ul class="ibody-right">
+							<li class="ititle-times">
+								<div class="ititle">Angela Long LongLongLongLongLong</div>
+								<div class="itimes">
+									<span class="itimes-cell">12</span><span class="itimes-middle">:</span>
+									<span class="itimes-cell">28</span><span class="itimes-middle">:</span>
+									<span class="itimes-cell">19</span>
+								</div>
+							</li>
+							<li class="li-mid li-mid-v1">
+								<div class="iprogress">
+									<div class="iprogress-inner" style="width: 50%;">50/100</div>
+								</div>
+							</li>
+							<li class="li-mid">
+								<label>Price:</label>
+								<div class="ivalues"><img src="../../assets/imgs/logo/eth.png"
+										class="logo-eth" />0.03<span class="ius-dol">($895.38)</span> </div>
+							</li>
+							<li class="li-mid">
+								<label> Prize:</label>
 								<div class="ivalues">NFT</div>
-							</div>
-							<div class="iinfos-cell">
-								<div class="ititle">Progress</div>
-								<div class="ivalues">
-									<div class="iprogress">
-										<div class="iprogress-inner" style="width: 50%;">50/100</div>
-									</div>
-								</div>
-							</div>
-							<div class="iinfos-cell">
-								<div class="ititle">Sale end</div>
-								<div class="ivalues">Apr 19.2022</div>
-							</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="infts-panel bg_gray">
+					<div class="ipanel-body">
+						<div class="ibody-left">
+							<img src="../../assets/imgs/nft-header1.png" class="iimg" />
 						</div>
+						<ul class="ibody-right">
+							<li class="ititle-times">
+								<div class="ititle">Angela Long LongLongLongLongLong</div>
+								<div class="itimes">
+									<span class="itimes-cell">12</span><span class="itimes-middle">:</span>
+									<span class="itimes-cell">28</span><span class="itimes-middle">:</span>
+									<span class="itimes-cell">19</span>
+								</div>
+							</li>
+							<li class="li-mid li-mid-v1">
+								<div class="iprogress">
+									<div class="iprogress-inner" style="width: 50%;">50/100</div>
+								</div>
+							</li>
+							<li class="li-mid">
+								<label>Price:</label>
+								<div class="ivalues"><img src="../../assets/imgs/logo/eth.png"
+										class="logo-eth" />0.03<span class="ius-dol">($895.38)</span> </div>
+							</li>
+							<li class="li-mid">
+								<label> Prize:</label>
+								<div class="ivalues">NFT</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 
 			</div>
-
-
 
 		</div>
 	</div>
@@ -155,8 +133,7 @@
 	}
 </script>
 
-<style scoped> 
-
+<style scoped>
 	.infts-primay-nft {
 		width: 100%;
 		border-radius: 0.6rem;
@@ -183,9 +160,10 @@
 	}
 
 	.infts-primay-nft .inft-infos .icell-title {
-		font-size: 0.64rem;
-		font-weight: 400;
-		line-height: 0.86rem;
+		font-size: 0.72rem;
+		font-weight: 500;
+		line-height: 1.1rem;
+		font-family: Poppins-Medium, Poppins;
 	}
 
 	.infts-primay-nft .inft-infos .icell-title .ivalue {
@@ -201,12 +179,20 @@
 	}
 
 	.infts-primay-nft .inft-infos .icell-values {
-		font-size: 0.52rem;
-		font-weight: 400;
-		line-height: 0.72rem;
+		font-size: 0.72rem;
+		font-weight: 500;
+		line-height: 0.9rem;
+		margin-top: 0.5rem;
+		font-family: Poppins-Medium, Poppins;
 	}
 
-	.infts-btns {
+	.infts-primay-nft .inft-infos .icell-values .ivalue {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.infts-btns-contain {
 		width: 100%;
 		margin: 0.96rem auto;
 		display: flex;
@@ -214,18 +200,15 @@
 		align-items: center;
 	}
 
-	.infts-btns .ibtn {
+	.infts-btns-contain .infts-btns {
 		width: 6.6rem;
 		height: 1.6rem;
 		line-height: 1.6rem;
 		text-align: center;
-		font-size: 0.52rem;
-		font-weight: 500;
+		font-size: 0.64rem;
+		font-weight: 600;
 		border-radius: 0.36rem;
-	}
-
-	.infts-btns .ibtn:active {
-		opacity: .6;
+		font-family: Poppins-SemiBold, Poppins;
 	}
 
 	.marquee {
@@ -264,139 +247,154 @@
 	.marquee .con .cons1 {
 		margin-left: -90%;
 	}
-	
-	.infts-activity-list{
+
+	.infts-activity-list {
 		width: 100%;
 		/* font-family: OpenSans-Regular, OpenSans; */
 	}
-	.infts-activity-list .ititle-contain{
+
+	.infts-activity-list .ititle-contain {
 		width: 100%;
-		line-height: 1.28rem;
-		margin: 0.96rem auto;
+		margin: 1.52rem auto 1.2rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.infts-activity-list .ititle-contain .ititle{
-		font-size: 0.64rem;
-		font-weight: 500;
+
+	.infts-activity-list .ititle-contain .ititle {
+		line-height: 1.16rem;
+		font-size: 0.84rem;
+		font-weight: 600;
+		font-family: Poppins-SemiBold, Poppins;
 	}
-	.infts-activity-list .ititle-contain .imore{
-		font-size: 0.4rem;
+
+	.infts-activity-list .ititle-contain .imore {
+		font-size: 0.52rem;
 		font-weight: 400;
+		color: #B3C0CA;
 	}
-	
-	.infts-panel{
+
+	.infts-panel {
 		width: 100%;
 		margin-bottom: 0.64rem;
 		border-radius: 0.36rem;
 	}
-	.infts-panel .ipanel-body{
+
+	.infts-panel .ipanel-body {
 		width: -webkit-calc(100% - 1.2rem);
 		padding: 0.6rem;
 		margin: 0 auto;
-	}
-	.infts-panel .ipanel-body .ibody-up{
-		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 	}
-	.infts-panel .ipanel-body .ibody-up .ibody-up-left{
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-	}
-	.ibody-up-left .iindex{
-		font-size: 0.52rem;
-		font-weight: 500;
-	}
-	.ibody-up-left .inftimgs{
-		width: 1.44rem;
-		height: 1.44rem;
-		margin: 0 0.36rem;
-		border-radius: 0.24rem;
+
+	.infts-panel .ipanel-body .ibody-left {
+		width: 3.54rem;
+		height: 4.04rem;
+		border-radius: 0.3rem;
 		overflow: hidden;
 	}
-	.ibody-up-left .inftimgs .iimg{
-		width: 100%;
+
+	.infts-panel .ipanel-body .ibody-left .iimg {
+		width: 3.54rem;
+		height: 4.04rem;
 	}
-	.ibody-up-left .iname-value .iname{
-		font-size: 0.52rem;
-		font-weight: 400;
+
+	/* 418 */
+	.infts-panel .ipanel-body .ibody-right {
+		width: 8.36rem;
 	}
-	.ibody-up-left .iname-value .ivalue{
+
+	.infts-panel .ipanel-body .ibody-right .li-mid {
+		margin-top: 0.2rem;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		margin-top: 0.28rem;
 	}
-	.ibody-up-left .iname-value .ivalue-eth{
-		font-size: 0.52rem;
-		font-weight: 500;
+	.infts-panel .ipanel-body .ibody-right .li-mid-v1{
+		margin-top: 0.5rem;
 	}
-	.ibody-up-left .iname-value .ivalue-dol{
-		font-size: 0.4rem;
+
+	.infts-panel .ipanel-body .ibody-right .li-mid label {
+		margin-right: 0.2rem;
+		font-size: 0.48rem;
 		font-weight: 300;
-		/* font-family: OpenSansRoman-Light, OpenSansRoman; */
+		font-family: Poppins-Light, Poppins;
 	}
-	.infts-panel .ipanel-body .ibody-up .ibody-up-right{
-		line-height: 0.6rem;
+
+	.li-mid .ivalues {
+		font-size: 0.68rem;
+		font-family: Poppins-Medium, Poppins;
+		font-weight: 500;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
 	}
-	.ibody-up-right .itime-cell{
-		width: 0.6rem;
-		height: 0.6rem;
-		line-height: 0.6rem;
-		margin: 0 0.16rem;
-		border-radius: 0.1rem;
-		overflow: hidden;
-		background: #B3C0CA;
-		font-size: 0.34rem;
-		font-weight: 400;
-		/* font-family: PingFangSC-Regular, PingFang SC; */
-		color: #313131;
-		text-align: center;
-	}
-	
-	.infts-panel .ipanel-body .ibody-down{
-		width: 100%;
-		padding-top: 0.8rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.infts-panel .ipanel-body .ibody-down .iinfos-cell{
-		/* font-family: OpenSansRoman-Light, OpenSansRoman; */
-	}
-	.infts-panel .ipanel-body .ibody-down .iinfos-cell .ivalues{
-		line-height: 0.66rem;
-		margin-top: 0.1rem;
+
+	.li-mid .ivalues .ius-dol {
 		font-size: 0.48rem;
 		font-weight: 400;
-		/* font-family: OpenSans-Regular, OpenSans; */
 	}
-	.iprogress{
-		width: 2.4rem;
-		height: 0.32rem;
-		border-radius: 0.16rem;
-		margin-top: 0.28rem;
-		background: #D8D8D8;
+
+	.ibody-right .ititle-times {
+		display: flex;
+		justify-content: space-between;
 	}
-	.iprogress .iprogress-inner{
-		height: 0.32rem;
-		line-height: 0.32rem;
-		font-size: 0.28rem;
-		border-radius: 0.16rem;
-		background: #F7B62D;
+
+	.ibody-right .ititle-times .ititle {
+		width: 4.88rem;
+		line-height: 0.84rem;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		font-size: 0.56rem;
+		font-weight: 400;
+	}
+
+	.ibody-right .ititle-times .itimes {
+		width: 3.54rem;
+		overflow: hidden;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.ibody-right .ititle-times .itimes .itimes-cell {
+		width: 0.72rem;
+		height: 0.72rem;
+		line-height: 0.72rem;
+		border-radius: 0.12rem;
+		display: block;
+		background: #D3DBE2;
+		text-align: center;
+		font-size: 0.48rem;
+		font-weight: 400;
 		color: #313131;
 	}
-	.infts-panel .ipanel-body .ibody-down .iinfos-cell .ititle{
-		font-size: 0.4rem;
-		font-weight: 300;
-		/* font-family: OpenSansRoman-Light, OpenSansRoman; */
+
+	.ibody-right .ititle-times .itimes .itimes-middle {
+		width: 0.3rem;
+		height: 0.72rem;
+		line-height: 0.72rem;
+		text-align: center;
+		font-size: 0.6rem;
 	}
-	
+
+	.iprogress {
+		width: 4.4rem;
+		height: 0.5rem;
+		border-radius: 0.26rem;
+		background: #D3DBE2;
+	}
+
+	.iprogress .iprogress-inner {
+		height: 0.5rem;
+		line-height: 0.5rem;
+		font-size: 0.48rem;
+		font-weight: 400;
+		border-radius: 0.26rem;
+		background: #F7B62D;
+		color: #1C212B;
+		text-align: right;
+	}
 </style>

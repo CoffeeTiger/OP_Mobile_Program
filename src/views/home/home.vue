@@ -4,14 +4,7 @@
 			<div class="ihome-top">
 				<img src="../../assets/imgs/topbanner.png" class="itopbanner-img" />
 			</div>
-			<!-- <div class="ilevel-0-page-title">About OpenPublish</div> -->
-			<!-- <div class="ihome-media-contain">
-				<iframe class="ivideo"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen frameborder="0" sandbox="allow-same-origin allow-scripts allow-presentation"
-					src="https://www.youtube.com/embed/ontbTdodX7M?autoplay=0&amp;controls=1&amp;loop=1&amp;modestbranding=1&amp;rel=0"
-					title="Meet OpenSea"></iframe>
-			</div> -->
+			
 			<div class="ihome-share">
 				<img src="../../assets/imgs/home-top-tw.png" class="ishare-img" />
 				<img src="../../assets/imgs/home-top-tg.png" class="ishare-img ishare-img-middle" />
