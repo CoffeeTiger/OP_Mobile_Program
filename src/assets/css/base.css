@@ -38,13 +38,13 @@ html,body {
 	max-width: 750px;
 	height: 100%;
 	margin: 0 auto;
-	background-color: #0C111B;
+	background-color: #121619;
 	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
 }
 
 body {
 	font-size: 16px;
-	font-family: OpenSans-Regular, OpenSans;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 }
@@ -121,6 +121,7 @@ textarea {
 	text-align: center;
 	border: 0;
 	border-radius: 0.1rem;
+	font-family: 'Poppins', sans-serif;
 }
 .ibtn:active{
 	opacity: .6;
@@ -131,7 +132,7 @@ textarea {
 	/* background-color: #f1f1f1; */
 	font-size: 0.4rem;
 	/* border-collapse:collapse;border-spacing:0; */
-font-family: OpenSans-Regular, OpenSans;
+/* font-family: OpenSans-Regular, OpenSans; */
 }
 
 .itable tr,th,td {
@@ -208,6 +209,9 @@ font-family: OpenSans-Regular, OpenSans;
 .imargin-bottom-30{
 	margin-bottom: 0.6rem;
 }
+.imargin-bottom-36{
+	margin-bottom: 0.72rem;
+}
 .imargin-left-30{
 	margin-left: 0.6rem;
 }
@@ -222,7 +226,7 @@ font-family: OpenSans-Regular, OpenSans;
 	font-size: 0.96rem;
 	font-weight: 600;
 	line-height: 1.3rem;
-	font-family: OpenSansRoman-SemiBold, OpenSansRoman;
+	/* font-family: OpenSansRoman-SemiBold, OpenSansRoman; */
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -234,7 +238,7 @@ font-family: OpenSans-Regular, OpenSans;
 	margin: 0.64rem auto;
 	border-radius: 0.36rem;
 	overflow: hidden;
-	font-family: OpenSans-Regular, OpenSans;
+	font-family: Poppins-Regular, Poppins;
 }
 .ipanel .ipanel-title{
 	width: -webkit-calc(100% - 1.2rem);
@@ -266,12 +270,12 @@ font-family: OpenSans-Regular, OpenSans;
 	text-overflow: ellipsis;
 	font-size: 0.4rem;
 	font-weight: 300;
-	font-family: OpenSansRoman-Light, OpenSansRoman;		
+	/* font-family: OpenSansRoman-Light, OpenSansRoman; */		
 }
 .isummary .isumm-cell .ivalue{
 	margin-top: 0.28rem;
 	line-height: 0.72rem;
 	font-size: 0.52rem;
 	font-weight: 400;
-	font-family: OpenSans-Regular, OpenSans;
+	font-family: Poppins-Regular, Poppins;
 }

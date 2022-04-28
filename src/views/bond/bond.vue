@@ -125,6 +125,6 @@
 		font-weight: 400;
 		line-height: 0.54rem;
 		color: #B3C0CA;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 </style>

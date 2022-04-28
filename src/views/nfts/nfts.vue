@@ -155,25 +155,13 @@
 	}
 </script>
 
-<style scoped>
-	/* .infts-title-big {
-		width: 100%;
-		height: 1.3rem;
-		padding: 0.96rem 0;
-		font-size: 0.96rem;
-		font-weight: 600;
-		line-height: 1.3rem;
-		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	} */
+<style scoped> 
 
 	.infts-primay-nft {
 		width: 100%;
 		border-radius: 0.6rem;
 		overflow: hidden;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 
 	.infts-primay-nft .inft-imgs .inft-img {
@@ -255,7 +243,7 @@
 		white-space: nowrap;
 		font-size: 0.4rem;
 		font-weight: 300;
-		font-family: OpenSansRoman-Light, OpenSansRoman;
+		/* font-family: OpenSansRoman-Light, OpenSansRoman; */
 		display: inline-block;
 	}
 
@@ -279,7 +267,7 @@
 	
 	.infts-activity-list{
 		width: 100%;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 	.infts-activity-list .ititle-contain{
 		width: 100%;
@@ -350,7 +338,7 @@
 	.ibody-up-left .iname-value .ivalue-dol{
 		font-size: 0.4rem;
 		font-weight: 300;
-		font-family: OpenSansRoman-Light, OpenSansRoman;
+		/* font-family: OpenSansRoman-Light, OpenSansRoman; */
 	}
 	.infts-panel .ipanel-body .ibody-up .ibody-up-right{
 		line-height: 0.6rem;
@@ -368,7 +356,7 @@
 		background: #B3C0CA;
 		font-size: 0.34rem;
 		font-weight: 400;
-		font-family: PingFangSC-Regular, PingFang SC;
+		/* font-family: PingFangSC-Regular, PingFang SC; */
 		color: #313131;
 		text-align: center;
 	}
@@ -381,14 +369,14 @@
 		align-items: center;
 	}
 	.infts-panel .ipanel-body .ibody-down .iinfos-cell{
-		font-family: OpenSansRoman-Light, OpenSansRoman;
+		/* font-family: OpenSansRoman-Light, OpenSansRoman; */
 	}
 	.infts-panel .ipanel-body .ibody-down .iinfos-cell .ivalues{
 		line-height: 0.66rem;
 		margin-top: 0.1rem;
 		font-size: 0.48rem;
 		font-weight: 400;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 	.iprogress{
 		width: 2.4rem;
@@ -408,7 +396,7 @@
 	.infts-panel .ipanel-body .ibody-down .iinfos-cell .ititle{
 		font-size: 0.4rem;
 		font-weight: 300;
-		font-family: OpenSansRoman-Light, OpenSansRoman;
+		/* font-family: OpenSansRoman-Light, OpenSansRoman; */
 	}
 	
 </style>

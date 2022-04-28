@@ -15,19 +15,10 @@
 			<div class="ihome-share">
 				<img src="../../assets/imgs/home-top-tw.png" class="ishare-img" />
 				<img src="../../assets/imgs/home-top-tg.png" class="ishare-img ishare-img-middle" />
-				<img src="../../assets/imgs/home-top-dis.png" class="ishare-img" @click="play" />
+				<img src="../../assets/imgs/home-top-dis.png" class="ishare-img" />
 			</div>
 			<div class="ihome-road-contain">
 				<div class="iroad-title">ROADMAP</div>
-				<!-- <div class="iroad-cells">
-					<div class="icell-index">
-						<div class="iline"></div>
-						<div class="iarc"></div>
-						<div class="icricle">R1</div>
-						<div class="istep-cricle"></div>
-						<div class="istep-line"></div>
-					</div>
-				</div> -->
 				<div class="iroad-content">
 					<img src="../../assets/imgs/home-road.png" class="iroad-img" />
 				</div>
@@ -35,7 +26,7 @@
 			<div class="ihome-panel">
 				<div class="ipanel-title">How to get involved?</div>
 
-				<div class="ipanel-card imargin-bottom-30 bg_gray">
+				<div class="ipanel-card imargin-bottom-36 bg_gray">
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 							<div class="ititle">Staking</div>
@@ -50,13 +41,13 @@
 								<img src="../../assets/imgs/ihome-Staking.png" class="iimge-stake" />
 							</div> -->
 						</div>
-						<div class="ipanel-card-btns ipadding-top-30">
-							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">Stake</van-button>
+						<div class="ipanel-card-btns">
+							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">STAKE</van-button>
 						</div>
 					</div>
 				</div>
 
-				<div class="ipanel-card imargin-bottom-30 bg_gray">
+				<div class="ipanel-card imargin-bottom-36 bg_gray">
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 						<div class="ititle">Bonding</div>
@@ -71,13 +62,13 @@
 								<img src="../../assets/imgs/ihome-Bonding.png" class="iimge-bond" />
 							</div> -->
 						</div>
-						<div class="ipanel-card-btns ipadding-top-30">
-							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">Stake</van-button>
+						<div class="ipanel-card-btns">
+							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">BOND</van-button>
 						</div>
 					</div>
 				</div>
 
-				<div class="ipanel-card imargin-bottom-30 bg_gray">
+				<div class="ipanel-card imargin-bottom-36 bg_gray">
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 							<div class="ititle">NFTs</div>
@@ -92,8 +83,8 @@
 								<img src="../../assets/imgs/ihome-NFTs.png" class="iimge-nfts" />
 							</div> -->
 						</div>
-						<div class="ipanel-card-btns ipadding-top-30">
-							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">Stake</van-button>
+						<div class="ipanel-card-btns">
+							<van-button round type="primary" class="ibtn ibtn-stake bg_blue">NFTs</van-button>
 						</div>
 					</div>
 				</div>
@@ -275,12 +266,12 @@
 
 	.ihome-road-contain .iroad-title {
 		width: 100%;
-		height: 0.86rem;
-		margin: 1.64rem auto 1.44rem;
-		line-height: 0.86rem;
-		font-size: 0.64rem;
+		height: 1.26rem;
+		margin: 1.96rem auto 1.44rem;
+		line-height: 1.26rem;
+		font-size: 0.84rem;
 		font-weight: 600;
-		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
+		font-family: Poppins-SemiBold, Poppins;
 	}
 
 	.ihome-road-contain .iroad-cells {
@@ -309,17 +300,17 @@
 
 	.ihome-panel {
 		width: 100%;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 
 	.ihome-panel .ipanel-title {
 		width: 100%;
-		height: 0.9rem;
-		line-height: 0.9rem;
-		font-size: 0.64rem;
+		height: 1.2rem;
+		line-height: 1.2rem;
+		font-size: 0.84rem;
 		font-weight: 600;
-		margin: 1.64rem 0;
-		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
+		margin: 2.4rem 0 1.52rem;
+		font-family: Poppins-SemiBold, Poppins;
 	}
 
 	.ihome-panel .ipanel-card {
@@ -341,10 +332,11 @@
 		align-items: center;
 	}
 	.ihome-panel .ipanel-card .ipanel-card-title .ititle{
-		height: 0.96rem;
-		line-height: 0.96rem;
-		font-size: 0.56rem;
-		font-weight: 400;
+		height: 1.2rem;
+		line-height: 1.2rem;
+		font-size: 0.84rem;
+		font-weight: 500;
+		font-family: Poppins-Medium, Poppins;
 	}
 	.ihome-panel .ipanel-card .ipanel-card-title .icattle{
 		width: 1rem;
@@ -364,8 +356,9 @@
 		min-height: 3.3rem;
 		font-size: 0.56rem;
 		font-weight: 400;
-		line-height: 0.76rem;
+		line-height: 0.84rem;
 		text-align: justify;
+		/* font-family: Poppins-Regular, Poppins; */
 	}
 
 	.ihome-panel .ipanel-card .ipanel-card-info .iimge-stake {
@@ -385,15 +378,18 @@
 
 	.ihome-panel .ipanel-card .ipanel-card-btns {
 		width: 100%;
+		padding: 0.96rem 0 0.36rem;
 	}
 
 	.ihome-panel .ipanel-card .ipanel-card-btns .ibtn-stake {
-		height: 0.92rem;
-		line-height: 0.92rem;
-		border-radius: 0.46rem;
+		width: 3.56rem;
+		height: 1.2rem;
+		line-height: 1.2rem;
+		border-radius: 0.6rem;
 		padding: 0 0.5rem;
-		font-size: 0.52rem;
+		font-size: 0.56rem;
 		font-weight: 400;
+		font-family: Poppins-Medium, Poppins;
 	}
  
 
@@ -422,7 +418,7 @@
 		align-items: center;
 		font-size: 0.56rem;
 		font-weight: 400;
-		font-family: OpenSans-Regular, OpenSans;
+		font-family: Poppins-Regular, Poppins;
 	}
 
 	.icollapse .icollapse-title-contain .icollapse-title .ititle {
@@ -446,7 +442,7 @@
 		background: #313e4c;
 		border-radius: 0 0 0.36rem 0.36rem;
 		overflow: hidden;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 
 	.ibody-close {
@@ -468,7 +464,7 @@
 		font-size: 0.48rem;
 		font-weight: 400;
 		color: #B3C0CA;
-		font-family: OpenSans-Regular, OpenSans;
+		font-family: Poppins-Regular, Poppins;
 		text-align: justify;
 	}
 

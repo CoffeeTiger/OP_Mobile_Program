@@ -64,7 +64,7 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #253341; 
-		font-family: PingFangSC-Regular, PingFang SC;
+		/* font-family: PingFangSC-Regular, PingFang SC; */
 	}
 	.footer-contain .footer-cell{
 		width: 20%;

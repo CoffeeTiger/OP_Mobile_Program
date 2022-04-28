@@ -97,7 +97,7 @@
 		white-space: nowrap;
 		font-size: 0.72rem;
 		font-weight: 600;
-		font-family: OpenSansRoman-SemiBold, OpenSansRoman;
+		/* font-family: OpenSansRoman-SemiBold, OpenSansRoman; */
 		text-align: center;
 	}
 	.header-icon-left {

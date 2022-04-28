@@ -76,7 +76,7 @@
 		line-height: 0.6rem;
 		font-size: 0.4rem;
 		font-weight: 400;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 		color: #B3C0CA;
 	}
 	.ibond-infos > li{
@@ -94,7 +94,7 @@
 		font-weight: 400;
 		line-height: 0.54rem;
 		color: #B3C0CA;
-		font-family: OpenSans-Regular, OpenSans;
+		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 	.ibtn-contain{
 		width: 100%;
