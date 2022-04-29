@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<div class="ilevel-0-page-title">NFTs</div>
-			<div class="infts-primay-nft bg_gray">
+			<div class="ilevel-0-page-title color_yellow">NFTs</div>
+			<div class="infts-primay-nft bg_lightgray">
 				<div class="inft-imgs">
 					<img src="../../assets/imgs/nft-example.png" class="inft-img" />
 				</div>
@@ -19,18 +19,18 @@
 					<div class="icell icell-values">
 						<div class="ivalue">
 							<img src="../../assets/imgs/logo/eth.png" class="logo-eth" />
-							<div class="">0.36</div>
+							<div class="">0.36<span class="ius-dol">($302.11)</span> </div>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="infts-btns-contain">
-				<div class="ibtn infts-btns bg_gray">Create</div>
-				<div class="ibtn infts-btns bg_blue">Publish</div>
+				<div class="ibtn infts-btns bg_lightgray">Create</div>
+				<div class="ibtn infts-btns bg_yellow color_black">Publish</div>
 			</div>
 
-			<!-- <div class="marquee bg_gray">
+			<!-- <div class="marquee bg_lightgray">
 				<div class="con">
 					<div class="cons cons1">OPENPUBLISH <span class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
 							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
@@ -51,13 +51,13 @@
 
 			<div class="infts-activity-list">
 				<div class="ititle-contain">
-					<div class="ititle">Activity list</div>
+					<div class="ititle color_yellow">Activity list</div>
 					<div class="imore">More
 						<van-icon name="arrow" />
 					</div>
 				</div>
 				
-				<div class="infts-panel bg_gray">
+				<div class="infts-panel bg_lightgray">
 					<div class="ipanel-body">
 						<div class="ibody-left">
 							<img src="../../assets/imgs/nft-header2.png" class="iimg" />
@@ -76,20 +76,20 @@
 									<div class="iprogress-inner" style="width: 50%;">50/100</div>
 								</div>
 							</li>
+							<li class="li-mid li-mid-v2">
+								<label> Prize:</label>
+								<div class="ivalues">NFT</div>
+							</li>
 							<li class="li-mid">
 								<label>Price:</label>
 								<div class="ivalues"><img src="../../assets/imgs/logo/eth.png"
 										class="logo-eth" />0.03<span class="ius-dol">($895.38)</span> </div>
 							</li>
-							<li class="li-mid">
-								<label> Prize:</label>
-								<div class="ivalues">NFT</div>
-							</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="infts-panel bg_gray">
+				<div class="infts-panel bg_lightgray">
 					<div class="ipanel-body">
 						<div class="ibody-left">
 							<img src="../../assets/imgs/nft-header1.png" class="iimg" />
@@ -108,14 +108,14 @@
 									<div class="iprogress-inner" style="width: 50%;">50/100</div>
 								</div>
 							</li>
+							<li class="li-mid li-mid-v2">
+								<label> Prize:</label>
+								<div class="ivalues">NFT</div>
+							</li>
 							<li class="li-mid">
 								<label>Price:</label>
 								<div class="ivalues"><img src="../../assets/imgs/logo/eth.png"
 										class="logo-eth" />0.03<span class="ius-dol">($895.38)</span> </div>
-							</li>
-							<li class="li-mid">
-								<label> Prize:</label>
-								<div class="ivalues">NFT</div>
 							</li>
 						</ul>
 					</div>
@@ -191,6 +191,11 @@
 		justify-content: flex-start;
 		align-items: center;
 	}
+	
+	.infts-primay-nft .inft-infos .icell-values .ivalue .ius-dol {
+		font-size: 0.48rem;
+		font-weight: 400;
+	}
 
 	.infts-btns-contain {
 		width: 100%;
@@ -255,7 +260,7 @@
 
 	.infts-activity-list .ititle-contain {
 		width: 100%;
-		margin: 1.52rem auto 1.2rem;
+		margin: 0.84rem auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -271,7 +276,7 @@
 	.infts-activity-list .ititle-contain .imore {
 		font-size: 0.52rem;
 		font-weight: 400;
-		color: #B3C0CA;
+		color: #B4B4B4;
 	}
 
 	.infts-panel {
@@ -312,7 +317,10 @@
 		align-items: center;
 	}
 	.infts-panel .ipanel-body .ibody-right .li-mid-v1{
-		margin-top: 0.5rem;
+		margin-top: 0.4rem;
+	}
+	.infts-panel .ipanel-body .ibody-right .li-mid-v2{
+		margin-top: 0.3rem;
 	}
 
 	.infts-panel .ipanel-body .ibody-right .li-mid label {

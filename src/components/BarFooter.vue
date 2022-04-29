@@ -64,6 +64,7 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: #252525; 
+		color: #979797;
 	}
 	.footer-contain .footer-cell{
 		width: 20%;
@@ -72,8 +73,6 @@
 		flex-direction: column;
 		align-items: center;
 		overflow: hidden;
-		font-size: 0.52rem;
-		font-weight: 400;
 	}
 	.footer-contain .cell-active{
 		color: #F7B62D;;
@@ -84,6 +83,8 @@
 		margin: 0.28rem auto;
 	}
 	.footer-contain .footer-cell .footer-cell-name{
-		line-height: 0.54rem; 
+		line-height: 0.7rem;
+		font-size: 0.48rem;
+		font-weight: 400;
 	}
 </style>
