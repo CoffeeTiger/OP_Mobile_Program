@@ -217,8 +217,14 @@ textarea {
 .imargin-bottom-30{
 	margin-bottom: 0.6rem;
 }
+.imargin-bottom-24{
+	margin-bottom: 0.48rem;
+}
 .imargin-bottom-36{
 	margin-bottom: 0.72rem;
+}
+.imargin-bottom-55{
+	margin-bottom: 1.1rem;
 }
 .imargin-left-30{
 	margin-left: 0.6rem;
@@ -233,7 +239,7 @@ textarea {
 	padding: 0.48rem 0 0.64rem;
 	font-size: 0.96rem;
 	font-weight: 600;
-	line-height: 1.3rem;
+	line-height: 1.34rem;
 	font-family: Poppins-SemiBold, Poppins;
 	overflow: hidden;
 	white-space: nowrap;

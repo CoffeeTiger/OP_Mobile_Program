@@ -4,14 +4,14 @@
 			<div class="ilevel-0-page-title color_yellow">NFTs</div>
 			<div class="infts-primay-nft bg_lightgray">
 				<div class="inft-imgs">
-					<img src="../../assets/imgs/nft-example.png" class="inft-img" />
+					<img src="../../assets/imgs/nft-example.jpg" class="inft-img" />
 				</div>
 				<div class="inft-infos">
 					<div class="icell icell-title">
 						<div class="ititle">Cryptomorie</div>
 						<div class="ivalue">
 							<div class="iprogress">
-								<div class="iprogress-inner" style="width: 50%;">50/100</div>
+								<div class="iprogress-inner bg_yellow" style="width: 50%;">50/100</div>
 							</div>
 						</div>
 					</div>
@@ -53,7 +53,41 @@
 				<div class="ititle-contain">
 					<div class="ititle color_yellow">Activity list</div>
 					<div class="imore">More
-						<van-icon name="arrow" />
+					<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+					</div>
+				</div>
+				
+				<div class="infts-panel bg_lightgray">
+					<div class="ipanel-body">
+						<div class="ibody-left">
+							<img src="../../assets/imgs/nft-header1.png" class="iimg" />
+						</div>
+						<ul class="ibody-right">
+							<li class="ititle-times">
+								<div class="ititle color_yellow">Angela Long LongLongLongLongLong</div>
+								<div class="itimes">
+									<span class="itimes-cell">12</span>
+									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<span class="itimes-cell">28</span>
+									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<span class="itimes-cell">19</span>
+								</div>
+							</li>
+							<li class="li-mid li-mid-v2">
+								<div class="iprogress">
+									<div class="iprogress-inner bg_yellow" style="width: 66%;">66/100</div>
+								</div>
+							</li>
+							<li class="li-mid li-mid-v1">
+								<label> Prize:</label>
+								<div class="ivalues">NFT</div>
+							</li>
+							<li class="li-mid">
+								<label>Price:</label>
+								<div class="ivalues"><img src="../../assets/imgs/logo/eth.png"
+										class="logo-eth" />0.03<span class="ius-dol">($895.38)</span> </div>
+							</li>
+						</ul>
 					</div>
 				</div>
 				
@@ -64,19 +98,21 @@
 						</div>
 						<ul class="ibody-right">
 							<li class="ititle-times">
-								<div class="ititle">Angela Long LongLongLongLongLong</div>
+								<div class="ititle color_yellow">Angela Long LongLongLongLongLong</div>
 								<div class="itimes">
-									<span class="itimes-cell">12</span><span class="itimes-middle">:</span>
-									<span class="itimes-cell">28</span><span class="itimes-middle">:</span>
+									<span class="itimes-cell">12</span>
+									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<span class="itimes-cell">28</span>
+									<img src="../../assets/imgs/dot2.png" class="idot"/>
 									<span class="itimes-cell">19</span>
 								</div>
 							</li>
-							<li class="li-mid li-mid-v1">
+							<li class="li-mid li-mid-v2">
 								<div class="iprogress">
-									<div class="iprogress-inner" style="width: 50%;">50/100</div>
+									<div class="iprogress-inner bg_yellow" style="width: 76%;">76/100</div>
 								</div>
 							</li>
-							<li class="li-mid li-mid-v2">
+							<li class="li-mid li-mid-v1">
 								<label> Prize:</label>
 								<div class="ivalues">NFT</div>
 							</li>
@@ -88,27 +124,29 @@
 						</ul>
 					</div>
 				</div>
-
+				
 				<div class="infts-panel bg_lightgray">
 					<div class="ipanel-body">
 						<div class="ibody-left">
-							<img src="../../assets/imgs/nft-header1.png" class="iimg" />
+							<img src="../../assets/imgs/nft-header3.png" class="iimg" />
 						</div>
 						<ul class="ibody-right">
 							<li class="ititle-times">
-								<div class="ititle">Angela Long LongLongLongLongLong</div>
+								<div class="ititle color_yellow">Angela Long LongLongLongLongLong</div>
 								<div class="itimes">
-									<span class="itimes-cell">12</span><span class="itimes-middle">:</span>
-									<span class="itimes-cell">28</span><span class="itimes-middle">:</span>
+									<span class="itimes-cell">12</span>
+									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<span class="itimes-cell">28</span>
+									<img src="../../assets/imgs/dot2.png" class="idot"/>
 									<span class="itimes-cell">19</span>
 								</div>
 							</li>
-							<li class="li-mid li-mid-v1">
+							<li class="li-mid li-mid-v2">
 								<div class="iprogress">
-									<div class="iprogress-inner" style="width: 50%;">50/100</div>
+									<div class="iprogress-inner bg_yellow" style="width: 40%;">40/100</div>
 								</div>
 							</li>
-							<li class="li-mid li-mid-v2">
+							<li class="li-mid li-mid-v1">
 								<label> Prize:</label>
 								<div class="ivalues">NFT</div>
 							</li>
@@ -120,6 +158,7 @@
 						</ul>
 					</div>
 				</div>
+			
 
 			</div>
 
@@ -135,9 +174,10 @@
 
 <style scoped>
 	.infts-primay-nft {
-		width: 100%;
-		border-radius: 0.6rem;
+		width: -webkit-calc(100% - 0.08rem);
+		border-radius: 0.64rem;
 		overflow: hidden;
+		border: 0.04rem solid #3F4142;
 		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 
@@ -148,7 +188,8 @@
 
 	.infts-primay-nft .inft-infos {
 		width: -webkit-calc(100% - 1.6rem);
-		padding: 0.8rem;
+		padding: 0.6rem 0.8rem;
+		margin: 0 auto;
 	}
 
 	.infts-primay-nft .inft-infos .icell {
@@ -162,7 +203,7 @@
 	.infts-primay-nft .inft-infos .icell-title {
 		font-size: 0.72rem;
 		font-weight: 500;
-		line-height: 1.1rem;
+		line-height: 1.02rem;
 		font-family: Poppins-Medium, Poppins;
 	}
 
@@ -194,21 +235,24 @@
 	
 	.infts-primay-nft .inft-infos .icell-values .ivalue .ius-dol {
 		font-size: 0.48rem;
-		font-weight: 400;
+		font-weight: 300;
+		font-family: Poppins-Light, Poppins;
+		color: #979797;
 	}
 
 	.infts-btns-contain {
 		width: 100%;
-		margin: 0.96rem auto;
+		margin: 0.48rem auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
 	.infts-btns-contain .infts-btns {
-		width: 6.6rem;
-		height: 1.6rem;
-		line-height: 1.6rem;
+		width: 6.54rem;
+		height: 1.52rem;
+		line-height: 1.52rem;
+		border: 0.04rem solid #3F4142;
 		text-align: center;
 		font-size: 0.64rem;
 		font-weight: 600;
@@ -255,12 +299,11 @@
 
 	.infts-activity-list {
 		width: 100%;
-		/* font-family: OpenSans-Regular, OpenSans; */
 	}
 
 	.infts-activity-list .ititle-contain {
 		width: 100%;
-		margin: 0.84rem auto;
+		margin: 0.82rem auto 0.56rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -278,16 +321,23 @@
 		font-weight: 400;
 		color: #B4B4B4;
 	}
+	
+	.infts-activity-list .ititle-contain .imore .iarrow-right{
+		width: 0.16rem;
+		height: 0.28rem;
+		margin-left: 0.2rem;
+	}
 
 	.infts-panel {
-		width: 100%;
-		margin-bottom: 0.64rem;
+		width: -webkit-calc(100% - 0.08rem);
+		margin-bottom: 0.48rem;
 		border-radius: 0.36rem;
+		border: 0.04rem solid #3F4142;
 	}
 
 	.infts-panel .ipanel-body {
 		width: -webkit-calc(100% - 1.2rem);
-		padding: 0.6rem;
+		padding: 0.78rem 0.6rem;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -341,7 +391,9 @@
 
 	.li-mid .ivalues .ius-dol {
 		font-size: 0.48rem;
-		font-weight: 400;
+		font-weight: 300;
+		font-family: Poppins-Light, Poppins;
+		color: #979797;
 	}
 
 	.ibody-right .ititle-times {
@@ -351,7 +403,7 @@
 
 	.ibody-right .ititle-times .ititle {
 		width: 4.88rem;
-		line-height: 0.84rem;
+		line-height: 0.78rem;
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -368,31 +420,29 @@
 	}
 
 	.ibody-right .ititle-times .itimes .itimes-cell {
-		width: 0.72rem;
+		width: 0.74rem;
 		height: 0.72rem;
 		line-height: 0.72rem;
 		border-radius: 0.12rem;
 		display: block;
-		background: #D3DBE2;
+		background: #B4B4B4;
 		text-align: center;
 		font-size: 0.48rem;
 		font-weight: 400;
 		color: #313131;
 	}
 
-	.ibody-right .ititle-times .itimes .itimes-middle {
-		width: 0.3rem;
-		height: 0.72rem;
-		line-height: 0.72rem;
-		text-align: center;
-		font-size: 0.6rem;
+	.ibody-right .ititle-times .itimes .idot {
+		width: 0.1rem;
+		height: 0.3rem;
+		margin: 0 0.14rem;
 	}
 
 	.iprogress {
-		width: 4.4rem;
+		width: 4.48rem;
 		height: 0.5rem;
 		border-radius: 0.26rem;
-		background: #D3DBE2;
+		background: #505050;
 	}
 
 	.iprogress .iprogress-inner {
@@ -401,8 +451,7 @@
 		font-size: 0.48rem;
 		font-weight: 400;
 		border-radius: 0.26rem;
-		background: #F7B62D;
 		color: #1C212B;
-		text-align: right;
+		text-align: center;
 	}
 </style>

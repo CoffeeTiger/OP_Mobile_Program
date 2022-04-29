@@ -24,7 +24,7 @@
 			<div class="ihome-panel">
 				<div class="ipanel-title color_yellow">How to get involved?</div>
 				
-				<div class="ipanel-card imargin-bottom-36 bg_lightgray">
+				<div class="ipanel-card imargin-bottom-24 bg_lightgray">
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 							<div class="ititle color_yellow">NFTs</div>
@@ -36,12 +36,13 @@
 								business model with high liquidity replaces the traditional NFT auction model.</div>
 						</div>
 						<div class="ipanel-card-btns">
-							<input type="button" value="NFTs" class="ibtn ibtn-stake bg_yellow" />
+							<div class="ibtn ibtn-stake bg_yellow">NFTs</div>
+							<!-- <input type="button" value="NFTs" class="ibtn ibtn-stake bg_yellow" /> -->
 						</div>
 					</div>
 				</div>
 				
-				<div class="ipanel-card imargin-bottom-36 bg_lightgray">
+				<div class="ipanel-card imargin-bottom-24 bg_lightgray">
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 							<div class="ititle color_yellow">Staking</div>
@@ -55,12 +56,13 @@
 								the protocol.</div>
 						</div>
 						<div class="ipanel-card-btns">
-							<input type="button" value="STAKE" class="ibtn ibtn-stake bg_yellow" />
+							<div class="ibtn ibtn-stake bg_yellow">STAKE</div>
+							<!-- <input type="button" value="STAKE" class="ibtn ibtn-stake bg_yellow" /> -->
 						</div>
 					</div>
 				</div>
 
-				<div class="ipanel-card imargin-bottom-36 bg_lightgray">
+				<div class="ipanel-card imargin-bottom-24 bg_lightgray">
 					<div class="ipanel-card-body">
 						<div class="ipanel-card-title">
 							<div class="ititle color_yellow">Bonding</div>
@@ -73,7 +75,8 @@
 								all liquidity in the treasury is owned by Openpublish.</div>
 						</div>
 						<div class="ipanel-card-btns">
-							<input type="button" value="BOND" class="ibtn ibtn-stake bg_yellow" />
+							<div class="ibtn ibtn-stake bg_yellow">BOND</div>
+							<!-- <input type="button" value="BOND" class="ibtn ibtn-stake bg_yellow" /> -->
 						</div>
 					</div>
 				</div> 
@@ -94,7 +97,7 @@
 			<div class="ihome-panel">
 				<div class="ipanel-title color_yellow">FAQ</div>
 			
-				<div class="icollapse imargin-bottom-36">
+				<div class="icollapse imargin-bottom-24">
 					<div
 						:class="open1?'icollapse-title-contain':'icollapse-title-contain icollapse-title-contain-close'">
 						<div class="icollapse-title" @click="show(1)">
@@ -110,7 +113,7 @@
 					</div>
 				</div>
 			
-				<div class="icollapse imargin-bottom-36 ">
+				<div class="icollapse imargin-bottom-24 ">
 					<div
 						:class="open2?'icollapse-title-contain':'icollapse-title-contain icollapse-title-contain-close'">
 						<div class="icollapse-title" @click="show(2)">
@@ -127,7 +130,7 @@
 					</div>
 				</div>
 			
-				<div class="icollapse imargin-bottom-36 ">
+				<div class="icollapse imargin-bottom-24 ">
 					<div
 						:class="open3?'icollapse-title-contain':'icollapse-title-contain icollapse-title-contain-close'">
 						<div class="icollapse-title" @click="show(3)">
@@ -154,7 +157,7 @@
 					</div>
 				</div>
 			
-				<div class="icollapse imargin-bottom-36">
+				<div class="icollapse imargin-bottom-24">
 					<div :class="open4?'icollapse-title-contain':'icollapse-title-contain icollapse-title-contain-close'">
 						<div class="icollapse-title" @click="show(4)">
 							<div class="ititle ititle-v2">How do I help OpenPublish move forward?</div>
@@ -404,9 +407,9 @@
 		width: 100%;
 		height: 0;
 		padding-bottom: 56.25%;
-		border: 0.04rem solid #3F4142;
+		/* border: 0.04rem solid #3F4142;
 		border-radius: 0.36rem;
-		overflow: hidden;
+		overflow: hidden; */
 	}
 	
 	.ihome-media-contain .ivideo {
@@ -443,7 +446,7 @@
 	}
 	
 	.icollapse .icollapse-title-contain .icollapse-title {
-		line-height: 1.44rem;
+		line-height: 2.3rem;
 		width: -webkit-calc(100% - 1.2rem);
 		margin: 0 auto;
 		display: flex;
@@ -534,9 +537,10 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+		margin: 0.24rem auto;
 	}
 	
-	.icollapse .icontent ul>li::before {
+	/* .icollapse .icontent ul>li::before {
 		content: '';
 		width: 0.08rem;
 		height: 0.08rem;
@@ -544,6 +548,6 @@
 		margin: 0.4rem;
 		display: block;
 		background: #B3C0CA;
-	}
+	} */
 	
 </style>

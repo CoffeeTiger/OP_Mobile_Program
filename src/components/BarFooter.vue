@@ -65,6 +65,7 @@
 		align-items: center;
 		background-color: #252525; 
 		color: #979797;
+		border-top: 0.04rem solid #3F4142;
 	}
 	.footer-contain .footer-cell{
 		width: 20%;
