@@ -3,7 +3,7 @@
 		<div class="main_contain">
 			<div class="ilevel-0-page-title">Bond</div>
 			
-			<div class="isummary bg_gray">
+			<div class="isummary isummary-v2 bg_gray">
 				<div class="isumm-cell">
 					<div class="iname">Tatal Value Deposited</div>
 					<div class="ivalue">$378.288.910</div>

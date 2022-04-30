@@ -1,56 +1,64 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<div class="ilevel-0-page-title">Stake</div>
-			<div class="isummary bg_gray">
+			<div class="ilevel-0-page-title color_yellow">Stake</div>
+			<div class="isummary bg_lightgray">
 				<div class="isumm-cell">
 					<div class="iname">Tatal Value Deposited</div>
 					<div class="ivalue">$378.288.910</div>
 				</div>
-				<div class="isumm-cell">
-					<div class="iname">Current Index</div>
-					<div class="ivalue">102.66 OPH</div>
-				</div>
-				<div class="isumm-cell">
-					<div class="iname">APY</div>
-					<div class="ivalue">288.15%</div>
+				<div class="imid-line"></div>
+				<div class="isummary-v2">
+					<div class="isumm-cell">
+						<div class="iname">Current Index</div>
+						<div class="ivalue">102.66 OPH</div>
+					</div>
+					<div class="isumm-cell">
+						<div class="iname">APY</div>
+						<div class="ivalue">288.15%</div>
+					</div>
+					<div class="isumm-cell">
+						<div class="iname">&ensp;</div>
+						<div class="ivalue"></div>
+					</div>
 				</div>
 			</div>
 			
-			<div class="ipanel bg_gray">
-				<div class="ipanel-title">
+			<div class="ipanel bg_lightgray">
+				<div class="ipanel-title color_yellow">
 					<span>Stake</span>
 				</div>
 				<div class="ipanel-body">
 					<div class="iconten-up">
 						<div class="iconten-up-left">OPH wallet：<span>{{maxstakev}}</span></div>
-						<van-icon name="question-o" />
+						<!-- <van-icon name="question-o" /> -->
 					</div>
 					<div class="iconten-down">
 						<div class="iinput-contain">
 							<input type="text" v-model="stakev" class="iinput" placeholder="Enter your number"/>
-							<span @click="max(1)" class="imax">Max</span>
+							<span @click="max(1)" class="imax color_yellow">Max</span>
 						</div>
-						<input type="button" value="Stake" class="ibtn ibtn-stake bg_blue" />
+						<!-- <input type="button" value="Stake" class="ibtn ibtn-stake bg_yellow" /> -->
+						<div  class="ibtn ibtn-stake bg_yellow">Stake</div>
 					</div>
 				</div>
 			</div>
 			
-			<div class="ipanel bg_gray">
-				<div class="ipanel-title">
+			<div class="ipanel bg_lightgray">
+				<div class="ipanel-title color_yellow">
 					<span>UnStake</span>
 				</div>
 				<div class="ipanel-body">
 					<div class="iconten-up">
 						<div class="iconten-up-left">veOPH wallet：<span>{{maxunstakev}}</span></div>
-						<van-icon name="question-o" />
+						<!-- <van-icon name="question-o" /> -->
 					</div>
 					<div class="iconten-down">
 						<div class="iinput-contain">
 							<input type="text" v-model="unstakev" class="iinput" placeholder="Enter your number"/>
-							<span @click="max(2)" class="imax">Max</span>
+							<span @click="max(2)" class="imax color_yellow">Max</span>
 						</div>
-						<input type="button" value="UnStake" class="ibtn ibtn-stake bg_blue" />
+						<div  class="ibtn ibtn-stake bg_yellow">Unstake</div>
 					</div>
 				</div>
 			</div>			
@@ -73,9 +81,17 @@
 		methods:{
 			max(v){
 				if (v ==1) {
-					this.stakev = this.maxstakev
+					if(this.stakev != this.maxstakev){
+						this.stakev = this.maxstakev
+					} else {
+						this.stakev = ''
+					}
 				} else{
-					this.unstakev = this.maxunstakev
+					if(this.unstakev != this.maxunstakev){
+						this.unstakev = this.maxunstakev
+					} else {
+						this.unstakev = ''
+					}
 				}
 			}
 		}
@@ -83,66 +99,23 @@
 </script>
 
 <style scoped>
-	/* .isummary{
-		width: -webkit-calc(100% - 1.2rem);
-		padding: 0.6rem;
-		margin: 0 auto;
-		border-radius: 0.36rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.isummary .isumm-cell .iname{
-		line-height: 0.54rem;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		font-size: 0.4rem;
-		font-weight: 300;
-		font-family: OpenSansRoman-Light, OpenSansRoman;		
-	}
-	.isummary .isumm-cell .ivalue{
-		margin-top: 0.28rem;
-		line-height: 0.72rem;
-		font-size: 0.52rem;
-		font-weight: 400;
-		font-family: OpenSans-Regular, OpenSans;
-	} */
-	/* .ipanel{
-		width: 100%;
-		margin: 0.6rem auto;
-		border-radius: 0.36rem;
-		overflow: hidden;
-		font-family: OpenSans-Regular, OpenSans;
-	}
-	.ipanel .ipanel-title{
-		width: -webkit-calc(100% - 1.2rem);
-		margin: 0 auto;
-		height: 1.28rem;
-		line-height: 1.28rem;
-		font-size: 0.48rem;
-		font-weight: 400;
-	}
-	.ipanel .ipanel-body{
-		width: -webkit-calc(100% - 1.2rem);
-		padding: 0.6rem;
-		background: #303f4c;
-	} */
+	
 	.ipanel .ipanel-body .iconten-up{
 		width: 100%;
-		height: 0.56rem;
-		padding: 0.24rem 0 0.6rem;
+		padding: 0 0 0.64rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 	.ipanel .ipanel-body .iconten-up .iconten-up-left{
-		font-size: 0.4rem;
+		line-height: 0.8rem;
+		font-size: 0.56rem;
 		font-weight: 400;
+		color: #979797;
 	}
 	.ipanel .ipanel-body .iconten-down{
 		width: 100%;
-		margin-bottom: 1.2rem;
+		margin-bottom: 0.2rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -150,30 +123,53 @@
 		font-weight: 400;
 	}
 	.ipanel .ipanel-body .iconten-down .iinput-contain{
-		width: 9.8rem;
-		height: 1.44rem;
-		background: #4A5965;
+		width: 9.76rem;
+		height: 1.76rem;
+		background: #6B6B6B;
 		border-radius: 0.16rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.ipanel .ipanel-body .iconten-down .ibtn-stake{
-		width: 2.36rem;
-		height: 1.44rem;
-		line-height: 1.44rem;
+		width: 2.44rem;
+		height: 1.76rem;
+		line-height: 1.76rem;
 		border-radius: 0.16rem;
+		overflow: hidden;
+		font-size: 0.56rem;
+		font-family: Poppins-SemiBold, Poppins;
+		font-weight: 600;
+		color: #313131;
 	}
 	.iinput{
-		width: 8rem;
-		height: 1.44rem;
-		line-height: 1.44rem;
+		width: 7.5rem;
+		height: 1.76rem;
+		line-height: 1.76rem;
 		margin: 0;
-		padding: 0 0.2rem;
+		padding-left: 0.4rem;
 		background-color: #FFFFFF00;
 		border: 0;
+		font-size: 0.56rem;
+		font-weight: 400;
+	}
+	.iinput::placeholder{
+		color: #979797;
 	}
 	.imax{
-		color: #1D9BF0;
+		width: 1.2rem;
+		font-size: 0.56rem;
+		font-weight: 400;
+		margin-right: 0.4rem;
 	}
 	.imax:active{
 		opacity: .6;
+	}
+	
+	.imid-line{
+		width: 100%;
+		height: 0.04rem;
+		background-color: #3F4142;
+		margin: 0.6rem auto;
 	}
 </style>
