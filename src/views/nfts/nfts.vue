@@ -334,6 +334,10 @@
 		border-radius: 0.36rem;
 		border: 0.04rem solid #3F4142;
 	}
+	
+	.infts-panel:active{
+		opacity: 0.6;
+	}
 
 	.infts-panel .ipanel-body {
 		width: -webkit-calc(100% - 1.2rem);
