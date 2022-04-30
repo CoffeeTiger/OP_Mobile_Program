@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<div class="ilevel-0-page-title">Bond</div>
+			<div class="ilevel-0-page-title color_yellow">Bond</div>
 			
-			<div class="isummary isummary-v2 bg_gray">
+			<div class="isummary isummary-v2 bg_lightgray">
 				<div class="isumm-cell">
 					<div class="iname">Tatal Value Deposited</div>
 					<div class="ivalue">$378.288.910</div>
@@ -18,45 +18,39 @@
 				</div>
 			</div>
 			
-			<div class="ipanel bg_gray">
-				<div class="ipanel-title">
-					<table class="itable">
+			<div class="ipanel bg_lightgray">
+				<div class="ipanel-title ipanel-title-v2">
+					<table class="itable itable-v2">
 						<thead>
-							<tr>
-								<th class="th-20">Bond</th><th class="th-20">Price</th><th class="th-20">Discount</th><th class="th-20">Duration</th><th class="th-20">&ensp;</th>
+							<tr class="color_yellow">
+								<th class="th-25 th-frist">Bond</th>
+								<th class="th-25">Price</th>
+								<th class="th-25">Discount</th>
+								<th class="th-25 th-last">Duration</th>
 							</tr>
 						</thead>
 					</table>
 				</div>
-				<div class="ipanel-body">
-					<table class="itable">
+				<div class="ipanel-body ipanel-body-v2">
+					<table class="itable itable-v2">
 						<tbody>
-							<tr>
-								<td class="td-20">OPH-LP</td>
-								<td class="td-20">$28.54</td>
-								<td class="td-20">-0.85%</td>
-								<td class="td-20">2days</td>
-								<td class="td-20">
-									<input type="button" value="Bond" class="ibtn ibtn-bond bg_blue" @click="purchase(1)"/>
-								</td>
+							<tr @click="purchase(1)">
+								<td class="th-25 td-frist">OPH-LP</td>
+								<td class="th-25">$20.54</td>
+								<td class="th-25">-0.25%</td>
+								<td class="th-25 td-last">5days</td>
 							</tr>
-							<tr>
-								<td class="td-20">OPH-LP</td>
-								<td class="td-20">$28.54</td>
-								<td class="td-20">-0.85%</td>
-								<td class="td-20">2days</td>
-								<td class="td-20">
-									<input type="button" value="Bond" class="ibtn ibtn-bond bg_blue" @click="purchase(1)"/>
-								</td>
+							<tr @click="purchase(1)">
+								<td class="th-25 td-frist">OPH-LP</td>
+								<td class="th-25">$28.54</td>
+								<td class="th-25">-0.85%</td>
+								<td class="th-25 td-last">3days</td>
 							</tr>
-							<tr>
-								<td class="td-20">OPH-LP</td>
-								<td class="td-20">$28.54</td>
-								<td class="td-20">-0.85%</td>
-								<td class="td-20">2days</td>
-								<td class="td-20">
-									<input type="button" value="Bond" class="ibtn ibtn-bond bg_blue" @click="purchase(1)"/>
-								</td>
+							<tr @click="purchase(1)">
+								<td class="th-25 td-frist">OPH-LP</td>
+								<td class="th-25">$28.54</td>
+								<td class="th-25">-0.15%</td>
+								<td class="th-25 td-last">2days</td>
 							</tr>
 						</tbody>
 					</table>
@@ -84,31 +78,25 @@
 </script>
 
 <style scoped>
-	/* .isummary{
-		width: -webkit-calc(100% - 1.2rem);
-		padding: 0.6rem;
-		margin: 0 auto;
-		border-radius: 0.36rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.isummary .isumm-cell .iname{
-		line-height: 0.54rem;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		font-size: 0.4rem;
-		font-weight: 300;
-		font-family: OpenSansRoman-Light, OpenSansRoman;		
-	}
-	.isummary .isumm-cell .ivalue{
-		margin-top: 0.28rem;
-		line-height: 0.72rem;
+	.itable-v2{
+		background: ##3A3A3A;
 		font-size: 0.52rem;
 		font-weight: 400;
-		font-family: OpenSans-Regular, OpenSans;
-	} */
+		font-family: Poppins-Regular, Poppins;
+	}
+	.itable-v2 th, td{text-align: left;}
+	.itable-v2 tr:active{
+		background: #6B6B6B;
+	}
+	.itable-v2 .th-frist, .th-last{
+		padding-left: 0.4rem;
+	}
+	.itable-v2 .td-frist, .td-last{
+		padding-left: 0.4rem;
+	}
+	.itable-v2 .tr-last{
+		padding-bottom: 0.6rem;
+	}
 	
 	.ibtn-bond{
 		width: 1.72rem;
@@ -117,14 +105,14 @@
 	}
 	
 	.itips{
-		width: 11.2rem;
-		margin: 1.28rem auto;
+		width: 10.6rem;
+		margin: 2.52rem auto;
 	}
 	.itips .iarticle{
-		font-size: 0.4rem;
+		font-size: 0.52rem;
 		font-weight: 400;
-		line-height: 0.54rem;
-		color: #B3C0CA;
-		/* font-family: OpenSans-Regular, OpenSans; */
+		line-height: 0.64rem;
+		color: #979797;
+		text-align: center;
 	}
 </style>
