@@ -78,6 +78,9 @@
 				maxunstakev:8876521,
 			}
 		},
+		created() {
+			
+		},
 		methods:{
 			max(v){
 				if (v ==1) {

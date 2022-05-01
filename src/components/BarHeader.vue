@@ -3,7 +3,7 @@
 		<div class="header-left" @click="clickLeft"> 
 			<img src="../assets/imgs/arrow-left.png" class="header-icon-left"/>
 		</div>
-		<div class="header-middle">{{$t(title)}}</div>
+		<div class="header-middle color_yellow">{{$t(title)}}</div>
 		<div class="header-right" @click="clickRight">
 			<!-- <img src="../assets/imgs/share.png" class="header-icon-right"/> -->
 		</div>
@@ -75,6 +75,8 @@
 							p: 1
 						}
 					})
+				} else if(_backroute == 'conn'){
+					this.$router.go(-2)
 				} else {
 					this.$router.go(-1)
 				}
@@ -92,12 +94,14 @@
 	}
 	.header-middle{
 		width: 9rem;
+		height: 1.76rem;
+		line-height: 1.76rem;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
-		font-size: 0.72rem;
+		font-size: 0.84rem;
 		font-weight: 600;
-		/* font-family: OpenSansRoman-SemiBold, OpenSansRoman; */
+		font-family: Poppins-SemiBold, Poppins;
 		text-align: center;
 	}
 	.header-icon-left {

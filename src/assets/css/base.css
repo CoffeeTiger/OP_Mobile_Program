@@ -294,6 +294,11 @@ textarea {
 	justify-content: space-between;
 	align-items: center;
 }
+.isummary-v3{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 .isummary .isumm-cell .iname{
 	line-height: 0.66rem;
 	overflow: hidden;
@@ -308,6 +313,6 @@ textarea {
 	margin-top: 0.2rem;
 	line-height: 0.96rem;
 	font-size: 0.68rem;
-	font-weight: 500;
-	font-family: Poppins-Medium, Poppins;
+	font-weight: 400;
+	font-family: Poppins-Regular, Poppins;
 }

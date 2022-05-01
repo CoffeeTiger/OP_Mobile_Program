@@ -40,13 +40,13 @@
 								<td class="th-25">-0.25%</td>
 								<td class="th-25 td-last">5days</td>
 							</tr>
-							<tr @click="purchase(1)">
+							<tr @click="purchase(2)">
 								<td class="th-25 td-frist">OPH-LP</td>
 								<td class="th-25">$28.54</td>
 								<td class="th-25">-0.85%</td>
 								<td class="th-25 td-last">3days</td>
 							</tr>
-							<tr @click="purchase(1)">
+							<tr @click="purchase(3)">
 								<td class="th-25 td-frist">OPH-LP</td>
 								<td class="th-25">$28.54</td>
 								<td class="th-25">-0.15%</td>
@@ -70,8 +70,13 @@
 		name:'bond',
 		methods:{
 			purchase(v){
-				console.info(v)
-				this.$router.push({name:'bondpurchase', params:{id:v}})
+				if (v == 1) {
+					this.$router.push({name:'bondpurchase', params:{id:v}})
+				} else if(v == 2){
+					this.$router.push({name:'bondpurchase', params:{id:v}})
+				} else if(v == 3){
+					this.$router.push({name:'bondpurchase', params:{id:v}})
+				}
 			}
 		}
 	}
