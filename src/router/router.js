@@ -51,6 +51,11 @@ const routes = [
 	meta:{index:1, showHeader:0, showFooter:0, login:false},
 	component: () => import('@/views/test/test.vue'),
 }, {
+	path: '/nft',
+	name: 'nft',
+	meta:{index:1, showHeader:0, showFooter:0, login:false},
+	component: () => import('@/components/profile/nft.vue'),
+}, {
 	path: '/:pathMatch(.*)*',
 	name: 'NotFound',
 	meta:{index:2, showHeader:0, showFooter:0, login:false},
