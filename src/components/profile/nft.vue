@@ -102,6 +102,9 @@
 		margin-bottom: 0.48rem;
 		overflow: hidden;
 	}
+	.inft:active{
+		opacity: 0.6;
+	}
 
 	.inft .inft-body {
 		width: -webkit-calc(100% - 1rem);

@@ -316,3 +316,11 @@ textarea {
 	font-weight: 400;
 	font-family: Poppins-Regular, Poppins;
 }
+
+.infts-list{
+	width: 100%;
+	margin-top: 0.64rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

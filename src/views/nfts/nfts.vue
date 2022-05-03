@@ -26,8 +26,8 @@
 			</div>
 
 			<div class="infts-btns-contain">
-				<div class="ibtn infts-btns bg_lightgray">Create</div>
-				<div class="ibtn infts-btns bg_yellow color_black">Publish</div>
+				<div class="ibtn infts-btns bg_lightgray" @click="create">Create</div>
+				<div class="ibtn infts-btns bg_yellow color_black" @click="publish">Publish</div>
 			</div>
 
 			<!-- <div class="marquee bg_lightgray">
@@ -168,7 +168,19 @@
 
 <script>
 	export default {
-		name: 'nfts'
+		name: 'nfts',
+		data() {
+			return {
+				ustat: false
+			}
+		},methods:{
+			publish(){
+				this.$router.push({name:'publishlist', params:{}})
+			},
+			create(){
+				this.$router.push({name:'create', params:{}})
+			}
+		}
 	}
 </script>
 

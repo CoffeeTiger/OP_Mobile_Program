@@ -41,11 +41,26 @@ const routes = [
 	meta:{index:0, showHeader:0, showFooter:1, login:false},
 	component: () => import('@/views/profile/profile.vue'),
 }, {
+	path: '/publishlist',
+	name: 'publishlist',
+	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'Publish'},
+	component: () => import('@/views/publish/publishList.vue'),
+}, {
+	path: '/publish',
+	name: 'publish',
+	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'Publish', share:1},
+	component: () => import('@/views/publish/publish.vue'),
+},{
+	path: '/create',
+	name: 'create',
+	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'Create'},
+	component: () => import('@/views/create/create.vue'),
+}, {
 	path: '/conn',
 	name: 'conn',
 	meta:{index:2, showHeader:0, showFooter:0, login:false},
 	component: () => import('@/views/wallet/conn.vue'),
-}, {
+}, /* {
 	path: '/test',
 	name: 'test',
 	meta:{index:1, showHeader:0, showFooter:0, login:false},
@@ -55,7 +70,7 @@ const routes = [
 	name: 'nft',
 	meta:{index:1, showHeader:0, showFooter:0, login:false},
 	component: () => import('@/components/profile/nft.vue'),
-}, {
+}, */ {
 	path: '/:pathMatch(.*)*',
 	name: 'NotFound',
 	meta:{index:2, showHeader:0, showFooter:0, login:false},

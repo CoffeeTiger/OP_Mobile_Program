@@ -28,12 +28,4 @@
 	}
 </script>
 
-<style scoped>
-	.infts-list{
-		width: 100%;
-		margin-top: 0.64rem;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-</style>
+<style scoped></style>

@@ -1,6 +1,6 @@
 <template>
 	<BarHeader :title="showBarHeader_title" :leftIcon="showBarHeader_leftIcon" :leftTitle="showBarHeader_leftTitle"
-		:rightIcon="showBarHeader_rightIcon" :rightTitle="showBarHeader_rightTitle" v-if="showBarHeader" />
+		:rightIcon="showBarHeader_rightIcon" :rightTitle="showBarHeader_rightTitle"  :showShare="showShare" v-if="showBarHeader" />
 
 	<!-- <transition name="van-slide-right">
 		<router-view class="center-contain center-contain-hheader_hfooter"/>
@@ -47,6 +47,7 @@
 				showBarHeader_leftTitle: '',
 				showBarHeader_rightIcon: '',
 				showBarHeader_rightTitle: '',
+				showShare:false,
 				showFooterBar: false,
 			}
 		},
@@ -70,6 +71,13 @@
 				} else {
 					this.showBarHeader = false
 					this.showFooterBar = false
+				}
+				
+				let share = to.meta.share
+				if(!(share == undefined || share == null)){
+					if(share == 1){
+						this.showShare = true
+					}
 				}
 				
 			}

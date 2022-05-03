@@ -5,7 +5,7 @@
 		</div>
 		<div class="header-middle color_yellow">{{$t(title)}}</div>
 		<div class="header-right" @click="clickRight">
-			<!-- <img src="../assets/imgs/share.png" class="header-icon-right"/> -->
+			<img src="../assets/imgs/share.png" class="header-icon-right" v-if="showShare"/>
 		</div>
 	</div>
 </template>
@@ -52,6 +52,10 @@
 			showWords: {
 				type: Boolean,
 				default: true
+			},
+			showShare: {
+				type: Boolean,
+				default: false
 			}
 		},
 		created() {
@@ -89,8 +93,18 @@
 </script>
 
 <style scoped="scoped">
-	.header-left, .header-right{
+	.header-left{
 		width: 3rem;
+	}
+	.header-right{
+		width: 3rem;
+		text-align: end;
+	}
+	.header-left:active{
+		opacity: 0.6;
+	}
+	.header-right:active{
+		opacity: 0.6;
 	}
 	.header-middle{
 		width: 9rem;
@@ -113,7 +127,7 @@
 	.header-icon-right {
 		width: 0.6rem;
 		height: 0.82rem;
-		margin-right: 0.82rem;
+		margin-right: 0.6rem;
 	}
 
 	.showNumber {
