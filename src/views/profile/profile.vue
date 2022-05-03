@@ -78,6 +78,7 @@
 		name: 'profile',
 		data() {
 			return {
+				activeName:'',
 				eyesOpen: false,
 				balance: 8858188,
 				reward: 19873
@@ -106,6 +107,7 @@
 		height: 2.3rem !important;
 		line-height: 2.3rem !important;
 		border-bottom: 0.04rem solid #2D2D2D;
+		background-color: black;
 	}
 	.van-tabs__line{
 		border-radius: 0 !important;
@@ -113,8 +115,8 @@
 	.van-tab--active{
 		line-height: 0.78rem;
 		font-size: 0.56rem;
-		font-weight: 500;
-		font-family: Poppins-Medium, Poppins;
+		font-weight: 500 !important;
+		font-family: Poppins-Medium, Poppins !important;
 		color: #FFFFFF;
 	}
 	.van-tab--line{
@@ -124,6 +126,7 @@
 		font-family: Poppins-Regular, Poppins;
 		/* color: #979797 !important; */
 	}
+
 </style>
 <style scoped>
 	.itools {
