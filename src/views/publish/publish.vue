@@ -52,7 +52,7 @@
 		</div>
 
 		<div class="iform-panel">
-			
+
 			<div class="iform-cell">
 				<label>Blockchain</label>
 				<div class="iinput-contain">
@@ -60,15 +60,16 @@
 						<select class="iinput ifrom-input" v-model="blockchain">
 							<option value="Ethereum">Ethereum</option>
 						</select>
-					</div>					
+					</div>
 				</div>
 			</div>
-			
+
 			<div class="iform-cell">
 				<label>Price</label>
 				<div class="iinput-contain">
 					<div class="iinput-body ifrom-input-w460">
-						<input type="number" class="iinput ifrom-input" v-model="price" @input="inputChange" placeholder="Please enter the price" min="1" max="999999" />
+						<input type="number" class="iinput ifrom-input" v-model="price" @input="inputChange"
+							placeholder="Please enter the price" min="1" max="999999" />
 					</div>
 					<div class="iinput-body ifrom-input-w210">
 						<select class="iinput ifrom-input" v-model="priceType">
@@ -77,16 +78,17 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="iform-cell">
 				<label>Total count</label>
 				<div class="iinput-contain">
 					<div class="iinput-body">
-						<input type="number" class="iinput ifrom-input" v-model="totalCount" @input="inputChange" placeholder="Please enter the total count" min="1" max="999999"/>
+						<input type="number" class="iinput ifrom-input" v-model="totalCount" @input="inputChange"
+							placeholder="Please enter the total count" min="1" max="999999" />
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="iform-cell">
 				<label>Duration</label>
 				<div class="iinput-contain">
@@ -98,13 +100,13 @@
 						</select>
 					</div>
 				</div>
-			</div>			
-			
+			</div>
+
 			<div class="iform-panel-title color_yellow">Activity information</div>
-			
+
 			<div class="iform-cell">
 				<label>Reward</label>
-				<div class="iinput-contain"> 
+				<div class="iinput-contain">
 					<div class="iinput-body">
 						<select class="iinput ifrom-input" v-model="reward">
 							<option value="OPH">OPH</option>
@@ -113,12 +115,13 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="iform-cell">
 				<label>Prize</label>
 				<div class="iinput-contain">
 					<div class="iinput-body ifrom-input-w460">
-						<input type="number" disabled="disabled" class="iinput ifrom-input" v-model="prize" placeholder="Please enter the Prize"/>
+						<input type="number" disabled="disabled" class="iinput ifrom-input" v-model="prize"
+							placeholder="Please enter the Prize" />
 					</div>
 					<div class="iinput-body ifrom-input-w210">
 						<select class="iinput ifrom-input" v-model="prizeType">
@@ -127,7 +130,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="ibtn-contain">
 				<div class="ibtn ibtn-publish bg_yellow">Publish</div>
 			</div>
@@ -144,17 +147,18 @@
 			return {
 				open1: true,
 				open2: true,
-				blockchain:'Ethereum',
-				price:10,
-				priceType:'OPH',
-				totalCount:100,
-				duration:'7',
-				reward:'OPH',
-				prize:1000,
-				prizeType:'OPH'
+				blockchain: 'Ethereum',
+				price: 10,
+				priceType: 'OPH',
+				totalCount: 100,
+				duration: '7',
+				reward: 'OPH',
+				prize: 1000,
+				prizeType: 'OPH'
 			}
-		},created() {
-			
+		},
+		created() {
+
 		},
 		methods: {
 			show(v) {
@@ -164,8 +168,9 @@
 					this.open2 = !this.open2
 				}
 			},
-			inputChange(){
-				if(!(this.price ==undefined || this.price == null || this.totalCount == undefined || this.totalCount == null)){
+			inputChange() {
+				if (!(this.price == undefined || this.price == null || this.totalCount == undefined || this.totalCount ==
+						null)) {
 					this.prize = this.price * this.totalCount
 				}
 			}
@@ -196,7 +201,7 @@
 		font-family: Poppins-Medium, Poppins;
 		font-weight: 500;
 	}
-	
+
 	/* .icollapse-panel begain */
 	.icollapse-panel {
 		width: -webkit-calc(100% - 0.08rem);
@@ -265,24 +270,28 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+
 	/* .icollapse-panel end */
-	
-	.iform-panel{
+
+	.iform-panel {
 		width: 100%;
 		margin: 0 auto 1.2rem;
 		font-family: Poppins-Light, Poppins;
 	}
-	.iform-panel .iform-cell{
+
+	.iform-panel .iform-cell {
 		width: 100%;
 		margin: 0.48rem auto;
 	}
-	.iform-panel .iform-cell > label{
+
+	.iform-panel .iform-cell>label {
 		line-height: 0.78rem;
 		font-size: 0.56rem;
 		font-weight: 300;
 		color: #979797;
 	}
-	.iform-panel .iform-cell .iinput-contain{
+
+	.iform-panel .iform-cell .iinput-contain {
 		width: 100%;
 		height: 1.76rem;
 		margin-top: 0.34rem;
@@ -290,8 +299,8 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	
-	.iinput-body{
+
+	.iinput-body {
 		width: -webkit-calc(100% - 0.08rem);
 		height: 1.76rem;
 		line-height: 1.76rem;
@@ -299,8 +308,8 @@
 		border-radius: 0.32rem;
 		border: 0.04rem solid #3F4142;
 	}
-	
-	.ifrom-input{
+
+	.ifrom-input {
 		width: -webkit-calc(100% - 1.2rem);
 		height: 1.76rem;
 		line-height: 1.76rem;
@@ -312,14 +321,16 @@
 		color: #979797;
 		font-family: Poppins-Light, Poppins !important;
 	}
-	.ifrom-input-w460{
+
+	.ifrom-input-w460 {
 		width: 9.2rem;
 	}
-	.ifrom-input-w210{
+
+	.ifrom-input-w210 {
 		width: 4.2rem;
 	}
-	
-	.iform-panel-title{
+
+	.iform-panel-title {
 		width: 100%;
 		height: 0.9rem;
 		line-height: 0.9rem;
@@ -328,17 +339,18 @@
 		font-family: Poppins-Medium, Poppins;
 		font-weight: 500;
 	}
-	
-	select > option{
+
+	select>option {
 		background: #252525;
 		color: #FFFFFF;
 	}
-	
-	.ibtn-contain{
+
+	.ibtn-contain {
 		width: 100%;
 		margin: 0.8rem auto 1.2rem;
 	}
-	.ibtn-publish{
+
+	.ibtn-publish {
 		width: 100%;
 		height: 1.6rem;
 		line-height: 1.6rem;
