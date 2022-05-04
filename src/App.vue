@@ -53,8 +53,8 @@
 		},
 		watch: {
 			$route(to, from) {
-				console.info(to)
-				console.info(from)
+				/* console.info(to)
+				console.info(from) */
 				let index  = to.meta.index
 				/* let showHeader = to.meta.showHeader
 				let showFooter = to.meta.showFooter */
@@ -77,6 +77,8 @@
 				if(!(share == undefined || share == null)){
 					if(share == 1){
 						this.showShare = true
+					} else{
+						this.showShare = false
 					}
 				}
 				

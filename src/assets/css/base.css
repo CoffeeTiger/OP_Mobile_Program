@@ -8,7 +8,7 @@ a:link,a:visited{color: #f63f27;text-decoration: none;}
 a:hover{color: #ff0000;text-decoration: none;}
 ul,li{margin: 0;padding: 0; list-style: none;}
 ::-webkit-scrollbar{width: 0px;}
-input, textarea{
+input, textarea, select{
 	-webkit-user-select: auto !important;
 	-moz-user-select: auto !important;
 	-ms-user-select: auto !important;
@@ -17,6 +17,9 @@ input::-webkit-input-placeholder{
 	color: #cecccc;
 }
 textarea::-webkit-input-placeholder{
+	color: #cecccc;
+}
+select::-webkit-input-placeholder{
 	color: #cecccc;
 }
 .left {float: left;}
@@ -63,10 +66,12 @@ body {
 }
 
 input,
-textarea {
+textarea, select{
 	outline: none;
 }
-
+select{
+	/* appearance: none; */
+}
 textarea {
 	resize: none;
 }
@@ -112,6 +117,9 @@ textarea {
 	border-radius: 0.4rem;
 	border: 1px solid #e3e3e3;
 	margin: 0.4rem auto;
+}
+.iinput::placeholder{
+	color: #979797;
 }
 
 .iinput-tips {
@@ -324,3 +332,4 @@ textarea {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
