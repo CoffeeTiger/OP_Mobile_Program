@@ -43,7 +43,7 @@ const routes = [
 }, {
 	path: '/publishlist',
 	name: 'publishlist',
-	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'Publish'},
+	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'Publish', share:0},
 	component: () => import('@/views/publish/publishList.vue'),
 }, {
 	path: '/publish',

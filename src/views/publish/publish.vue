@@ -50,6 +50,16 @@
 			</div>
 
 		</div>
+
+		<div class="iform-panel">
+			<div class="iform-cell">
+				<label>Blockchain</label>
+				<div class="iinput-contain">
+				</div>
+			</div>
+		</div>
+
+
 	</div>
 </template>
 
@@ -69,8 +79,9 @@
 				} else if (v == 2) {
 					this.open2 = !this.open2
 				}
-			}
-		}
+			},
+
+		},
 	}
 </script>
 
