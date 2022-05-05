@@ -50,11 +50,21 @@ const routes = [
 	name: 'publish',
 	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'Publish', share:1},
 	component: () => import('@/views/publish/publish.vue'),
-},{
+}, {
 	path: '/create',
 	name: 'create',
 	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'Create'},
 	component: () => import('@/views/create/create.vue'),
+}, {
+	path: '/activelist',
+	name: 'activelist',
+	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'', share:1},
+	component: () => import('@/views/nfts/activeList.vue'),
+}, {
+	path: '/active',
+	name: 'active',
+	meta:{index:1, showHeader:1, showFooter:0, login:false, title:'', share:1},
+	component: () => import('@/views/nfts/active.vue'),
 }, {
 	path: '/conn',
 	name: 'conn',

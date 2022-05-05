@@ -56,8 +56,8 @@
 					<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
 					</div>
 				</div>
-				
-				<div class="infts-panel bg_lightgray">
+								
+				<div class="infts-panel bg_lightgray" @click="goBuy('2222')">
 					<div class="ipanel-body">
 						<div class="ibody-left">
 							<img src="../../assets/imgs/nft-header1.png" class="iimg" />
@@ -91,7 +91,7 @@
 					</div>
 				</div>
 				
-				<div class="infts-panel bg_lightgray">
+				<div class="infts-panel bg_lightgray" @click="goBuy('1111')">
 					<div class="ipanel-body">
 						<div class="ibody-left">
 							<img src="../../assets/imgs/nft-header2.png" class="iimg" />
@@ -125,7 +125,7 @@
 					</div>
 				</div>
 				
-				<div class="infts-panel bg_lightgray">
+				<div class="infts-panel bg_lightgray" @click="goBuy('333')">
 					<div class="ipanel-body">
 						<div class="ibody-left">
 							<img src="../../assets/imgs/nft-header3.png" class="iimg" />
@@ -179,7 +179,10 @@
 			},
 			create(){
 				this.$router.push({name:'create', params:{}})
-			}
+			},
+			goBuy(id){
+				this.$router.push({name:'active', params:{id: id}})
+			},
 		}
 	}
 </script>

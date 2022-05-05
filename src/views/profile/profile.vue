@@ -22,7 +22,7 @@
 			<div class="iaccount-line"></div>
 			<div class="iaccount-assets">
 				<div class="icell">
-					<div class="icell-name">Balance(veOPH)</div>
+					<div class="icell-name">Balance</div>
 					<div class="icell-value">
 						<img src="../../assets/imgs/logo/oph.png" class="ilogo-oph" />
 						<span class="ivlaue" v-if="eyesOpen">{{balance}}</span>

@@ -3,7 +3,7 @@
 		<div class="inft-imgs">
 			<img src="../../assets/imgs/nft-example.jpg" class="nft-img" />
 		</div>
-		<div class="nft-names color_yellow">Crytomories-20200122-0011</div>
+		<div class="inft-names color_yellow">Crytomories-20200122-0011</div>
 
 		<div class="icollapse-panel bg_lightgray">
 
@@ -16,7 +16,7 @@
 			</div>
 			<div :class="open1?'ibody':'ibody ibody-close ibody-close-bottom'">
 				<div class="infos">Stakers play an important role in the Openpublish ecosystem. Stakers deposit their
-					OPH into the protocol, which contributes to OPH’s long-term price stability. </div>
+					OPH into the protocol, which contributes to OPH long-term price stability. </div>
 			</div>
 
 			<div class="iheader" @click="show(2)">
@@ -180,7 +180,7 @@
 
 <style scoped>
 	@import url("../../assets/css/comm.css");
-	.inft-imgs {
+	/* .inft-imgs {
 		width: 100%;
 		margin-top: 0.64rem;
 		max-height: 7.34rem;
@@ -200,10 +200,10 @@
 		font-size: 0.72rem;
 		font-family: Poppins-Medium, Poppins;
 		font-weight: 500;
-	}
+	} */
 
 	/* .icollapse-panel begain */
-	.icollapse-panel {
+	/* .icollapse-panel {
 		width: -webkit-calc(100% - 0.08rem);
 		margin: 0.48rem auto;
 		border: 0.04rem solid #3F4142;
@@ -269,7 +269,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
+	} */
 
 	/* .icollapse-panel end */
 

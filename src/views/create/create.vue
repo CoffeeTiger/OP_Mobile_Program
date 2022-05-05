@@ -40,7 +40,7 @@
 					</div>
 				</div>
 				<div class="iinput-desc">OpenPublish will include a link to this URL on this item’s detail page,so that
-					users can click to leam moreabout it. you are welcome to link to your own webpage with moer details.
+					users can click to leam moreabout it. you are welcome to link to your own webpage with more details.
 				</div>
 			</div>
 
