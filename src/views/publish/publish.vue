@@ -57,7 +57,7 @@
 				<label>Blockchain</label>
 				<div class="iinput-contain">
 					<div class="iinput-body">
-						<select class="iinput ifrom-input" v-model="blockchain">
+						<select class="iinput ifrom-input ifrom-select" v-model="blockchain" ref="blockchain">
 							<option value="Ethereum">Ethereum</option>
 						</select>
 					</div>
@@ -72,7 +72,7 @@
 							placeholder="Please enter the price" min="1" max="999999" />
 					</div>
 					<div class="iinput-body ifrom-input-w210">
-						<select class="iinput ifrom-input" v-model="priceType">
+						<select class="iinput ifrom-input ifrom-select" v-model="priceType">
 							<option value="OPH">OPH</option>
 						</select>
 					</div>
@@ -93,7 +93,7 @@
 				<label>Duration</label>
 				<div class="iinput-contain">
 					<div class="iinput-body">
-						<select class="iinput ifrom-input" v-model="duration">
+						<select class="iinput ifrom-input ifrom-select" v-model="duration">
 							<option value="7">7days</option>
 							<option value="10">10days</option>
 							<option value="14">14days</option>
@@ -108,7 +108,7 @@
 				<label>Reward</label>
 				<div class="iinput-contain">
 					<div class="iinput-body">
-						<select class="iinput ifrom-input" v-model="reward">
+						<select class="iinput ifrom-input ifrom-select" v-model="reward">
 							<option value="OPH">OPH</option>
 							<option value="NFT">NFT</option>
 						</select>
@@ -124,7 +124,7 @@
 							placeholder="Please enter the Prize" />
 					</div>
 					<div class="iinput-body ifrom-input-w210">
-						<select class="iinput ifrom-input" v-model="prizeType">
+						<select class="iinput ifrom-input ifrom-select" v-model="prizeType">
 							<option value="OPH">OPH</option>
 						</select>
 					</div>
@@ -173,8 +173,7 @@
 						null)) {
 					this.prize = this.price * this.totalCount
 				}
-			}
-
+			},
 		},
 	}
 </script>
@@ -227,7 +226,7 @@
 		font-weight: 400;
 	}
 
-	.icollapse-panel .iheader .icollepse-arrow {
+	.icollepse-arrow {
 		width: 0.34rem;
 		height: 0.2rem;
 	}
@@ -321,6 +320,14 @@
 		color: #979797;
 		font-family: Poppins-Light, Poppins !important;
 	}
+	.ifrom-select{
+		background: url("../../assets/imgs/arrow-down.png") no-repeat scroll right center transparent;
+		background-size: 0.34rem 0.2rem;
+	}
+	.ifrom-select:active{
+		background: url("../../assets/imgs/arrow-up.png") no-repeat scroll right center transparent;
+		background-size: 0.34rem 0.2rem;
+	}
 
 	.ifrom-input-w460 {
 		width: 9.2rem;
@@ -329,6 +336,27 @@
 	.ifrom-input-w210 {
 		width: 4.2rem;
 	}
+	
+	/* .iselect{
+		width: -webkit-calc(100% - 1.2rem);
+		height: 1.76rem;
+		line-height: 1.76rem;
+		margin: 0 auto;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.iselect .ifrom-select {
+		width: -webkit-calc(100% - 0.34rem);
+		height: 1.76rem;
+		line-height: 1.76rem;
+		background-color: #FFFFFF00;
+		border: 0;
+		font-size: 0.64rem;
+		font-weight: 400;
+		color: #979797;
+		font-family: Poppins-Light, Poppins !important;
+	} */
 
 	.iform-panel-title {
 		width: 100%;

@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"> 
-	<link rel="icon" type="image/png" sizes="96x96" href="<%= BASE_URL %>favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<title>OpenPublish-NFT Marketplace</title>
-	<meta name="description" content="OpenPublish is the world’s first decentralized NFT Publisher. We offerservices such as NFT Purchase、NFT release、NFT Trading" />
-	<meta name="keywords" content="Blockchain,nft,nft marketplace,Blockchain Mining,Blockchain applications,Blockchain Finance,Blockchain technology,Blockchain Projects,NFT Purchase,NFT release,NFT Trading" />
-	<meta name="author" content="OpenPublish" />
-	<meta name="apple-mobile-web-app-title" content="OpenPublish" />
-	<meta name="application-name" content="OpenPublish" />
-	<script>(function(){var html=document.documentElement;var width=html.getBoundingClientRect().width||window.innerWidth;html.style.fontSize=width/15+"px";if(width>=750){html.style.fontSize="50px"}else{html.style.fontSize=width/15+"px"}})();window.addEventListener('resize',function(){var html=document.documentElement;var width=html.getBoundingClientRect().width||window.innerWidth;if(width>=750){html.style.fontSize="50px"}else{html.style.fontSize=width/15+"px"}});</script>
-  </head>
-  <body ontouchstart="">
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+		<link rel="icon" type="image/png" sizes="96x96" href="<%= BASE_URL %>favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet">
+		<title>OpenPublish-NFT Marketplace</title>
+		<meta name="description"
+			content="OpenPublish is the world’s first decentralized NFT Publisher. We offerservices such as NFT Purchase、NFT release、NFT Trading" />
+		<meta name="keywords"
+			content="Blockchain,nft,nft marketplace,Blockchain Mining,Blockchain applications,Blockchain Finance,Blockchain technology,Blockchain Projects,NFT Purchase,NFT release,NFT Trading" />
+		<meta name="author" content="OpenPublish" />
+		<meta name="apple-mobile-web-app-title" content="OpenPublish" />
+		<meta name="application-name" content="OpenPublish" />
+		<script>
+			(function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width || window.innerWidth;
+				html.style.fontSize = width / 15 + "px";
+				if (width >= 750) {
+					html.style.fontSize = "50px"
+				} else {
+					html.style.fontSize = width / 15 + "px"
+				}
+			})();
+			window.addEventListener('resize', function() {
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width || window.innerWidth;
+				if (width >= 750) {
+					html.style.fontSize = "50px"
+				} else {
+					html.style.fontSize = width / 15 + "px"
+				}
+			});
+		</script>
+	</head>
+	<body ontouchstart="">
+		<noscript>
+			<strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript
+				enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+	</body>
 </html>

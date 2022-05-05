@@ -70,7 +70,8 @@ textarea, select{
 	outline: none;
 }
 select{
-	/* appearance: none; */
+	appearance: none;
+	-webkit-appearance: none;
 }
 textarea {
 	resize: none;
