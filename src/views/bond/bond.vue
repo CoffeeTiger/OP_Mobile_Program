@@ -89,7 +89,7 @@
 		font-weight: 400;
 		font-family: Poppins-Regular, Poppins;
 	}
-	.itable-v2 th, td{text-align: left;}
+	.itable-v2 th, td{text-align: left;font-weight: 400;}
 	.itable-v2 tr:active{
 		background: #6B6B6B;
 	}

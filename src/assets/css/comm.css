@@ -1,0 +1,143 @@
+/* iform-panel */
+.iform-panel {
+	width: 100%;
+	margin: 0 auto 1.2rem;
+	font-family: Poppins-Light, Poppins;
+}
+
+.iform-panel .iform-cell {
+	width: 100%;
+	margin: 0.48rem auto;
+}
+
+.iform-panel .iform-cell>label {
+	line-height: 0.78rem;
+	font-size: 0.56rem;
+	font-weight: 400;
+	color: #979797;
+}
+.iform-panel .iform-cell > .label-yellow{
+	color: #F7B62D;
+} 
+.iform-panel .iform-cell .label-descirp{
+	height: 0.78rem;
+	line-height: 0.78rem;
+	margin-top: 0.34rem;
+	font-size: 0.52rem;
+	font-family: Poppins-Light, Poppins;
+	font-weight: 300;
+	color: #979797;
+}
+
+.iform-panel .iform-cell .iinput-contain {
+	width: 100%;
+	min-height: 1.76rem;
+	margin-top: 0.34rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.iinput-body {
+	width: -webkit-calc(100% - 0.08rem);
+	height: 1.76rem;
+	line-height: 1.76rem;
+	background: #252525;
+	border-radius: 0.32rem;
+	border: 0.04rem solid #3F4142;
+}
+
+.ifrom-input {
+	width: -webkit-calc(100% - 1.2rem);
+	height: 1.76rem;
+	line-height: 1.76rem;
+	margin: 0 0.6rem;
+	background-color: #FFFFFF00;
+	border: 0;
+	font-size: 0.64rem;
+	font-weight: 400;
+	color: #979797;
+	font-family: Poppins-Light, Poppins !important;
+}
+
+.ifrom-select {
+	background: url("../../assets/imgs/arrow-down.png") no-repeat scroll right center transparent;
+	background-size: 0.34rem 0.2rem;
+}
+
+/* .ifrom-select:hover {
+	background: url("../../assets/imgs/arrow-up.png") no-repeat scroll right center transparent;
+	background-size: 0.34rem 0.2rem;
+} */
+
+.ifrom-input-w460 {
+	width: 9.2rem;
+}
+
+.ifrom-input-w210 {
+	width: 4.2rem;
+}
+
+.iform-panel-title {
+	width: 100%;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	margin: 1rem auto 0;
+	font-size: 0.64rem;
+	font-family: Poppins-Medium, Poppins;
+	font-weight: 500;
+}
+
+select>option {
+	background: #252525;
+	color: #FFFFFF;
+}
+.iform-panel .iform-cell .iinput-desc{
+	line-height: 0.64rem;
+	font-size: 0.52rem;
+	font-family: Poppins-Light, Poppins;
+	font-weight: 300;
+	color: #979797;
+	margin-top: 0.34rem;
+}
+
+.itextarea-body{
+	width: -webkit-calc(100% - 0.08rem);
+	min-height: 1.76rem;
+	background: #252525;
+	border-radius: 0.32rem;
+	border: 0.04rem solid #3F4142;
+	text-align: center;
+}
+.itextarea{
+	width: -webkit-calc(100% - 1.2rem);
+	height: 4rem;
+	margin: 0.34rem auto;
+	background: #FFFFFF00;
+	line-height: 0.96rem;
+	font-size: 0.64rem;
+	font-family: Poppins-Regular, Poppins;
+	font-weight: 400;
+	color: #979797;
+	border: 0;
+}
+.itextarea::placeholder{
+	color: #979797;
+}
+
+.ibtn-contain {
+	width: 100%;
+	margin: 0.8rem auto 1.2rem;
+}
+
+.ibtn-publish {
+	width: 100%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	border-radius: 0.32rem;
+	font-size: 0.64rem;
+	font-family: Poppins-Bold, Poppins;
+	font-weight: bold;
+	color: #313131;
+}
+/* iform-panel end */

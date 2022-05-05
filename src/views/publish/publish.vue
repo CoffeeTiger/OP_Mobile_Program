@@ -179,6 +179,7 @@
 </script>
 
 <style scoped>
+	@import url("../../assets/css/comm.css");
 	.inft-imgs {
 		width: 100%;
 		margin-top: 0.64rem;
@@ -272,7 +273,7 @@
 
 	/* .icollapse-panel end */
 
-	.iform-panel {
+	/* .iform-panel {
 		width: 100%;
 		margin: 0 auto 1.2rem;
 		font-family: Poppins-Light, Poppins;
@@ -336,27 +337,6 @@
 	.ifrom-input-w210 {
 		width: 4.2rem;
 	}
-	
-	/* .iselect{
-		width: -webkit-calc(100% - 1.2rem);
-		height: 1.76rem;
-		line-height: 1.76rem;
-		margin: 0 auto;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-	}
-	.iselect .ifrom-select {
-		width: -webkit-calc(100% - 0.34rem);
-		height: 1.76rem;
-		line-height: 1.76rem;
-		background-color: #FFFFFF00;
-		border: 0;
-		font-size: 0.64rem;
-		font-weight: 400;
-		color: #979797;
-		font-family: Poppins-Light, Poppins !important;
-	} */
 
 	.iform-panel-title {
 		width: 100%;
@@ -371,9 +351,9 @@
 	select>option {
 		background: #252525;
 		color: #FFFFFF;
-	}
+	} */
 
-	.ibtn-contain {
+	/* .ibtn-contain {
 		width: 100%;
 		margin: 0.8rem auto 1.2rem;
 	}
@@ -387,5 +367,5 @@
 		font-family: Poppins-Bold, Poppins;
 		font-weight: bold;
 		color: #313131;
-	}
+	} */
 </style>
