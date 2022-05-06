@@ -108,8 +108,12 @@
 					<thead>
 						<tr class="color_yellow">
 							<th class="th-25 th-frist">Buyer</th>
-							<th class="th-25"><div class="td_cell_text">Date</div></th>
-							<th class="th-25"><div class=" td_cell_text">Number</div></th>
+							<th class="th-25">
+								<div class="td_cell_text">Date</div>
+							</th>
+							<th class="th-25">
+								<div class=" td_cell_text">Number</div>
+							</th>
 							<th class="th-25">Commodity</th>
 						</tr>
 					</thead>
@@ -120,20 +124,29 @@
 					<tbody>
 						<tr @click="purchase(1)">
 							<td class="th-25 td-frist">Anto</td>
-							<td class="th-25"><div class="td_cell_times td_cell_text">Jan.29,2021<br />11h 22m 34s</div></td>
-							<td class="th-25"><div class="td_cell_text">1</div></td>
+							<td class="th-25">
+								<div class="td_cell_times td_cell_text">Jan.29,2021<br />11h 22m 34s</div>
+							</td>
+							<td class="th-25">
+								<div class="td_cell_text">1</div>
+							</td>
 							<td class="th-25 td-last">#001</td>
 						</tr>
 						<tr @click="purchase(2)">
 							<td class="th-25 td-frist">Fabioo</td>
 							<td class="th-25 td_cell_times">Jan.29,2021<br />11h 22m 34s</td>
-							<td class="th-25"><div class="td_cell_text">1</div></td>
-							<td class="th-25 td-last color_yellow"><span>#002</span><img src="../../assets/imgs/prize-win.png" class="iprize-win"/></td>
+							<td class="th-25">
+								<div class="td_cell_text">1</div>
+							</td>
+							<td class="th-25 td-last color_yellow"><span>#002</span><img
+									src="../../assets/imgs/prize-win.png" class="iprize-win" /></td>
 						</tr>
 						<tr @click="purchase(3)">
 							<td class="th-25 td-frist">Jaysa</td>
 							<td class="th-25 td_cell_times">Jan.29,2021<br />11h 22m 34s</td>
-							<td class="th-25"><div class="td_cell_text">1</div></td>
+							<td class="th-25">
+								<div class="td_cell_text">1</div>
+							</td>
 							<td class="th-25 td-last">#003</td>
 						</tr>
 					</tbody>
@@ -153,15 +166,16 @@
 				open2: true,
 				count: 1,
 				saleStatus: true,
-				time0:'12',
-				time1:'01',
-				time2:'28',
-				progress:20,
-				progressTotal:100,
+				time0: '12',
+				time1: '01',
+				time2: '28',
+				progress: 20,
+				progressTotal: 100,
 			}
-		},created() {
+		},
+		created() {
 			let id = this.$route.params.id
-			if(id == '3'){
+			if (id == '3') {
 				this.saleStatus = false
 			}
 		},
@@ -290,18 +304,19 @@
 		font-weight: bold;
 		border-radius: 0.32rem;
 	}
-	
-	
-	.td_cell_times{
+
+
+	.td_cell_times {
 		line-height: 0.6rem;
 		text-align: center;
 	}
-	.td_cell_text{
+
+	.td_cell_text {
 		text-align: center;
 	}
-	.iprize-win{
+
+	.iprize-win {
 		width: 0.84rem;
 		height: 0.98rem;
 	}
-	
 </style>
