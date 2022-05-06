@@ -27,6 +27,7 @@
 	border: 0.04rem solid #3F4142;
 	border-radius: 0.36rem;
 	font-family: Poppins-Regular, Poppins;
+	overflow: hidden;
 }
 
 .icollapse-panel .iheader {

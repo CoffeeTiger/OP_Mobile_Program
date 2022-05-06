@@ -125,7 +125,7 @@
 					</div>
 				</div>
 				
-				<div class="infts-panel bg_lightgray" @click="goBuy('333')">
+				<div class="infts-panel bg_lightgray" @click="goBuy('3')">
 					<div class="ipanel-body">
 						<div class="ibody-left">
 							<img src="../../assets/imgs/nft-header3.png" class="iimg" />

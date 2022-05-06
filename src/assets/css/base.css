@@ -139,6 +139,9 @@ textarea {
 .ibtn:active{
 	opacity: .6;
 }
+.ibtn-disable{
+	opacity: .5;
+}
 
 /* table 内容 */
 .itable {
@@ -171,6 +174,26 @@ textarea {
  .itable .td-25, .th-25{
  	 width: 25%;
  }
+ 
+.itable-v2{
+	background: ##3A3A3A;
+	font-size: 0.52rem;
+	font-weight: 400;
+	font-family: Poppins-Regular, Poppins;
+}
+.itable-v2 th, td{text-align: left;font-weight: 400;}
+.itable-v2 tr:active{
+	background: #6B6B6B;
+}
+.itable-v2 .th-frist, .th-last{
+	padding-left: 0.4rem;
+}
+.itable-v2 .td-frist, .td-last{
+	padding-left: 0.4rem;
+}
+.itable-v2 .tr-last{
+	padding-bottom: 0.6rem;
+}
 
 .header-contain{
 	width: 100%;

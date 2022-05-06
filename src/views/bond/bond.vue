@@ -83,7 +83,7 @@
 </script>
 
 <style scoped>
-	.itable-v2{
+	/* .itable-v2{
 		background: ##3A3A3A;
 		font-size: 0.52rem;
 		font-weight: 400;
@@ -101,7 +101,7 @@
 	}
 	.itable-v2 .tr-last{
 		padding-bottom: 0.6rem;
-	}
+	} */
 	
 	.ibtn-bond{
 		width: 1.72rem;
