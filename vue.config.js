@@ -27,7 +27,7 @@ module.exports = {
 		before: app => {}
 	},
 	
-	lintOnSave: true,
+	lintOnSave: false,
 	productionSourceMap: process.env.NODE_ENV !== 'production',
 	configureWebpack: {
 		resolve: {
@@ -39,6 +39,6 @@ module.exports = {
 	css: {
 		// Enable CSS source maps.
 		//sourceMap: process.env.NODE_ENV !== 'production'
-		sourceMap: true
+		sourceMap: false
 	}
 };
