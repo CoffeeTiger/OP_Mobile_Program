@@ -1,6 +1,7 @@
 <template>
 	<div class="main_contain">
 		<div class="itools">
+			<div class="ibtn ibtn-swap color_yellow">Swap</div>
 			<van-icon name="setting-o" color="#F7B62D" class="isetting" size=".84rem" @click="set" />
 		</div>
 		<div class="iuser">
@@ -14,15 +15,19 @@
 		</div>
 
 		<div class="isummary iaccount bg_lightgray">
-			<div class="iaccount-title color_yellow">
+			<!-- <div class="iaccount-title color_yellow">
 				<span>My account</span>
 				<img src="../../assets/imgs/eye-open.png" class="ieyes-img" v-if="eyesOpen" @click="open" />
 				<img src="../../assets/imgs/eye-close.png" class="ieyes-img" v-if="!eyesOpen" @click="open" />
 			</div>
-			<div class="iaccount-line"></div>
+			<div class="iaccount-line"></div> -->
 			<div class="iaccount-assets">
 				<div class="icell">
-					<div class="icell-name">Balance</div>
+					<div class="icell-name">
+						<span>Balance</span>
+						<img src="../../assets/imgs/eye-open.png" class="ieyes-img" v-if="eyesOpen" @click="open" />
+						<img src="../../assets/imgs/eye-close.png" class="ieyes-img" v-if="!eyesOpen" @click="open" />
+					</div>
 					<div class="icell-value">
 						<img src="../../assets/imgs/logo/oph.png" class="ilogo-oph" />
 						<span class="ivlaue" v-if="eyesOpen">{{balance}}</span>
@@ -45,7 +50,6 @@
 			<div class="ibtn-contain">
 				<div class="ibtn ibtn-funding bg_yellow color_black">Deposit</div>
 				<div class="ibtn ibtn-funding bg_yellow color_black">Withdraw</div>
-				<div class="ibtn ibtn-funding bg_yellow color_black">Swap</div>
 			</div>
 		</div>
 
@@ -107,7 +111,7 @@
 		height: 2.3rem !important;
 		line-height: 2.3rem !important;
 		border-bottom: 0.04rem solid #2D2D2D;
-		background-color: black;
+		background-color: #000000;
 	}
 	.van-tabs__line{
 		border-radius: 0 !important;
@@ -124,7 +128,7 @@
 		font-size: 0.56rem;
 		font-weight: 400;
 		font-family: Poppins-Regular, Poppins;
-		/* color: #979797 !important; */
+		background-color: #000000;
 	}
 
 </style>
@@ -133,6 +137,7 @@
 		width: 100%;
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
 	}
 
 	.itools .isetting {
@@ -142,6 +147,17 @@
 	}
 	.itools .isetting:active{
 		opacity: .6;
+	}
+	.itools .ibtn-swap{
+		width: 2.28rem;
+		height: 0.9rem;
+		line-height: 0.9rem;
+		border-radius: 0.16rem;
+		border: 0.04rem solid #F7B62D;
+		font-size: 0.48rem;
+		font-family: Poppins-Medium, Poppins;
+		font-weight: 500;
+		margin-right: 0.7rem;
 	}
 
 	.iuser {
@@ -206,7 +222,8 @@
 	}
 
 	.iaccount .iaccount-assets {
-		width: 100%;
+		width: -webkit-calc(100% - 0.96rem);
+		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -215,6 +232,7 @@
 	.iaccount .iaccount-assets .icell {
 		/* width: 50%;
 		overflow: hidden; */
+		width: 5.12rem;
 	}
 
 	.iaccount .iaccount-assets .icell-name {
@@ -223,6 +241,12 @@
 		font-family: Poppins-Light, Poppins;
 		font-weight: 300;
 		color: #979797;
+	}
+	
+	.iaccount .iaccount-assets .icell-name .ieyes-img {
+		width: 0.56rem;
+		height: 0.3rem;
+		margin: 0 0.48rem;
 	}
 
 	.iaccount .iaccount-assets .icell-value {
@@ -267,12 +291,12 @@
 	.iaccount .ibtn-contain {
 		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 	}
 
 	.iaccount .ibtn-contain .ibtn-funding {
-		width: 3.96rem;
+		width: 5.12rem;
 		height: 1.2rem;
 		line-height: 1.2rem;
 		margin-top: 0.44rem;

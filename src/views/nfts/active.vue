@@ -319,4 +319,5 @@
 		width: 0.84rem;
 		height: 0.98rem;
 	}
+	
 </style>
