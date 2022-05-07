@@ -70,12 +70,12 @@ const routes = [
 	name: 'conn',
 	meta:{index:2, showHeader:0, showFooter:0, login:false},
 	component: () => import('@/views/wallet/conn.vue'),
-}, /* {
+}, {
 	path: '/test',
 	name: 'test',
 	meta:{index:1, showHeader:0, showFooter:0, login:false},
 	component: () => import('@/views/test/test.vue'),
-}, {
+}, /* {
 	path: '/nft',
 	name: 'nft',
 	meta:{index:1, showHeader:0, showFooter:0, login:false},
