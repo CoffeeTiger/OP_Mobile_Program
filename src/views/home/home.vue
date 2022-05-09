@@ -13,6 +13,13 @@
 				<img src="../../assets/imgs/home-top-tw2.png" class="ishare-img ishare-img-middle" />
 				<img src="../../assets/imgs/home-top-dis2.png" class="ishare-img" />
 			</div>
+			
+			<div class="ihome-docs">
+				<a href="https://wiki.openpublish.io" target="_blank">
+				<span class="color_yellow">Learn more about Openpublish</span>
+				<img src="../../assets/imgs/arrow-rightv2.png" class="idimg"/>
+				</a>
+			</div>
 
 			<div class="ihome-road-contain">
 				<div class="iroad-title color_yellow">ROADMAP</div>
@@ -549,5 +556,21 @@
 		display: block;
 		background: #B3C0CA;
 	} */
+	
+	.ihome-docs{
+		width: 100%;
+		line-height: 0.7rem;
+		font-size: 0.48rem;
+		font-family: Poppins-Medium, Poppins;
+		font-weight: 500;
+		color: #A1730E;
+		padding-bottom: 0.4rem;
+		text-align: center;
+	}
+	.ihome-docs .idimg{
+		width: 0.56rem;
+		height: 0.48rem;
+		margin: 0 0.16rem;
+	}
 	
 </style>
