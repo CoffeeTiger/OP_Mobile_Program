@@ -1,28 +1,28 @@
 <template>
 	<div class="van-safe-area-bottom footer-contain">
 		<div :class="active=='home'?'footer-cell cell-active':'footer-cell'" class="footer-cell" @click="go('home')">
-			<img src="../assets/imgs/home.png" class="footer-cell-img" v-if="active!='home'"/>
-			<img src="../assets/imgs/home-1.png" class="footer-cell-img" v-if="active=='home'"/>
+			<img src="../assets/imgs/home.svg" class="footer-cell-img" v-if="active!='home'"/>
+			<img src="../assets/imgs/home-1.svg" class="footer-cell-img" v-if="active=='home'"/>
 			<span class="footer-cell-name">Home</span>
 		</div>
 		<div :class="active=='nfts'?'footer-cell cell-active':'footer-cell'" @click="go('nfts')">
-			<img src="../assets/imgs/nfts.png" class="footer-cell-img" v-if="active!='nfts'"/>
-			<img src="../assets/imgs/nfts-1.png" class="footer-cell-img" v-if="active=='nfts'"/>
+			<img src="../assets/imgs/nfts.svg" class="footer-cell-img" v-if="active!='nfts'"/>
+			<img src="../assets/imgs/nfts-1.svg" class="footer-cell-img" v-if="active=='nfts'"/>
 			<span class="footer-cell-name">NFTs</span>
 		</div>
 		<div :class="active=='stake'?'footer-cell cell-active':'footer-cell'" @click="go('stake')">
-			<img src="../assets/imgs/stake.png" class="footer-cell-img" v-if="active!='stake'"/>
-			<img src="../assets/imgs/stake-1.png" class="footer-cell-img" v-if="active=='stake'"/>
+			<img src="../assets/imgs/stake.svg" class="footer-cell-img" v-if="active!='stake'"/>
+			<img src="../assets/imgs/stake-1.svg" class="footer-cell-img" v-if="active=='stake'"/>
 			<span class="footer-cell-name">Stake</span>
 		</div>
 		<div :class="active=='bond'?'footer-cell cell-active':'footer-cell'" @click="go('bond')">
-			<img src="../assets/imgs/bond.png" class="footer-cell-img" v-if="active!='bond'"/>
-			<img src="../assets/imgs/bond-1.png" class="footer-cell-img" v-if="active=='bond'"/>
+			<img src="../assets/imgs/bond.svg" class="footer-cell-img" v-if="active!='bond'"/>
+			<img src="../assets/imgs/bond-1.svg" class="footer-cell-img" v-if="active=='bond'"/>
 			<span class="footer-cell-name">Bond</span>
 		</div>
 		<div :class="active=='profile'?'footer-cell cell-active':'footer-cell'" @click="go('profile')">
-			<img src="../assets/imgs/Profile.png" class="footer-cell-img" v-if="active!='profile'"/>
-			<img src="../assets/imgs/Profile-1.png" class="footer-cell-img" v-if="active=='profile'"/>
+			<img src="../assets/imgs/Profile.svg" class="footer-cell-img" v-if="active!='profile'"/>
+			<img src="../assets/imgs/Profile-1.svg" class="footer-cell-img" v-if="active=='profile'"/>
 			<span class="footer-cell-name">Profile</span>
 		</div>
 	</div>

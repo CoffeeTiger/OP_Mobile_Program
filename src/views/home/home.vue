@@ -2,7 +2,7 @@
 	<div>
 		<div class="main_contain_v2">
 			<div class="ihome-top">
-				<img src="../../assets/imgs/topbanner2.png" class="itopbanner-img" />
+				<img src="../../assets/imgs/home-logo.png" class="itopbanner-img" />
 			</div>
 			<div class="ihome-desc">Get your Rewards, Any Time Any size Only at OpenPublish</div>
 		</div>
@@ -16,7 +16,7 @@
 			
 			<div class="ihome-docs">
 				<a href="https://wiki.openpublish.io" target="_blank">
-				<span class="color_yellow">Learn more about Openpublish</span>
+				<span class="ihome-docs-more">Learn more about Openpublish</span>
 				<img src="../../assets/imgs/arrow-rightv2.png" class="idimg"/>
 				</a>
 			</div>
@@ -402,7 +402,7 @@
 		font-size: 0.64rem;
 		font-weight: 600;
 		font-family: Poppins-SemiBold, Poppins;
-		color: #313131;
+		color: #313131 !important;
 	}
 	
 	.ihome-media-contain {
@@ -558,14 +558,16 @@
 	} */
 	
 	.ihome-docs{
-		width: 100%;
+		width: 100%; 
+		padding-bottom: 0.4rem;
+		text-align: center;
+	}
+	.ihome-docs .ihome-docs-more{
 		line-height: 0.7rem;
 		font-size: 0.48rem;
 		font-family: Poppins-Medium, Poppins;
 		font-weight: 500;
 		color: #A1730E;
-		padding-bottom: 0.4rem;
-		text-align: center;
 	}
 	.ihome-docs .idimg{
 		width: 0.56rem;
