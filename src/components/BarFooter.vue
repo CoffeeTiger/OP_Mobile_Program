@@ -76,7 +76,8 @@
 		overflow: hidden;
 	}
 	.footer-contain .cell-active{
-		color: #F7B62D;;
+		color: #F7B62D;
+		transition: all .3s ease-in-out .3s; 
 	} 
 	.footer-contain .footer-cell .footer-cell-img{
 		width: 0.88rem;

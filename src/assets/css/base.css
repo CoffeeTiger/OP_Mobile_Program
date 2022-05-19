@@ -213,6 +213,7 @@ textarea {
 	left: 0;
 	position: relative;
 	overflow-x: auto;
+	
 }
 .center-contain-hheader{
 	height: -webkit-calc(100% - 1.76rem);
