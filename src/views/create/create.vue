@@ -13,10 +13,11 @@
 				<div class="iinput-contain">
 					<van-field name="uploader">
 						<template #input>
-						<van-uploader v-model="uploader" multiple :max-count="1" :max-size="30*1024*1024" preview-size="100%" :upload-icon="require('../../assets/imgs/upload.png')"/>
+							<van-uploader v-model="uploader" multiple :max-count="1" :max-size="30*1024*1024"
+								preview-size="100%" :upload-icon="require('../../assets/imgs/upload.png')" />
 						</template>
 					</van-field>
-					
+
 					<!-- <img src="../../assets/imgs/upload.png" /> -->
 				</div>
 			</div>
@@ -48,7 +49,8 @@
 				<label>Description</label>
 				<div class="iinput-contain">
 					<div class="itextarea-body">
-						<textarea class="itextarea" placeholder="Provide a detailed description of your item"></textarea>
+						<textarea class="itextarea"
+							placeholder="Provide a detailed description of your item"></textarea>
 					</div>
 				</div>
 				<div class="iinput-desc">The description will be included on the item’s detail page underneath.Makdown
@@ -65,7 +67,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="ibtn-contain">
 				<div class="ibtn ibtn-publish bg_yellow">Create</div>
 			</div>
@@ -89,7 +91,7 @@
 	}
 </script>
 <style>
-	.van-cell{
+	.van-cell {
 		background: #FFFFFF00;
 		width: -webkit-calc(100% - 0.12rem);
 		min-height: 6.82rem;
@@ -97,23 +99,29 @@
 		border: 0.06rem dashed #3F4142;
 		padding: 0 !important;
 	}
-	.van-uploader__upload{
+
+	.van-uploader__upload {
 		background: #FFFFFF00;
 	}
-	.van-icon__image{
+
+	.van-icon__image {
 		width: 2.42rem;
 		height: 1.94rem;
 	}
-	.van-field__body{
+
+	.van-field__body {
 		margin: 0 auto;
 	}
-	.van-uploader{
+
+	.van-uploader {
 		margin: 0 auto;
 	}
-	.van-field__value{
+
+	.van-field__value {
 		display: flex;
 	}
-	.van-uploader__preview{
+
+	.van-uploader__preview {
 		margin: 0 auto;
 	}
 </style>

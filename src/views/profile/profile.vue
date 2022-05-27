@@ -1,7 +1,7 @@
 <template>
 	<div class="main_contain">
 		<div class="itools">
-			<div class="ibtn ibtn-swap color_yellow">Swap</div>
+			<div class="ibtn ibtn-swap color_yellow" @click="swapPage">Swap</div>
 			<van-icon name="setting-o" color="#F7B62D" class="isetting" size=".84rem" @click="set" />
 		</div>
 		<div class="iuser">
@@ -13,49 +13,66 @@
 				<div class="iuser-token">0x8862...8818</div>
 			</div>
 		</div>
-
-		<div class="isummary iaccount bg_lightgray">
-			<!-- <div class="iaccount-title color_yellow">
-				<span>My account</span>
-				<img src="../../assets/imgs/eye-open.png" class="ieyes-img" v-if="eyesOpen" @click="open" />
-				<img src="../../assets/imgs/eye-close.png" class="ieyes-img" v-if="!eyesOpen" @click="open" />
-			</div>
-			<div class="iaccount-line"></div> -->
+		<coph v-if="cophShow"></coph>
+		<veoph v-if="veophShow"></veoph>
+		<oph v-if="ophShow"></oph>
+		<balance v-if="balanceShow"></balance>
+		<div class="isummary iaccount bg_lightgray" v-if="messageShow">
 			<div class="iaccount-assets">
 				<div class="icell">
 					<div class="icell-name">
-						<span>Balance</span>
-						<img src="../../assets/imgs/eye-open.png" class="ieyes-img" v-if="eyesOpen" @click="open" />
-						<img src="../../assets/imgs/eye-close.png" class="ieyes-img" v-if="!eyesOpen" @click="open" />
-					</div>
-					<div class="icell-value">
-						<img src="../../assets/imgs/logo/oph.png" class="ilogo-oph" />
-						<span class="ivlaue" v-if="eyesOpen">{{balance}}</span>
-						<span class="ivlaue ivalue-dot" v-if="!eyesOpen">******</span>
-						<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
-					</div>
-				</div>
-
-				<div class="icell">
-					<div class="icell-name">Yesterday's reward</div>
-					<div class="icell-value">
-						<img src="../../assets/imgs/logo/oph.png" class="ilogo-oph" />
-						<div class="ivlaue" v-if="eyesOpen">{{reward}}</div>
-						<div class="ivlaue ivalue-dot" v-if="!eyesOpen">******</div>
-						<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+						<span class="iuser-balance">Balance</span>
+						<div>
+							<span class="iuser-number" @click="balanceClick">$317.78</span>
+							<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+						</div>
+						<span class="iuser-oph">1.234567 OPH</span>
 					</div>
 				</div>
 			</div>
-
-			<div class="ibtn-contain">
-				<div class="ibtn ibtn-funding bg_yellow color_black">Deposit</div>
-				<div class="ibtn ibtn-funding bg_yellow color_black">Withdraw</div>
+			<hr class="frist-name-hr" />
+			<div style="display: flex;">
+				<div class="iaccount-assets">
+					<div class="icell">
+						<div class="icell-name">
+							<span>OPH</span>
+							<div>
+								<span class="iuser-number" @click="ophClick">$55.89</span>
+								<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+							</div>
+							<span>1.234567 OPH</span>
+						</div>
+					</div>
+				</div>
+				<div class="iaccount-assets">
+					<div class="icell">
+						<div class="icell-name">
+							<span>veOPH</span>
+							<div>
+								<span class="iuser-number" @click="veophClick">$12.08</span>
+								<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+							</div>
+							<span>1.234567 veOPH</span>
+						</div>
+					</div>
+				</div>
+				<div class="iaccount-assets">
+					<div class="icell">
+						<div class="icell-name">
+							<span>cOPH</span>
+							<div>
+								<span class="iuser-number" @click="cophClick">$12.08</span>
+								<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+							</div>
+							<span>1.234567 cOPH</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div class="infts-tabs">
-			<van-tabs v-model:active="activeName" line-width="33%" line-height="0.16rem" color="#F7B62D" background="#FFFFFF00"
-				title-inactive-color="#979797" title-active-color="#FFFFFF" sticky swipeable>
+		<div class="infts-tabs" v-if="tabsShow">
+			<van-tabs v-model:active="activeName" line-width="33%" line-height="0.16rem" color="#F7B62D"
+				background="#FFFFFF00" title-inactive-color="#979797" title-active-color="#FFFFFF" sticky swipeable>
 				<van-tab title="Original" name="a">
 					<originaList></originaList>
 				</van-tab>
@@ -67,7 +84,6 @@
 				</van-tab>
 			</van-tabs>
 		</div>
-
 	</div>
 </template>
 
@@ -75,64 +91,152 @@
 	import {
 		ref
 	} from 'vue';
-	import boughtList from '../../components/profile/boughtList.vue'
-	import originaList from '../../components/profile/originaList.vue'
-	import saleList  from '../../components/profile/saleList.vue'
+	import boughtList from '@/components/profile/boughtList.vue'
+	import originaList from '@/components/profile/originaList.vue'
+	import saleList from '@/components/profile/saleList.vue'
+	import balance from '@/components/profile/balance.vue'
+	import oph from '@/components/profile/oph.vue'
+	import veoph from '@/components/profile/veoph.vue'
+	import coph from '@/components/profile/coph.vue'
 	export default {
 		name: 'profile',
 		data() {
 			return {
-				activeName:'',
+				activeName: '',
 				eyesOpen: false,
 				balance: 8858188,
-				reward: 19873
+				reward: 19873,
+				messageShow:true,
+				tabsShow:true,
+				balanceShow:false,
+				ophShow:false,
+				veophShow:false,
+				cophShow:false
 			}
 		},
-		components:{boughtList, originaList, saleList},
+		components: {
+			boughtList,
+			originaList,
+			saleList,
+			balance,
+			oph,
+			veoph,
+			coph
+		},
 		methods: {
+			cophClick(){
+				this.messageShow = false
+				this.tabsShow = false
+				this.balanceShow = false
+				this.ophShow = false
+				this.veophShow = false
+				this.cophShow = true
+			},
+			veophClick(){
+				this.messageShow = false
+				this.tabsShow = false
+				this.balanceShow = false
+				this.ophShow = false
+				this.veophShow = true
+				this.cophShow = false
+			},
+			ophClick(){
+				this.messageShow = false
+				this.tabsShow = false
+				this.balanceShow = false
+				this.ophShow = true
+				this.veophShow = false
+				this.cophShow = false
+			},
+			balanceClick() {
+				this.messageShow = false
+				this.tabsShow = false
+				this.balanceShow = true
+				this.ophShow = false
+				this.veophShow = false
+				this.cophShow = false
+			},
 			open() {
 				this.eyesOpen = !this.eyesOpen
 			},
-			set(){
-				
+			set() {
+				this.$router.push({
+					name: 'setUp',
+					params: {}
+				})
 			},
-			setup() {
-				const activeName = ref('a');
-				return {
-					activeName
-				};
+			swapPage() {
+				this.$router.push({
+					name: 'swap',
+					params: {}
+				})
 			},
 		},
 	}
 </script>
 <style>
-	.van-tabs__wrap{
+	.van-tabs__wrap {
 		width: 100%;
 		height: 2.3rem !important;
 		line-height: 2.3rem !important;
 		border-bottom: 0.04rem solid #2D2D2D;
 		background-color: #000000;
 	}
-	.van-tabs__line{
+
+	.van-tabs__line {
 		border-radius: 0 !important;
 	}
-	.van-tab--active{
+
+	.van-tab--active {
 		line-height: 0.78rem;
 		font-size: 0.56rem;
 		font-weight: 500 !important;
 		font-family: Poppins-Medium, Poppins !important;
 		color: #FFFFFF;
 	}
-	.van-tab--line{
+
+	.van-tab--line {
 		line-height: 0.78rem;
 		font-size: 0.56rem;
 		font-weight: 400;
 		font-family: Poppins-Regular, Poppins;
 		background-color: #000000;
 	}
-
 </style>
 <style scoped>
+	.frist-name-hr {
+		border: none;
+		height: 0.04rem;
+		background-color: #3F4142;
+	}
+
+	.iuser-size {
+		height: 0.66rem;
+		font-size: 0.48rem;
+		font-family: Poppins-Light, Poppins;
+		font-weight: 300;
+		color: #979797;
+		line-height: 0.7rem;
+	}
+
+	.iuser-size .iuser-oph {
+		width: 3.04rem;
+	}
+
+	.iuser-size .iuser-balance {
+		width: 1.96rem;
+	}
+
+	.iuser-number {
+		width: 2.18rem;
+		height: 0.86rem;
+		font-size: 0.6rem;
+		font-family: Poppins-Medium, Poppins;
+		font-weight: 500;
+		color: #FFFFFF;
+		line-height: 0.92rem;
+	}
+
 	.itools {
 		width: 100%;
 		display: flex;
@@ -145,10 +249,12 @@
 		height: 0.84rem;
 		margin: 0.58rem 0 0.66rem;
 	}
-	.itools .isetting:active{
+
+	.itools .isetting:active {
 		opacity: .6;
 	}
-	.itools .ibtn-swap{
+
+	.itools .ibtn-swap {
 		width: 2.28rem;
 		height: 0.9rem;
 		line-height: 0.9rem;
@@ -223,7 +329,7 @@
 
 	.iaccount .iaccount-assets {
 		width: -webkit-calc(100% - 0.96rem);
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -232,7 +338,7 @@
 	.iaccount .iaccount-assets .icell {
 		/* width: 50%;
 		overflow: hidden; */
-		width: 5.12rem;
+		width: 4.6rem;
 	}
 
 	.iaccount .iaccount-assets .icell-name {
@@ -242,7 +348,7 @@
 		font-weight: 300;
 		color: #979797;
 	}
-	
+
 	.iaccount .iaccount-assets .icell-name .ieyes-img {
 		width: 0.56rem;
 		height: 0.3rem;
@@ -286,6 +392,7 @@
 	.iaccount .iaccount-assets .iarrow-right {
 		width: 0.16rem;
 		height: 0.28rem;
+		margin-left: 0.08rem;
 	}
 
 	.iaccount .ibtn-contain {
@@ -305,10 +412,9 @@
 		font-family: Poppins-Medium, Poppins;
 		font-weight: 500;
 	}
-	
-	.infts-tabs{
+
+	.infts-tabs {
 		width: 100%;
 		margin-top: 0.52rem;
 	}
-	
 </style>

@@ -53,10 +53,10 @@
 				<div class="ititle-contain">
 					<div class="ititle color_yellow">Activity list</div>
 					<div class="imore">More
-					<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+						<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
 					</div>
 				</div>
-								
+
 				<div class="infts-panel bg_lightgray" @click="goBuy('2222')">
 					<div class="ipanel-body">
 						<div class="ibody-left">
@@ -67,9 +67,9 @@
 								<div class="ititle color_yellow">Angela Long LongLongLongLongLong</div>
 								<div class="itimes">
 									<span class="itimes-cell">12</span>
-									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<img src="../../assets/imgs/dot2.png" class="idot" />
 									<span class="itimes-cell">28</span>
-									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<img src="../../assets/imgs/dot2.png" class="idot" />
 									<span class="itimes-cell">19</span>
 								</div>
 							</li>
@@ -90,7 +90,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 				<div class="infts-panel bg_lightgray" @click="goBuy('1111')">
 					<div class="ipanel-body">
 						<div class="ibody-left">
@@ -101,9 +101,9 @@
 								<div class="ititle color_yellow">Angela Long LongLongLongLongLong</div>
 								<div class="itimes">
 									<span class="itimes-cell">12</span>
-									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<img src="../../assets/imgs/dot2.png" class="idot" />
 									<span class="itimes-cell">28</span>
-									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<img src="../../assets/imgs/dot2.png" class="idot" />
 									<span class="itimes-cell">19</span>
 								</div>
 							</li>
@@ -124,7 +124,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 				<div class="infts-panel bg_lightgray" @click="goBuy('3')">
 					<div class="ipanel-body">
 						<div class="ibody-left">
@@ -135,9 +135,9 @@
 								<div class="ititle color_yellow">Angela Long LongLongLongLongLong</div>
 								<div class="itimes">
 									<span class="itimes-cell">12</span>
-									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<img src="../../assets/imgs/dot2.png" class="idot" />
 									<span class="itimes-cell">28</span>
-									<img src="../../assets/imgs/dot2.png" class="idot"/>
+									<img src="../../assets/imgs/dot2.png" class="idot" />
 									<span class="itimes-cell">19</span>
 								</div>
 							</li>
@@ -158,7 +158,7 @@
 						</ul>
 					</div>
 				</div>
-			
+
 
 			</div>
 
@@ -173,15 +173,27 @@
 			return {
 				ustat: false
 			}
-		},methods:{
-			publish(){
-				this.$router.push({name:'publishlist', params:{}})
+		},
+		methods: {
+			publish() {
+				this.$router.push({
+					name: 'publishlist',
+					params: {}
+				})
 			},
-			create(){
-				this.$router.push({name:'create', params:{}})
+			create() {
+				this.$router.push({
+					name: 'create',
+					params: {}
+				})
 			},
-			goBuy(id){
-				this.$router.push({name:'active', params:{id: id}})
+			goBuy(id) {
+				this.$router.push({
+					name: 'active',
+					params: {
+						id: id
+					}
+				})
 			},
 		}
 	}
@@ -247,7 +259,7 @@
 		justify-content: flex-start;
 		align-items: center;
 	}
-	
+
 	.infts-primay-nft .inft-infos .icell-values .ivalue .ius-dol {
 		font-size: 0.48rem;
 		font-weight: 300;
@@ -336,8 +348,8 @@
 		font-weight: 400;
 		color: #B4B4B4;
 	}
-	
-	.infts-activity-list .ititle-contain .imore .iarrow-right{
+
+	.infts-activity-list .ititle-contain .imore .iarrow-right {
 		width: 0.16rem;
 		height: 0.28rem;
 		margin-left: 0.2rem;
@@ -349,8 +361,8 @@
 		border-radius: 0.36rem;
 		border: 0.04rem solid #3F4142;
 	}
-	
-	.infts-panel:active{
+
+	.infts-panel:active {
 		opacity: 0.6;
 	}
 
@@ -385,10 +397,12 @@
 		justify-content: flex-start;
 		align-items: center;
 	}
-	.infts-panel .ipanel-body .ibody-right .li-mid-v1{
+
+	.infts-panel .ipanel-body .ibody-right .li-mid-v1 {
 		margin-top: 0.4rem;
 	}
-	.infts-panel .ipanel-body .ibody-right .li-mid-v2{
+
+	.infts-panel .ipanel-body .ibody-right .li-mid-v2 {
 		margin-top: 0.3rem;
 	}
 

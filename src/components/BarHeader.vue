@@ -1,11 +1,17 @@
 <template>
 	<div class="van-safe-area-top header-contain">
-		<div class="header-left" @click="clickLeft"> 
-			<img src="../assets/imgs/arrow-left.png" class="header-icon-left"/>
+		<div class="header-left" @click="clickLeft">
+			<img src="../assets/imgs/arrow-left.png" class="header-icon-left" />
 		</div>
 		<div class="header-middle color_yellow">{{$t(title)}}</div>
 		<div class="header-right" @click="clickRight">
-			<img src="../assets/imgs/share.png" class="header-icon-right" v-if="showShare"/>
+			<img src="../assets/imgs/share.png" class="header-icon-right" v-if="showShare" />
+			<div v-if="showPublish" class="header-publish-list">
+				<img src="../assets/imgs/publish.svg" @click="publishClick" class="header-icon-right" />
+				<img src="../assets/imgs/original-transfer.svg" class="header-icon-right" />
+				<img src="../assets/imgs/share.png" class="header-icon-right" />
+			</div>
+			<div class="header-logout" v-if="showWordsRight">Log Out</div>
 		</div>
 	</div>
 </template>
@@ -53,7 +59,15 @@
 				type: Boolean,
 				default: true
 			},
+			showWordsRight: {
+				type: Boolean,
+				default: false
+			},
 			showShare: {
+				type: Boolean,
+				default: false
+			},
+			showPublish: {
 				type: Boolean,
 				default: false
 			}
@@ -68,9 +82,15 @@
 			    this.$router.push('login')
 			  }
 			} */
-			
+
 		},
 		methods: {
+			publishClick(){
+				this.$router.push({
+					name: 'active',
+					params: {}
+				})
+			},
 			clickLeft() {
 				let _backroute = this.$route.name
 				if (_backroute == 'deposit2') {
@@ -80,7 +100,7 @@
 							p: 1
 						}
 					})
-				} else if(_backroute == 'conn'){
+				} else if (_backroute == 'conn') {
 					this.$router.go(-2)
 				} else {
 					this.$router.go(-1)
@@ -94,20 +114,49 @@
 </script>
 
 <style scoped="scoped">
-	.header-left{
+	.header-publish-list {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.header-transfer {
+		width: 0.8rem;
+		height: 0.78rem;
+		margin: 0.5rem 0.82rem 0.6rem 0rem;
+	}
+
+	.header-publish {
+		width: 0.8rem;
+		height: 0.78rem;
+		margin: 0.46rem 0.8rem 0.52rem 0rem;
+	}
+
+	.header-logout {
+		margin-right: 0.6rem;
+		color: #F7B62D;
+		font-size: 0.56rem;
+		line-height: 0.84rem;
+		margin-top: 0.5rem;
+	}
+
+	.header-left {
 		width: 3rem;
 	}
-	.header-right{
+
+	.header-right {
 		width: 3rem;
 		text-align: end;
 	}
-	.header-left:active{
+
+	.header-left:active {
 		opacity: 0.6;
 	}
-	.header-right:active{
+
+	.header-right:active {
 		opacity: 0.6;
 	}
-	.header-middle{
+
+	.header-middle {
 		width: 9rem;
 		height: 1.76rem;
 		line-height: 1.76rem;
@@ -119,6 +168,7 @@
 		font-family: Poppins-SemiBold, Poppins;
 		text-align: center;
 	}
+
 	.header-icon-left {
 		width: 0.64rem;
 		height: 0.64rem;
