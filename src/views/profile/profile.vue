@@ -200,7 +200,7 @@
 		font-size: 0.56rem;
 		font-weight: 400;
 		font-family: Poppins-Regular, Poppins;
-		background-color: #000000;
+		background-color: #121619;
 	}
 </style>
 <style scoped>

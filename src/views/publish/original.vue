@@ -28,7 +28,7 @@
 			<div :class="open2?'ibody':'ibody ibody-close'">
 				<div class="publish-detail">
 					<div class="iname">Contract Address Token ID Token standard Blackchain Number</div>
-					<div class="ivalue">0x3e11…18fb 80277467893097… ERC-721 Ethereum 44/100</div>
+					<div class="publish-detail-ivalue">0x3e11…18fb 80277467893097… ERC-721 Ethereum 44/100</div>
 				</div>
 			</div>
 
@@ -130,7 +130,7 @@
 		overflow: hidden;
 	}
 
-	.ivalue {
+	.publish-detail-ivalue {
 		text-align: end;
 	}
 
