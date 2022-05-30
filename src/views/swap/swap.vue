@@ -28,9 +28,9 @@
 				<div class="isummary-v2 setsize-s2">
 					<div>Auto Router API?</div>
 					<div class="swap-btm">
-						<div @click="btm(1)" style="padding-right: 0.08rem" :class="swapActive?'swap-active':''">On
+						<div @click="btm(1)" style="padding-left: 0.08rem" :class="swapActive?'swap-active':''">On
 						</div>
-						<div @click="btm(2)" style="padding-left: 0.08rem" :class="swapInActive?'swap-inactive':''">Off
+						<div @click="btm(2)" style="padding-right: 0.2rem" :class="swapInActive?'swap-inactive':''">Off
 						</div>
 					</div>
 				</div>
@@ -38,16 +38,19 @@
 					<div>Expert Mode?</div>
 					<div class="swap-btm">
 						<div @click="btm(3)" style="padding-left: 0.08rem" :class="swapMode?'swap-active':''">On</div>
-						<div @click="btm(4)" :class="swapInMode?'swap-inactive':''">Off</div>
+						<div @click="btm(4)" style="padding-right: 0.2rem" :class="swapInMode?'swap-inactive':''">Off
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="isummary bg_lightgray money-list">
 				<div class="isummary-v2">
 					<div class="money-cell">0.0</div>
-					<div class="money-cell money-num money-ico">
-						<div class="iname">ETH</div>
-						<img class="money-img" src="@/assets/imgs/arrow-down.png" />
+
+					<div class="money-cell money-num">
+						<select v-model="ethList" class="icon-select1">
+							<option value="eth">ETH</option>
+						</select>
 					</div>
 				</div>
 				<div class="isummary-v2">
@@ -62,7 +65,7 @@
 				<div class="isummary-v2">
 					<div class="money-cell">0.0</div>
 					<div class="money-cell money-num">
-						<div class="iname">OPH</div>
+						<div class="swap-iname">OPH</div>
 					</div>
 				</div>
 				<div class="isummary-v2">
@@ -78,7 +81,9 @@
 				<div class="money-deail-d2">
 					<div class="money-oil-quantity">
 						<img class="money-deail-img" src="@/assets/imgs/swap-come.svg" />
-						<div class="money-deail-size">$15.16</div>
+						<select v-model="countList" class="icon-select2">
+							<option value="count">$15.16</option>
+						</select>
 					</div>
 					<div class="money-img-i2">
 						<img class="money-img" src="@/assets/imgs/arrow-down.png" />
@@ -86,7 +91,7 @@
 				</div>
 			</div>
 			<van-popup v-show="show==true" v-model="show" class="sawp-popup">
-				<div class="isummary-v2 swap-popup-detail">
+				<div class="isummary-v2 swap-popup-detail swap-s2">
 					<div>Expected Output</div>
 					<div>0.217172 OPH</div>
 				</div>
@@ -125,7 +130,9 @@
 				swapActive: true,
 				swapInActive: false,
 				swapMode: false,
-				swapInMode: true
+				swapInMode: true,
+				ethList: 'eth',
+				countList: 'count'
 			}
 		},
 		methods: {
@@ -144,14 +151,6 @@
 					this.swapMode = false
 				}
 
-			},
-			onInput(checked) {
-				Dialog.confirm({
-					title: '提醒',
-					message: '是否切换开关？'
-				}).then(() => {
-					this.checked = checked;
-				});
 			},
 			set() {
 				this.setShow = !this.setShow
@@ -188,6 +187,35 @@
 </script>
 
 <style scoped>
+	.icon-select2 {
+		cursor: pointer;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background-color: #252525;
+		color: #ffffff;
+		margin-left: 0.4rem;
+		border: none;
+		font-size: 0.48rem;
+		line-height: 0.66rem;
+	}
+
+	.icon-select1 {
+		line-height: 1.04rem;
+		width: 2.5rem;
+		cursor: pointer;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background: url("../../assets/imgs/arrow-down.png") no-repeat right center transparent;
+		background-size: 0.28rem 0.16rem;
+		border: none;
+		font-size: 0.48rem;
+		color: #FFFFFF;
+		text-align: left;
+		margin-left: 10px;
+	}
+
 	.swap-img {
 		position: absolute;
 		top: 6.26rem;
@@ -315,7 +343,11 @@
 	.swap-popup-detail {
 		font-size: 0.48rem;
 		margin-bottom: 0.24rem;
-		margin-top: 0.38rem;
+		/* 	margin-top: 0.38rem; */
+	}
+
+	.swap-s2 {
+		margin-top: 0.38rem
 	}
 
 	.frist-name-hr {
@@ -424,8 +456,10 @@
 		border-radius: 0.52rem;
 	}
 
-	.iname {
-		padding-left: 0.3rem
+	.swap-iname {
+		padding-left: 0.3rem;
+		font-size: 0.48rem;
+		color: #ffffff;
 	}
 
 	.money-deail-img {

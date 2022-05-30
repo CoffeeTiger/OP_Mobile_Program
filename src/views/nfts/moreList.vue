@@ -1,59 +1,31 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<div class="ilevel-0-page-title color_yellow">NFTs</div>
-			<div class="infts-primay-nft bg_lightgray">
-				<div class="inft-imgs">
-					<img src="../../assets/imgs/nft-example.jpg" class="inft-img" />
-				</div>
-				<div class="inft-infos">
-					<div class="icell icell-title">
-						<div class="ititle">Cryptomorie</div>
-						<div class="ivalue">
-							<div class="iprogress">
-								<div class="iprogress-inner bg_yellow" style="width: 50%;">50/100</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="icell icell-values">
-						<div class="ivalue">
-							<img src="../../assets/imgs/logo/eth.png" class="logo-eth" />
-							<div class="">0.36<span class="ius-dol">($302.11)</span> </div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="infts-btns-contain">
-				<div class="ibtn infts-btns bg_lightgray" @click="create">Create</div>
-				<div class="ibtn infts-btns bg_yellow color_black" @click="publish">Publish</div>
-			</div>
-
-			<!-- <div class="marquee bg_lightgray">
-				<div class="con">
-					<div class="cons cons1">OPENPUBLISH <span class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span></div>
-					<div class="cons"> OPENPUBLISH <span class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span> OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span>OPENPUBLISH <span
-							class="color_blue">OPENPUBLISH</span></div>
-				</div>
-			</div> -->
-
 			<div class="infts-activity-list">
 				<div class="ititle-contain">
-					<div class="ititle color_yellow">Activity list</div>
-					<div class="imore" @click="goMoreList">More
-						<img src="../../assets/imgs/arrow-right.png" class="iarrow-right" />
+					<div class="money-cell money-num">
+						<select v-model="compieted" class="icon-select1">
+							<option value="Com">Compieted</option>
+						</select>
+					</div>
+					<div class="money-cell money-num" style="width: 2.76rem;">
+						<select v-model="nft" class="icon-select1" style="width: 2.76rem;">
+							<option value="nft">NFT</option>
+						</select>
+					</div>
+					<div class="money-cell money-num money-num-n2" style="padding-right: 0rem;font-size: 0.52rem">
+						<input v-model="min" placeholder="Min" class="more-input" />
+						To
+						<input v-model="max" placeholder="Max" class="more-input" style="margin-left: 0.12rem;" />
+						<div class="more-input-img">
+							<div @click="minClick" style="line-height: 0.82rem;height: 0.82rem;">
+								<img src="../../assets/imgs/arrow-down.svg" />
+							</div>
+							<hr style="margin:0rem; width: 0.94rem;height: 0.04rem;background-color: #3F4142;border: #3F4142;"/>
+							<div @click="maxClick" style="line-height: 0.82rem;height: 0.82rem;">
+								<img src="../../assets/imgs/arrow-down.svg" />
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -171,13 +143,23 @@
 		name: 'nfts',
 		data() {
 			return {
-				ustat: false
+				ustat: false,
+				compieted: 'Com',
+				nft: 'nft',
+				min:'',
+				max:''
 			}
 		},
 		methods: {
-			goMoreList(){
+			maxClick(){
+				this.max++
+			},
+			minClick(){
+				this.min++
+			},
+			goMoreList() {
 				this.$router.push({
-					name: 'moreList',
+					name: 'publishlist',
 					params: {}
 				})
 			},
@@ -206,6 +188,62 @@
 </script>
 
 <style scoped>
+	.more-input-img {
+		width: 0.94rem;
+		border-left: 0.02rem solid #3F4142;
+		display: grid;
+		text-align: center;
+	}
+
+	.more-input {
+		width: 1.2rem;
+		height: 1.76rem;
+		background: #252525;
+		border-radius: 0.32rem;
+		border: none;
+		font-size: 0.52rem;
+		line-height: 1.76rem;
+		color: #FFFFFF;
+	}
+
+	.icon-select1 {
+		cursor: pointer;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background: url("../../assets/imgs/arrow-down.png") no-repeat right center transparent;
+		background-size: 0.34rem 0.2rem;
+		border: none;
+		font-size: 0.52rem;
+		color: #FFFFFF;
+		width: 4.14rem;
+		height: 1.76rem;
+		border-radius: 0.32rem;
+
+	}
+
+	.money-num-n2 {
+		display: flex;
+		
+	}
+
+	.money-num {
+		width: 4.14rem;
+		height: 1.76rem;
+		text-align: left;
+		line-height: 1.76rem;
+		background: #252525;
+		box-shadow: 0rem 0.08rem 0.16rem 0rem rgba(0, 0, 0, 0.3);
+		border-radius: 0.32rem;
+		padding-right: 0.28rem;
+		border: 0.04rem solid #3F4142;
+		padding-left: 0.28rem;
+	}
+
+	.money-cell {
+		color: #979797
+	}
+
 	.infts-primay-nft {
 		width: -webkit-calc(100% - 0.08rem);
 		border-radius: 0.64rem;

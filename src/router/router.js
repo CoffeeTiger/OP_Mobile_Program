@@ -59,6 +59,7 @@ const routes = [{
 			login: false,
 			title: 'OPH-LP',
 			showWordsRight:0,
+			showProflie:0
 		},
 		component: () => import('@/views/bond/bondPurchase.vue'),
 	}, {
@@ -70,7 +71,8 @@ const routes = [{
 			showFooter: 1,
 			login: false,
 			showWordsRight:0,
-			showPublish:0
+			showPublish:0,
+			showProflie:0
 		},
 		component: () => import('@/views/profile/profile.vue'),
 	},
@@ -85,9 +87,70 @@ const routes = [{
 			title: '',
 			showWordsRight:0,
 			share:0,
-			showPublish:1
+			showPublish:1,
+			showProflie:0
 		},
 		component: () => import('@/views/publish/original.vue'),
+	},
+	{
+		path: '/balance',
+		name: 'balance',
+		meta: {
+			index: 1,
+			showHeader: 1,
+			showFooter: 0,
+			login: false,
+			title:'',
+			showWordsRight:0,
+			showPublish:0,
+			showProflie:0
+		},
+		component: () => import('@/views/profile/balance.vue'),
+	},
+	{
+		path: '/oph',
+		name: 'oph',
+		meta: {
+			index: 1,
+			showHeader: 1,
+			showFooter: 0,
+			login: false,
+			title:'',
+			showWordsRight:0,
+			showPublish:0,
+			showProflie:0
+		},
+		component: () => import('@/views/profile/oph.vue'),
+	},
+	{
+		path: '/coph',
+		name: 'coph',
+		meta: {
+			index: 1,
+			showHeader: 1,
+			showFooter: 0,
+			login: false,
+			title:'',
+			showWordsRight:0,
+			showPublish:0,
+			showProflie:0
+		},
+		component: () => import('@/views/profile/coph.vue'),
+	},
+	{
+		path: '/veoph',
+		name: 'veoph',
+		meta: {
+			index: 1,
+			showHeader: 1,
+			showFooter: 0,
+			login: false,
+			title:'',
+			showWordsRight:0,
+			showPublish:0,
+			showProflie:0
+		},
+		component: () => import('@/views/profile/veoph.vue'),
 	},
 	{
 		path: '/setUp',
@@ -100,7 +163,8 @@ const routes = [{
 			title: '',
 			showWordsRight:1,
 			showPublish:0,
-			share:0
+			share:0,
+			showProflie:0
 		},
 		component: () => import('@/views/setUp/setUp.vue'),
 	},
@@ -115,10 +179,28 @@ const routes = [{
 			showWordsRight:0,
 			title: 'swap',
 			showPublish:0,
-			share:0
+			share:0,
+			showProflie:0
 		},
 		component: () => import('@/views/swap/swap.vue'),
-	}, {
+	}, 
+	{
+		path: '/moreList',
+		name: 'moreList',
+		meta: {
+			index: 1,
+			showHeader: 0,
+			showFooter: 0,
+			login: false,
+			showWordsRight:0,
+			title: 'Activity list',
+			showPublish:0,
+			share:0,
+			showProflie:0
+		},
+		component: () => import('@/views/nfts/moreList.vue'),
+	}, 
+	{
 		path: '/publishlist',
 		name: 'publishlist',
 		meta: {
@@ -129,7 +211,8 @@ const routes = [{
 			showWordsRight:0,
 			title: 'Publish',
 			showPublish:0,
-			share:0
+			share:0,
+			showProflie:0
 		},
 		component: () => import('@/views/publish/publishList.vue'),
 	}, 
@@ -144,7 +227,9 @@ const routes = [{
 			title: 'Publish',
 			share: 1,
 			showWordsRight:0,
-			showPublish:0
+			showPublish:0,
+			showProflie:0
+			
 		},
 		component: () => import('@/views/publish/publish.vue'),
 	}, {
@@ -169,7 +254,8 @@ const routes = [{
 			title: '',
 			share: 1,
 			showWordsRight:0,
-			showPublish:0
+			showPublish:0,
+			showProflie:0
 		},
 		component: () => import('@/views/nfts/activeList.vue'),
 	}, {
@@ -183,7 +269,8 @@ const routes = [{
 			title: '',
 			share: 1,
 			showWordsRight:0,
-			showPublish:0
+			showPublish:0,
+			showProflie:0
 		},
 		component: () => import('@/views/nfts/active.vue'),
 	}, {

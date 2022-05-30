@@ -13,11 +13,7 @@
 				<div class="iuser-token">0x8862...8818</div>
 			</div>
 		</div>
-		<coph v-if="cophShow"></coph>
-		<veoph v-if="veophShow"></veoph>
-		<oph v-if="ophShow"></oph>
-		<balance v-if="balanceShow"></balance>
-		<div class="isummary iaccount bg_lightgray" v-if="messageShow">
+		<div class="isummary iaccount bg_lightgray">
 			<div class="iaccount-assets">
 				<div class="icell">
 					<div class="icell-name">
@@ -70,7 +66,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="infts-tabs" v-if="tabsShow">
+		<div class="infts-tabs">
 			<van-tabs v-model:active="activeName" line-width="33%" line-height="0.16rem" color="#F7B62D"
 				background="#FFFFFF00" title-inactive-color="#979797" title-active-color="#FFFFFF" sticky swipeable>
 				<van-tab title="Original" name="a">
@@ -94,10 +90,6 @@
 	import boughtList from '@/components/profile/boughtList.vue'
 	import originaList from '@/components/profile/originaList.vue'
 	import saleList from '@/components/profile/saleList.vue'
-	import balance from '@/components/profile/balance.vue'
-	import oph from '@/components/profile/oph.vue'
-	import veoph from '@/components/profile/veoph.vue'
-	import coph from '@/components/profile/coph.vue'
 	export default {
 		name: 'profile',
 		data() {
@@ -105,56 +97,38 @@
 				activeName: '',
 				eyesOpen: false,
 				balance: 8858188,
-				reward: 19873,
-				messageShow:true,
-				tabsShow:true,
-				balanceShow:false,
-				ophShow:false,
-				veophShow:false,
-				cophShow:false
+				reward: 19873
 			}
 		},
 		components: {
 			boughtList,
 			originaList,
-			saleList,
-			balance,
-			oph,
-			veoph,
-			coph
+			saleList
 		},
 		methods: {
-			cophClick(){
-				this.messageShow = false
-				this.tabsShow = false
-				this.balanceShow = false
-				this.ophShow = false
-				this.veophShow = false
-				this.cophShow = true
+			cophClick() {
+				this.$router.push({
+					name: 'coph',
+					params: {}
+				})
 			},
-			veophClick(){
-				this.messageShow = false
-				this.tabsShow = false
-				this.balanceShow = false
-				this.ophShow = false
-				this.veophShow = true
-				this.cophShow = false
+			veophClick() {
+				this.$router.push({
+					name: 'veoph',
+					params: {}
+				})
 			},
-			ophClick(){
-				this.messageShow = false
-				this.tabsShow = false
-				this.balanceShow = false
-				this.ophShow = true
-				this.veophShow = false
-				this.cophShow = false
+			ophClick() {
+				this.$router.push({
+					name: 'oph',
+					params: {}
+				})
 			},
 			balanceClick() {
-				this.messageShow = false
-				this.tabsShow = false
-				this.balanceShow = true
-				this.ophShow = false
-				this.veophShow = false
-				this.cophShow = false
+				this.$router.push({
+					name: 'balance',
+					params: {}
+				})
 			},
 			open() {
 				this.eyesOpen = !this.eyesOpen

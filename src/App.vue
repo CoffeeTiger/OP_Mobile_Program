@@ -1,6 +1,7 @@
 <template>
 	<BarHeader :title="showBarHeader_title" :leftIcon="showBarHeader_leftIcon" :leftTitle="showBarHeader_leftTitle"
-		:rightIcon="showBarHeader_rightIcon" :rightTitle="showBarHeader_rightTitle" :showWordsRight="showWordsRight" :showPublish="showPublish"  :showShare="showShare" v-if="showBarHeader" />
+		:rightIcon="showBarHeader_rightIcon" :showProflie="showProflie" :rightTitle="showBarHeader_rightTitle"
+		:showWordsRight="showWordsRight" :showPublish="showPublish" :showShare="showShare" v-if="showBarHeader" />
 
 	<!-- <transition name="van-slide-right">
 		<router-view class="center-contain center-contain-hheader_hfooter"/>
@@ -9,7 +10,7 @@
 	<router-view v-slot="{ Component }">
 		<transition name="van-fade" mode="out-in" v-if="showBarHeader && showFooterBar">
 			<keep-alive>
-				<component :is="Component" class="center-contain center-contain-hheader_hfooter"  />
+				<component :is="Component" class="center-contain center-contain-hheader_hfooter" />
 			</keep-alive>
 		</transition>
 		<transition name="van-fade" mode="out-in" v-if="showBarHeader && !showFooterBar">
@@ -22,7 +23,7 @@
 		</transition>
 		<transition name="van-fade" mode="out-in" v-if="!showBarHeader && !showFooterBar">
 			<keep-alive>
-				<component :is="Component" class="center-contain"  />
+				<component :is="Component" class="center-contain" />
 			</keep-alive>
 		</transition>
 	</router-view>
@@ -47,60 +48,69 @@
 				showBarHeader_leftTitle: '',
 				showBarHeader_rightIcon: '',
 				showBarHeader_rightTitle: '',
-				showShare:false,
+				showShare: false,
 				showWordsRight: false,
 				showFooterBar: false,
-				showPublish:false
+				showPublish: false,
+				showProflie: false
 			}
 		},
 		watch: {
 			$route(to, from) {
 				/* console.info(to)
 				console.info(from) */
-				let index  = to.meta.index
+				let index = to.meta.index
 				/* let showHeader = to.meta.showHeader
 				let showFooter = to.meta.showFooter */
-				if(index == 0){
+				if (index == 0) {
 					this.showBarHeader = false
 					this.showFooterBar = true
-				} else if(index == 1){
+				} else if (index == 1) {
 					this.showBarHeader = true
 					this.showFooterBar = false
 					this.showBarHeader_title = to.meta.title
-				} else if(index == 2){
+				} else if (index == 2) {
 					this.showBarHeader = false
 					this.showFooterBar = false
 				} else {
 					this.showBarHeader = false
 					this.showFooterBar = false
 				}
-				
+
 				let share = to.meta.share
-				if(!(share == undefined || share == null)){
-					if(share == 1){
+				if (!(share == undefined || share == null)) {
+					if (share == 1) {
 						this.showShare = true
-					} else{
+					} else {
 						this.showShare = false
 					}
 				}
-				
+
 				let showWordsRight = to.meta.showWordsRight
-				if(!(showWordsRight == undefined || showWordsRight == null)){
-					if(showWordsRight == 0){
+				if (!(showWordsRight == undefined || showWordsRight == null)) {
+					if (showWordsRight == 0) {
 						this.showWordsRight = false
-					} else{
+					} else {
 						this.showWordsRight = true
 					}
 				}
 				let showPublish = to.meta.showPublish
-				if(!(showPublish == undefined || showPublish == null)){
-					if(showPublish == 0){
+				if (!(showPublish == undefined || showPublish == null)) {
+					if (showPublish == 0) {
 						this.showPublish = false
-					} else{
+					} else {
 						this.showPublish = true
 					}
 				}
-				
+
+				let showProflie = to.meta.showProflie
+				if (!(showProflie == undefined || showProflie == null)) {
+					if (showProflie == 0) {
+						this.showProflie = false
+					} else {
+						this.showProflie = true
+					}
+				}
 			}
 		},
 

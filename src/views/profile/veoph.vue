@@ -1,5 +1,14 @@
 <template>
-	<div>
+	<div class="main_contain">
+		<div class="iuser">
+			<div class="iuser-header">
+				<img src="../../assets/imgs/userheader.png" class="iheader-img" />
+			</div>
+			<div class="iuser-info">
+				<div class="iuser-name color_yellow">Hugo Saavedra</div>
+				<div class="iuser-token">0x8862...8818</div>
+			</div>
+		</div>
 		<div class="isummary iaccount bg_lightgray">
 			<div class="iaccount-assets">
 				<div class="icell">
@@ -12,14 +21,15 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
 		<div class="ipanel bg_lightgray">
 			<div class="ipanel-title ipanel-title-v2">
 				<table class="itable itable-v2">
 					<thead>
-						<th class="th-25 th-frist" style="font-size: 0.64rem;">All
-							<img src="@/assets/imgs/arrow-down.png" class="arrow-down-d1" />
+						<th class="th-25 th-frist">
+							<select v-model="All" class="icon-select1">
+								<option value="all">All</option>
+							</select>
 						</th>
 					</thead>
 				</table>
@@ -35,8 +45,7 @@
 					</div>
 					<div style="display: flex;">
 						<div class="table-list-right-num">1.3339</div>
-						<img style="height: 0.4rem;width: 0.1rem;margin: 1.02rem 0rem 0.94rem 0rem"
-							src="@/assets/imgs/profile-more.svg" />
+						<img class="oph-more" src="@/assets/imgs/profile-more.svg" />
 					</div>
 				</div>
 				<div class="table-list table-list-border">
@@ -49,8 +58,7 @@
 					</div>
 					<div style="display: flex;">
 						<div class="table-list-right-num">1.3339</div>
-						<img style="height: 0.4rem;width: 0.1rem;margin: 1.02rem 0rem 0.94rem 0rem"
-							src="@/assets/imgs/profile-more.svg" />
+						<img class="oph-more" src="@/assets/imgs/profile-more.svg" />
 					</div>
 
 				</div>
@@ -64,8 +72,7 @@
 					</div>
 					<div style="display: flex;">
 						<div class="table-list-right-num">1.3339</div>
-						<img style="height: 0.4rem;width: 0.1rem;margin: 1.02rem 0rem 0.94rem 0rem"
-							src="@/assets/imgs/profile-more.svg" />
+						<img class="oph-more" src="@/assets/imgs/profile-more.svg" />
 					</div>
 
 				</div>
@@ -75,9 +82,6 @@
 </template>
 
 <script>
-	import {
-		ref
-	} from 'vue';
 	export default {
 		name: 'profile',
 		data() {
@@ -85,16 +89,11 @@
 				activeName: '',
 				eyesOpen: false,
 				balance: 8858188,
-				reward: 19873
+				reward: 19873,
+				All: 'all'
 			}
 		},
 		methods: {
-			balanceClick() {
-
-			},
-			open() {
-				this.eyesOpen = !this.eyesOpen
-			},
 			set() {
 				this.$router.push({
 					name: 'setUp',
@@ -111,6 +110,26 @@
 	}
 </script>
 <style scoped>
+	.oph-more {
+		height: 0.4rem;
+		width: 0.1rem;
+		margin: 1.02rem 0rem 0.94rem 0rem
+	}
+
+	.icon-select1 {
+		width: 1.4rem;
+		line-height: 0.8rem;
+		cursor: pointer;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background: url("../../assets/imgs/arrow-down.png") no-repeat right center transparent;
+		background-size: 0.34rem 0.2rem;
+		border: none;
+		font-size: 0.64rem;
+		color: #FFFFFF;
+	}
+
 	.table-row-num1 {
 		display: grid;
 		font-family: Poppins-Regular, Poppins;
@@ -170,9 +189,6 @@
 		width: 0.34rem;
 		height: 0.2rem;
 		margin-left: 0.12rem;
-		/* width: 0.34rem;
-		height: 0.34rem;
-		background: #979797; */
 	}
 
 	.frist-name-hr {
@@ -320,16 +336,81 @@
 		color: #979797;
 	}
 
-	.iaccount .iaccount-assets .icell-name .ieyes-img {
-		width: 0.56rem;
-		height: 0.3rem;
-		margin: 0 0.48rem;
+	.icon-select1 {
+		width: 1.4rem;
+		line-height: 0.8rem;
+		cursor: pointer;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background: url("../../assets/imgs/arrow-down.png") no-repeat right center transparent;
+		background-size: 0.34rem 0.2rem;
+		border: none;
+		font-size: 0.64rem;
+		color: #FFFFFF;
 	}
 
+	.table-row-num1 {
+		display: grid;
+		font-family: Poppins-Regular, Poppins;
+		height: 0.72rem;
+		font-weight: 400;
+		line-height: 0.72rem;
+		margin: 0.48rem 0rem;
+	}
 
-	.iaccount .iaccount-assets .iarrow-right {
-		width: 0.16rem;
-		height: 0.28rem;
-		margin-left: 0.08rem;
+	.table-list-right-num {
+		margin: 0.84rem 0.16rem 0.8rem 0;
+		width: 1.64rem;
+		height: 0.72rem;
+		font-size: 0.56rem;
+		font-family: Poppins-Regular, Poppins;
+		font-weight: 400;
+		color: #FFFFFF;
+		line-height: 0.84rem;
+	}
+
+	.table-row-num1 .table-row-num-n2 {
+		/* width: 1.52rem; */
+		font-size: 0.52rem;
+		color: #979797;
+	}
+
+	.table-row-num1 .table-row-num {
+		width: 1.2rem;
+		font-size: 0.56rem;
+		color: #FFFFFF;
+	}
+
+	.table-row-img {
+		width: 1.2rem;
+		height: 1.26rem;
+		margin: 0.56rem 0.08rem 0.54rem -0.14rem;
+	}
+
+	.table-row {
+		display: flex;
+	}
+
+	.table-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0rem 0.6rem;
+
+	}
+
+	.table-list-border {
+		border-bottom: 0.02rem solid #3F4142;
+		/* margin: 0rem 0.6rem; */
+	}
+
+	.arrow-down-d1 {
+		width: 0.34rem;
+		height: 0.2rem;
+		margin-left: 0.12rem;
+		/* width: 0.34rem;
+		height: 0.34rem;
+		background: #979797; */
 	}
 </style>

@@ -11,6 +11,10 @@
 				<img src="../assets/imgs/original-transfer.svg" class="header-icon-right" />
 				<img src="../assets/imgs/share.png" class="header-icon-right" />
 			</div>
+			<div class="itools" v-if="showProflie">
+				<div class="ibtn ibtn-swap color_yellow" @click="swapPage">Swap</div>
+				<van-icon name="setting-o" color="#F7B62D" class="isetting" size=".84rem" @click="set" />
+			</div>
 			<div class="header-logout" v-if="showWordsRight">Log Out</div>
 		</div>
 	</div>
@@ -70,6 +74,10 @@
 			showPublish: {
 				type: Boolean,
 				default: false
+			},
+			showProflie: {
+				type: Boolean,
+				default: false
 			}
 		},
 		created() {
@@ -85,7 +93,7 @@
 
 		},
 		methods: {
-			publishClick(){
+			publishClick() {
 				this.$router.push({
 					name: 'active',
 					params: {}
@@ -114,6 +122,38 @@
 </script>
 
 <style scoped="scoped">
+	.itools {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		margin-right: 0.6rem;
+	}
+
+	.itools .isetting {
+		width: 0.84rem;
+		height: 0.84rem;
+		line-height: 0.84rem;
+		margin-right: 0.6rem;
+	}
+
+	.itools .isetting:active {
+		opacity: .6;
+	}
+
+	.itools .ibtn-swap {
+		width: 2.28rem;
+		height: 0.9rem;
+		line-height: 0.9rem;
+		border-radius: 0.16rem;
+		border: 0.04rem solid #F7B62D;
+		font-size: 0.48rem;
+		font-family: Poppins-Medium, Poppins;
+		font-weight: 500;
+		margin-right: 0.7rem;
+		padding: 0rem 0.46rem 0rem 0.42rem;
+	}
+
 	.header-publish-list {
 		display: flex;
 		justify-content: flex-end;

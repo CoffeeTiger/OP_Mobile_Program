@@ -1,9 +1,6 @@
 <template>
 	<div>
 		<div class="main_contain">
-			<!-- <div class="page-title color_yellow">
-				<div class="page-title-t2">Log Out</div>
-			</div> -->
 			<div style="text-align: center;">
 				<img class="setup-img" src="@/assets/imgs/setuphead.svg" />
 				<div class="setup-size">set New Photo</div>
