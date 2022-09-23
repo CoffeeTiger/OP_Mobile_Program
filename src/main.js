@@ -6,12 +6,12 @@ import router from './router/router';
 import i18n from './i18n'
 /* use vant */
 import 'vant/lib/index.css'
-import {Toast, Button, NavBar, Icon, Cell, CellGroup, Collapse, CollapseItem, Progress, Tab, Tabs, DropdownMenu, DropdownItem, Uploader, Field} from 'vant'; 
+import {Toast, Button, NavBar, Icon, Cell, CellGroup, Collapse, CollapseItem, Progress, Tab, Tabs, DropdownMenu, DropdownItem, Uploader, Field, Calendar, Popup, Picker} from 'vant'; 
 
 import VueClipboard from 'vue-clipboard2'
 
 
-createApp(App).use(VueAxios, axios).use(router).use(i18n).use(Toast).use(Button).use(NavBar).use(Icon).use(Cell).use(CellGroup).use(VueClipboard).use(Collapse).use(CollapseItem).use(Progress).use(Tab).use(Tabs).use(DropdownMenu).use(DropdownItem).use(Uploader).use(Field).mount('#app')
+createApp(App).use(VueAxios, axios).use(router).use(i18n).use(Toast).use(Button).use(NavBar).use(Icon).use(Cell).use(CellGroup).use(VueClipboard).use(Collapse).use(CollapseItem).use(Progress).use(Tab).use(Tabs).use(DropdownMenu).use(DropdownItem).use(Uploader).use(Field).use(Calendar).use(Popup).use(Picker).mount('#app')
 
 /* app.config.globalProperties.$http = () => {
 	return 'www.open.io'

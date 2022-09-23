@@ -10,7 +10,17 @@ let langLocal = localStorage.getItem('lang')
 if(!(langLocal == undefined || langLocal==null ||langLocal=='' )){
   console.info('--------lang='+ langLocal +'-------')
 } else {
-  langLocal = 'en-us'
+  // langLocal = 'en-us'
+  
+  let na = navigator.language
+  if (na.indexOf('en') !== -1) {
+  	langLocal = 'en-us'
+  } else if(na.indexOf('zh') !== -1){
+  	langLocal = 'zh'
+  } else {
+	langLocal = 'en-us'
+  }
+  
 }
 
 const i18n = new createI18n({
